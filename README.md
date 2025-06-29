@@ -15,7 +15,7 @@ Provides downloadable building manuals.
 
 Includes an FAQ.
 
-Offers a contact form.
+Offers a contact form. (can we do it without having a backend?)
 
 Lays a foundation for future development by:
 -Practicing proper React component structure.
@@ -23,7 +23,7 @@ Lays a foundation for future development by:
 -Writing modular and reusable Sass.
 
 wishlist: 
--lazyloading
+-lazyloading 
 -sick parallax effect /w wallpaper
 -carrousel (w/ loading anim if needed) (Embla maybe?)
 
