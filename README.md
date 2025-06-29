@@ -43,3 +43,10 @@ LandingPage.jsx --> quyzone.com
 SupportPage.jsx (merged with FAQ) --> quyzone.com\support
 
 Routing: react-router-dom (SPA-style navigation)
+
+
+
+???:
+- Offers a contact form. (can we do it without having a backend?)
+- deploymemt to ionos
+- video preloaded in folder no backend
