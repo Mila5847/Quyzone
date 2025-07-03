@@ -6,9 +6,11 @@ import {
   useLocation,
   useNavigate,
 } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
+
 import LandingPage from './pages/LandingPage';
 import SupportPage from './pages/SupportPage';
+
 import './style.scss';
 
 function App() {
@@ -23,14 +25,16 @@ function MainApp() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const scrollTo = (id) => {
+  const scrollTo = useCallback((id) => {
     if (location.pathname !== '/') {
       navigate('/', { state: { scrollTarget: id } });
     } else {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  };
+  }, [location.pathname, navigate]);
 
   return (
     <>

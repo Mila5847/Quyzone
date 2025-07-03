@@ -1,39 +1,46 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+
 import HowItWorks from '../components/HowItWorks';
 import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
+
 import '../style.scss';
 
 function LandingPage() {
-// Uncomment the following lines if you want to handle scroll restoration 
+  const location = useLocation();
 
-//   const location = useLocation();
+  useEffect(() => {
+    const scrollTarget = location.state?.scrollTarget;
 
-//   useEffect(() => {
-//     const scrollTarget = location.state?.scrollTarget;
+    setTimeout(() => {
+      if (scrollTarget) {
+        const el = document.getElementById(scrollTarget);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
 
-//     requestAnimationFrame(() => {
-//       if (scrollTarget) {
-//         const el = document.getElementById(scrollTarget);
-//         if (el) {
-//           el.scrollIntoView({ behavior: 'smooth' });
-//         }
-//       } else {
-//         window.scrollTo({ top: 0, behavior: 'smooth' });
-//       }
-//     });
-//   }, [location.key]);
+          // Remove scrollTarget from history so it doesn't affect back/forward
+          window.history.replaceState({}, '');
+          return;
+        }
+      }
+
+      // Scroll to top by default (e.g. on refresh)
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50); // Delay ensures DOM is fully rendered
+  }, [location.key]);
 
   return (
     <div>
       <section id="how-it-works">
         <HowItWorks />
       </section>
+
       <section id="gallery">
         <Gallery />
       </section>
-       <section id="contact">
+
+      <section id="contact">
         <Contact />
       </section>
     </div>

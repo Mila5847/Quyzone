@@ -2,7 +2,7 @@ function Gallery() {
   return (
     <section>
       <h2>Gallery</h2>
-      <p>Images/videos of the kit will be shown here.</p>
+      <p>Images and videos of the kit will be displayed here.</p>
     </section>
   );
 }
