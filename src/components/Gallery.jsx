@@ -1,8 +1,16 @@
+import ImageCarousel from './ImageCarousel';
+
 function Gallery() {
+  const images = [
+  '/images/sample_image_1.jpg',
+  '/images/sample_image_2.jpg',
+];
+
+
   return (
     <section>
       <h2>Gallery</h2>
-      <p>Images and videos of the kit will be displayed here.</p>
+      <ImageCarousel images={images} />
     </section>
   );
 }

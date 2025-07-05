@@ -28,12 +28,12 @@
   }
 }
 
-/* ✅ Global: Smooth scroll */
+/* Global: Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* ✅ Global: Section layout */
+/* Global: Section layout */
 section {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@ section {
   margin: 0 auto;
 }
 
-/* ✅ Section background colors */
+/* Section background colors */
 #contact {
   background: goldenrod;
   color: white;
@@ -62,4 +62,5 @@ section {
   color: white;
   height: 100vh;
 }
+
 
