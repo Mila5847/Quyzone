@@ -50,3 +50,12 @@ Routing: react-router-dom (SPA-style navigation)
 - Offers a contact form. (can we do it without having a backend?)
 - deploymemt to ionos
 - video preloaded in folder no backend
+
+
+For me:
+![image](https://github.com/user-attachments/assets/5d61af25-04a0-4c22-b565-d24950666586)
+
+
+
+
+
