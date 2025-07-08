@@ -1,23 +1,23 @@
 // abstracts
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+@use './abstracts/variables';
+//@import 'abstracts/mixins';
 //@import 'abstracts/functions';
 
 // base
-@import 'base/reset';
-@import 'base/typography';
+@use './base/reset';
+@use './base/typography';
 
 // layout
-@import 'layout/header';
-@import 'layout/footer';
+//@import 'layout/header';
+//@import 'layout/footer';
 
 // components
-@import 'components/button';
+//@import 'components/button';
 //@import 'components/card';
 
 // pages
-@import 'pages/LandingPage';
-@import 'pages/supportpage';
+//@import 'pages/LandingPage';
+//@import 'pages/supportpage';
 
 // themes
 //@import 'themes/default';

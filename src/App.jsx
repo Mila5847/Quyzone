@@ -13,6 +13,7 @@ import SupportPage from './pages/SupportPage';
 
 import './style.scss';
 
+
 function App() {
   return (
     <Router>
