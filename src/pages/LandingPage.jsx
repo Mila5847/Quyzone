@@ -1,6 +1,11 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
+
+import Hero from '../components/hero';
+
+import Footer from '../components/footer';
+
 import HowItWorks from '../components/HowItWorks';
 import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
@@ -32,6 +37,11 @@ function LandingPage() {
 
   return (
     <div>
+
+  <   section id="hero">
+        <Hero />
+      </section>
+
       <section id="how-it-works">
         <HowItWorks />
       </section>
@@ -43,6 +53,11 @@ function LandingPage() {
       <section id="contact">
         <Contact />
       </section>
+
+      <section id="footer">
+        <Footer />
+      </section>
+
     </div>
   );
 }
