@@ -6,7 +6,7 @@ import {
   useLocation,
   useNavigate,
 } from 'react-router-dom';
-import { useEffect, useCallback } from 'react';
+import { useCallback } from 'react';
 
 import LandingPage from './pages/LandingPage';
 import SupportPage from './pages/SupportPage';
