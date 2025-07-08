@@ -1,11 +1,11 @@
 // abstracts
-@import 'abstracts/variables';
+@use './abstracts/variables';
 //@import 'abstracts/mixins';
 //@import 'abstracts/functions';
 
 // base
-@import 'base/reset';
-@import 'base/typography';
+@use './base/reset';
+@use './base/typography';
 
 // layout
 //@import 'layout/header';
