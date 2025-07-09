@@ -1,5 +1,7 @@
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect, useCallback } from 'react';
+import { Link,
+  useLocation,
+  useNavigate, } from 'react-router-dom';
 
 
 import Hero from '../components/hero';
@@ -14,6 +16,19 @@ import '../style.scss';
 
 function LandingPage() {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollTo = useCallback((id) => {
+    if (location.pathname !== '/') {
+      navigate('/', { state: { scrollTarget: id } });
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location.pathname, navigate]);
+
 
   useEffect(() => {
     const scrollTarget = location.state?.scrollTarget;
@@ -41,6 +56,14 @@ function LandingPage() {
   <   section id="hero">
         <Hero />
       </section>
+
+   <nav className="nav">
+        <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
+        <button onClick={() => scrollTo('gallery')}>Gallery</button>
+        <button onClick={() => scrollTo('contact')}>Contact</button>
+        <Link to="/support">Support</Link>
+      </nav>
+
 
       <section id="how-it-works">
         <HowItWorks />

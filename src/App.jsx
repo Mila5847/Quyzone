@@ -23,28 +23,28 @@ function App() {
 }
 
 function MainApp() {
-  const location = useLocation();
-  const navigate = useNavigate();
+  // const location = useLocation();
+  // const navigate = useNavigate();
 
-  const scrollTo = useCallback((id) => {
-    if (location.pathname !== '/') {
-      navigate('/', { state: { scrollTarget: id } });
-    } else {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [location.pathname, navigate]);
+  // const scrollTo = useCallback((id) => {
+  //   if (location.pathname !== '/') {
+  //     navigate('/', { state: { scrollTarget: id } });
+  //   } else {
+  //     const element = document.getElementById(id);
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: 'smooth' });
+  //     }
+  //   }
+  // }, [location.pathname, navigate]);
 
   return (
     <>
-      <nav className="nav">
+      {/* <nav className="nav">
         <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
         <button onClick={() => scrollTo('gallery')}>Gallery</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
         <Link to="/support">Support</Link>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<LandingPage />} />
