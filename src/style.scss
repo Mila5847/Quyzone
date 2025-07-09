@@ -50,19 +50,19 @@ section {
 
 /* Section background colors */
 #contact {
-  background: goldenrod;
+  background: rgba(218, 165, 32, 0.077);
   color: white;
   height: 100vh;
 }
 
 #gallery {
-  background: gray;
+  background: rgba(128, 128, 128, 0.092);
   color: black;
   height: 100vh
 }
 
 #how-it-works {
-  background: rebeccapurple;
+  background: rgba(102, 51, 153, 0.055);
   color: white;
   height: 100vh;
 }
@@ -91,7 +91,7 @@ h2 {
 
 .contact-form input,
 .contact-form textarea {
-  width: 80vw;           
+  width: 80vw;
   max-width: 600px;
   padding: 18px;
   font-size: 18px;
