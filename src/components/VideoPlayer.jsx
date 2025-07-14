@@ -1,4 +1,4 @@
-import '../VideoPlayer.scss';
+import '../styles/components/_VideoPlayer.scss';
 
 function VideoPlayer({ src, caption = '' }) {
   return (

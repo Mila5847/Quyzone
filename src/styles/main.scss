@@ -11,9 +11,10 @@
 // layout
 //@import 'layout/header';
 //@import 'layout/footer';
+@use './layout/section';
 
 // components
-//@import 'components/button';
+@use 'components/button';
 //@import 'components/card';
 
 // pages

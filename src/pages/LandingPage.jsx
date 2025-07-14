@@ -12,7 +12,7 @@ import HowItWorks from '../components/HowItWorks';
 import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
 
-import '../style.scss';
+import '../styles/layout/_nav.scss'
 
 function LandingPage() {
   const location = useLocation();
