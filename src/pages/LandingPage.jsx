@@ -3,14 +3,12 @@ import { Link,
   useLocation,
   useNavigate, } from 'react-router-dom';
 
-
+import Logo from '../components/Logo';
 import Hero from '../components/hero';
-
-import Footer from '../components/footer';
-
 import HowItWorks from '../components/HowItWorks';
 import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
+import Footer from '../components/footer';
 
 import '../styles/layout/_nav.scss'
 
@@ -52,7 +50,11 @@ function LandingPage() {
 
   return (
     <div>
-
+  <   section id="Logo" className='container'>
+        <Logo />
+      </section>
+      <h1 >MECH BUST</h1>
+      <p className='sub-h1'>PRINTABLE - - POSABLE - - PERFECTIBLE</p>
   <   section id="hero">
         <Hero />
       </section>

@@ -2,8 +2,10 @@ const Hero = () => {
   return (
     <section>
       <div>
-        <h1>Welcome to Quyzone</h1>
-        <p>Perfectible. Printable. Posable.</p>
+<p>Get</p>
+<p>Started</p>
+<p>Here!</p>
+        
         <button>Get Started</button>
       </div>
     </section>

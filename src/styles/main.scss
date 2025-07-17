@@ -11,10 +11,14 @@
 // layout
 //@import 'layout/header';
 //@import 'layout/footer';
-@use './layout/section';
+// @use './layout/section';
+@use 'layout/container';
+
 
 // components
 @use 'components/button';
+@use 'components/logo';
+// @use 'components/ImageCarousel';
 //@import 'components/card';
 
 // pages

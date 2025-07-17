@@ -11,7 +11,7 @@ import { useCallback } from 'react';
 import LandingPage from './pages/LandingPage';
 import SupportPage from './pages/SupportPage';
 
-import './style.scss';
+
 
 
 function App() {
