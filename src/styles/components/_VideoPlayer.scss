@@ -5,17 +5,19 @@
   flex-wrap: nowrap;
   gap: 2rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;;
+  margin-bottom: 2rem;
+  ;
 }
 
 .video-wrapper {
   width: 100%;
   max-width: 200px;
-  aspect-ratio: 9 / 16;
+  aspect-ratio: 9 / 12;
   background: #000;
   border-radius: 8px;
   overflow: hidden;
-  flex-shrink: 0; 
+  flex-shrink: 0;
+  mix-blend-mode: multiply;
 }
 
 .native-video {
