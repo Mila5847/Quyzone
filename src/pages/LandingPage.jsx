@@ -50,16 +50,17 @@ function LandingPage() {
 
   return (
     <div>
-  <   section id="Logo" className='container'>
+  <   section id="Logo" className='section container'>
         <Logo />
-      </section>
-      <h1 >MECH BUST</h1>
-      <p className='sub-h1'>PRINTABLE - - POSABLE - - PERFECTIBLE</p>
+        <h1 >MECH BUST</h1>
+        <div className='sub-h1'><span>PRINTABLE</span><span className='spacer-horizontal'>&#x25CF;</span><span>POSABLE</span><span className='spacer-horizontal'>&#x25CF;</span><span>PERFECTIBLE</span></div>
+      </section >
+      
   <   section id="hero">
         <Hero />
       </section>
 
-   <nav className="nav">
+   <nav className="nav section container" >
         <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
         <button onClick={() => scrollTo('gallery')}>Gallery</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
@@ -67,19 +68,19 @@ function LandingPage() {
       </nav>
 
 
-      <section id="how-it-works">
+      <section id="how-it-works" className='section container'>
         <HowItWorks />
       </section>
 
-      <section id="gallery">
+      <section id="gallery" className='section container'>
         <Gallery />
       </section>
 
-      <section id="contact">
+      <section id="contact" className='section container'>
         <Contact />
       </section>
 
-      <section id="footer">
+      <section id="footer" className='section container'>
         <Footer />
       </section>
 

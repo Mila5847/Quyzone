@@ -1,5 +1,10 @@
+@use '../abstracts/variables'as v;
+
 .container {
-  padding: 5px;
-  max-width: 100%;
+  width: 100%;
+
+  @media (min-width: v.$breakpoint-sm) {
+    padding: 1.5rem; // Slightly more padding on larger phones/small tablets
+  }
 
 }
