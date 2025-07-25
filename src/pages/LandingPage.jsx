@@ -48,6 +48,8 @@ function LandingPage() {
     }, 50); // Delay ensures DOM is fully rendered
   }, [location.key]);
 
+/*------------------------------------------------------------------*/
+
   return (
     <div>
   <   section id="Logo" className='section container'>
@@ -56,15 +58,19 @@ function LandingPage() {
         <div className='sub-h1'><span>PRINTABLE</span><span className='spacer-horizontal'>&#x25CF;</span><span>POSABLE</span><span className='spacer-horizontal'>&#x25CF;</span><span>PERFECTIBLE</span></div>
       </section >
       
-  <   section id="hero">
+  <   section id="hero" className='section container'>
         <Hero />
       </section>
 
    <nav className="nav section container" >
+   
         <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
         <button onClick={() => scrollTo('gallery')}>Gallery</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
         <Link to="/support">Support</Link>
+
+ <div className='divider'></div>
+        
       </nav>
 
 

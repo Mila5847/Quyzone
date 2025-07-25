@@ -28,6 +28,7 @@ body {
 
 /* Headings */
 h1 {
+  margin-left: -5px;
   font-family: $font-rajdhani;
   font-weight: 900;
   font-size: 127px;
@@ -40,7 +41,7 @@ h1 {
 
 
 .sub-h1 {
-  margin-left: 5px;
+
   font-family: $font-rajdhani;
   font-weight: 600;
   color: $secondary-color;
