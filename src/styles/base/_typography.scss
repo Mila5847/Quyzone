@@ -22,8 +22,8 @@ body {
   font-family: $font-sofia;
   font-size: 16px;
   line-height: 1.6;
-  color: #222;
-  background-color: #fff;
+  color: $primary-color;
+
 }
 
 /* Headings */
@@ -31,13 +31,10 @@ h1 {
   margin-left: -5px;
   font-family: $font-rajdhani;
   font-weight: 900;
-  font-size: 127px;
+  font-size: $h1-font-size;
   line-height: 0.9;
   color: $secondary-color;
 }
-
-
-
 
 
 .sub-h1 {
@@ -45,10 +42,24 @@ h1 {
   font-family: $font-rajdhani;
   font-weight: 600;
   color: $secondary-color;
-  font-size: 37px;
+  font-size: $sub-h1-font-size;
   margin-top: -20px;
+  letter-spacing: 5px;
 
 }
+
+.cta {
+
+  font-family: $font-orbitron;
+  font-size: $cta-font-size;
+  color: $primary-color;
+  line-height: $cta-line-height;
+
+  span {
+    font-weight: 900;
+  }
+}
+
 
 h2,
 h3,
