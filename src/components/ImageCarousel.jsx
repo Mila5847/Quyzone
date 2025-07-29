@@ -1,21 +1,17 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
-
-// import required modules
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
+import '../styles/components/_ImageCarousel.scss';
 
 function ImageCarousel({ images }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <>
+    <div className="carousel-container">
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -25,14 +21,15 @@ function ImageCarousel({ images }) {
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper2"
+        className="main-swiper"
       >
-         {images.map((src, idx) => (
+        {images.map((src, idx) => (
           <SwiperSlide key={idx}>
-            <img src={src} alt={`Slide ${idx + 1}`} />
+            <img src={src} alt={`Slide ${idx + 1}`} className="main-image" />
           </SwiperSlide>
         ))}
       </Swiper>
+
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
@@ -40,16 +37,15 @@ function ImageCarousel({ images }) {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
+        className="thumb-swiper"
       >
-      
-       {images.map((src, idx) => (
+        {images.map((src, idx) => (
           <SwiperSlide key={idx}>
-            <img src={src} alt={`Slide ${idx + 1}`} />
+            <img src={src} alt={`Slide ${idx + 1}`} className="thumb-image" />
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }
 
