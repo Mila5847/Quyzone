@@ -54,8 +54,8 @@ function LandingPage() {
     <div>
   <   section id="Logo" className='section container'>
         <Logo />
-        <h1 >MECH BUST</h1>
-        <div className='sub-h1'><span>PRINTABLE</span><span className='spacer-horizontal'>&#x25CF;</span><span>POSABLE</span><span className='spacer-horizontal'>&#x25CF;</span><span>PERFECTIBLE</span></div>
+        <h1 >MECHABUST</h1>
+        <div className='sub-h1'><span>PRINTABLE</span><span className='spacer-horizontal'>&nbsp;&#x25CF;&nbsp;</span><span>POSABLE</span><span className='spacer-horizontal'>&nbsp;&#x25CF;&nbsp;</span><span>PERFECTIBLE</span></div>
       </section >
       
   <   section id="hero" className='section container'>
