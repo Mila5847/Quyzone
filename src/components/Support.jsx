@@ -1,14 +1,14 @@
 import {
-
   Link,
   useLocation,
   useNavigate,
 } from 'react-router-dom';
 import { useCallback } from 'react';
+import { Accordion, AccordionItem } from '@szhsin/react-accordion';
+import '../styles/pages/_SupportPage.scss';
 
 function Support() {
-
- const location = useLocation();
+  const location = useLocation();
   const navigate = useNavigate();
 
   const scrollTo = useCallback((id) => {
@@ -22,19 +22,51 @@ function Support() {
     }
   }, [location.pathname, navigate]);
 
+  // Array of Q&A
+  const faqs = [
+    {
+      q: 'What is Lorem Ipsum?',
+      a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+    {
+      q: 'Where does it come from?',
+      a: 'Quisque eget luctus mi, vehicula mollis lorem. Proin fringilla vel erat quis sodales. Nam ex enim, eleifend venenatis lectus vitae, accumsan auctor mi.'
+    },
+    {
+      q: 'Why do we use it?',
+      a: 'Suspendisse massa risus, pretium id interdum in, dictum sit amet ante. Fusce vulputate purus sed tempus feugiat.'
+    }
+  ];
+
   return (
-<>
- { <nav className="nav">
+    <>
+      <nav className="nav">
         <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
         <button onClick={() => scrollTo('gallery')}>Gallery</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
         <Link to="/support">Support</Link>
-      </nav> }
+      </nav>
     
-    <section>
-      <h2>Support</h2>
-      <p>Include frequently asked questions, help guides, or contact options here.</p>
-    </section>
+      <section>
+        <h2>Support</h2>
+        <p>Include frequently asked questions, help guides, or contact options here.</p>
+      </section>
+
+      <Accordion className="faq" allowMultiple transition transitionTimeout={200}>
+        {faqs.map((item, idx) => (
+          <AccordionItem
+            key={idx}
+            header={
+              <div className="accordion-header">
+                <span>{item.q}</span>
+                <span className="arrow">▼</span>
+              </div>
+            }
+          >
+            {item.a}
+          </AccordionItem>
+        ))}
+      </Accordion>
     </>
   );
 }
