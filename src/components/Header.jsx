@@ -29,8 +29,6 @@ export default function BrandHeader({
           <span className="spacer-horizontal">&nbsp;&#x25CF;&nbsp;</span>
           <span>PERFECTIBLE</span>
         </div>
-
-      <Hero />
     </section>
   );
 }

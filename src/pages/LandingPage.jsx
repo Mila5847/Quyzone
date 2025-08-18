@@ -7,6 +7,7 @@ import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
 import Footer from '../components/footer';
 import Header from '../components/Header';
+import Hero from '../components/hero';
 
 import '../styles/layout/_nav.scss'
 
@@ -50,7 +51,10 @@ function LandingPage() {
 
   return (
     <div>
-    <Header title="MECHABUST" /> 
+    <Header title="MECHABUST" />
+    <section id="hero" className="section container">
+      <Hero />
+    </section>
 
    <nav className="nav section container" >
    
