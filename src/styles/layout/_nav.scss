@@ -33,19 +33,53 @@
     text-decoration: none;
     padding: 0.5rem;
 
-    &:hover {
-      color: #000000;
-      position: relative;
-      top: -2px; // moves text 1px higher
-      left: -3px;
-      text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3); // Shadow sits 2px below
+    /* Required for all our effects */
+    position: relative;
+    overflow: hidden;
 
+    /* Smooth transitions for all the effects */
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+  }
 
+  /* Arrow Effect (::before pseudo-element) */
+  a::before,
+  button::before {
+    content: "▷";
+    margin-right: 0.5rem;
+    transition: content 0.3s ease;
+    /* This transition won't work but keeps code clean */
+  }
 
-    }
+  /* Underline Effect (::after pseudo-element) */
+  a::after,
+  button::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.2s ease-out;
+  }
 
-    button {
-      font-family: inherit;
-    }
+  /* Hover State */
+  a:hover,
+  button:hover {
+    /* Subtle position shift and text shadow */
+    transform: translate(-3px, -2px);
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Hover state for the Arrow */
+  a:hover::before,
+  button:hover::before {
+    content: "▶";
+  }
+
+  /* Hover state for the Underline */
+  a:hover::after,
+  button:hover::after {
+    width: 100%;
   }
 }

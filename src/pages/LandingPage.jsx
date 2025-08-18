@@ -75,7 +75,7 @@ function LandingPage() {
 
    <nav className="nav section container" >
    
-        <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
+        <button  className="menu-button" onClick={() => scrollTo('how-it-works')}>How It Works</button>
         <button onClick={() => scrollTo('gallery')}>Gallery</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
         <Link to="/support">Support</Link>
