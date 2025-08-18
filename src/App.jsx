@@ -2,23 +2,20 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  useLocation,
-  useNavigate,
 } from 'react-router-dom';
 import { useCallback } from 'react';
 
 import LandingPage from './pages/LandingPage';
 import SupportPage from './pages/SupportPage';
-
-
-
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
-    <Router>
-      <MainApp />
-    </Router>
+    <ParallaxProvider>
+      <Router>
+        <MainApp />
+      </Router>
+    </ParallaxProvider>
   );
 }
 

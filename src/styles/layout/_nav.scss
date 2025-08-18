@@ -39,71 +39,13 @@
       top: -2px; // moves text 1px higher
       left: -3px;
       text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3); // Shadow sits 2px below
+
+
+
     }
 
     button {
       font-family: inherit;
     }
   }
-}
-
-/* Parallax Hero Section Styles !!! */
-
-
-
-/* Full-height hero with hidden overflow so the bg can be taller */
-.parallax-hero {
-  position: relative;
-  padding: 0;
-  /* usually want no padding for a full-bleed hero */
-  overflow: hidden;
-  height: 100vh;
-  /* make the hero full screen */
-}
-
-/* Keep a wrapper to hold bg + content layers */
-.parallax-hero__wrap {
-  position: relative;
-  height: 100%;
-}
-
-/* The background layer that we parallax */
-.parallax-hero__bg {
-  background-image: url('../../../public/images/wallpaper.svg');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 120%;
-  /* taller than container for smooth parallax */
-}
-
-/* Foreground content sits above the bg */
-.parallax-hero__content {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: auto;
-  /* ensure your buttons/links work */
-}
-
-.parallax-hero {
-  min-height: 60vh;
-  background-image: url('../../../public/images/bckp/wallpaper.svg');
-  /* replace with your test image */
-  background-size: cover;
-  background-position: center;
-  //background-attachment:fixed; /* gives the parallax effect */
-  display: grid;
-  place-items: center;
-  color: white;
-  text-align: center;
-}
-
-.parallax-content {
-  background: rgba(0, 0, 0, 0.4);
-  /* optional overlay so text is readable */
-  padding: 2rem;
-  border-radius: 12px;
 }
