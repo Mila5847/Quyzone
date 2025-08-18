@@ -2,12 +2,11 @@ import { useEffect, useCallback } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Parallax } from 'react-scroll-parallax';
 
-import Logo from '../components/Logo';
-import Hero from '../components/hero';
 import HowItWorks from '../components/HowItWorks';
 import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
 import Footer from '../components/footer';
+import Header from '../components/Header';
 
 import '../styles/layout/_nav.scss'
 
@@ -51,27 +50,7 @@ function LandingPage() {
 
   return (
     <div>
-      <section id="Logo" className="section container">
-        <Parallax speed={-20}>
-          <Logo />
-        </Parallax>
-        <Parallax speed={10}>
-          <h1>MECHABUST</h1>
-          <div className="sub-h1">
-            <span>PRINTABLE</span>
-            <span className="spacer-horizontal">&nbsp;&#x25CF;&nbsp;</span>
-            <span>POSABLE</span>
-            <span className="spacer-horizontal">&nbsp;&#x25CF;&nbsp;</span>
-            <span>PERFECTIBLE</span>
-          </div>
-        </Parallax>
-      </section>
-
-      <section id="hero" className="section container">
-        <Parallax translateY={[-30, 30]}>
-          <Hero />
-        </Parallax>
-      </section>
+    <Header title="MECHABUST" /> 
 
    <nav className="nav section container" >
    
