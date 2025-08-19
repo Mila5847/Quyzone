@@ -8,6 +8,7 @@ import Gallery from '../components/Gallery';
 import Footer from '../components/footer';
 import Header from '../components/Header';
 import Hero from '../components/hero';
+import Background from '../components/Background';
 
 import '../styles/layout/_nav.scss'
 
@@ -51,6 +52,7 @@ function LandingPage() {
 
   return (
     <div>
+    <Background/>
     <Header title="MECHABUST" />
     <section id="hero" className="section container">
       <Hero />
