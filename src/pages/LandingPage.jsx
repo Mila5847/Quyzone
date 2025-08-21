@@ -68,19 +68,19 @@ function LandingPage() {
       </nav>
 
       <section id="how-it-works" className="section container">
-        <Parallax speed={100}>
+        <Parallax speed={0}>
           <HowItWorks />
         </Parallax>
       </section>
 
       <section id="gallery" className="section container">
-        <Parallax translateY={[20, -20]}>
+        <Parallax translateY={[0, 0]}>
           <Gallery />
         </Parallax>
       </section>
 
       <section id="contact" className="section container">
-        <Parallax speed={10}>
+        <Parallax speed={0}>
           <Contact />
         </Parallax>
       </section>
