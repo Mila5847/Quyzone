@@ -8,7 +8,6 @@ import LandingPage from './pages/LandingPage';
 import SupportPage from './pages/SupportPage';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Background from './components/Background';
-import BackToTop from './components/BackToTop';
 
 function App() {
   return (
