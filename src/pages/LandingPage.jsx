@@ -52,10 +52,11 @@ function LandingPage() {
 
   return (
     <div>
-    <Background/>
     <Header title="MECHABUST" />
     <section id="hero" className="section container">
+    <Parallax speed={0}>
       <Hero />
+    </Parallax>
     </section>
 
    <nav className="nav section container" >

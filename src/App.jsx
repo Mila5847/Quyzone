@@ -3,15 +3,16 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
-import { useCallback } from 'react';
 
 import LandingPage from './pages/LandingPage';
 import SupportPage from './pages/SupportPage';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Background from './components/Background';
 
 function App() {
   return (
     <ParallaxProvider>
+      <Background />
       <Router>
         <MainApp />
       </Router>
