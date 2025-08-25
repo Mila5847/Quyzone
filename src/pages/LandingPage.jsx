@@ -1,6 +1,7 @@
-import { useEffect, useCallback } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Parallax } from 'react-scroll-parallax';
+import { Element, Link as ScrollLink, scroller } from 'react-scroll';
 
 import HowItWorks from '../components/HowItWorks';
 import Contact from '../components/Contact';
@@ -10,80 +11,103 @@ import Header from '../components/Header';
 import Hero from '../components/hero';
 
 import '../styles/layout/_nav.scss'
+import '../styles/pages/_LandingPage.scss';
 
 function LandingPage() {
   const location = useLocation();
-  const navigate = useNavigate();
 
-  const scrollTo = useCallback((id) => {
-      if (location.pathname !== '/') {
-        navigate('/', { state: { scrollTarget: id } });
-      } else {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-  }, [location.pathname, navigate]);
-
-
+  // If navigated here with { state: { scrollTarget } }, scroll after mount
   useEffect(() => {
-    const scrollTarget = location.state?.scrollTarget;
-
-    setTimeout(() => {
-      if (scrollTarget) {
-        const el = document.getElementById(scrollTarget);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth' });
-
-          // Remove scrollTarget from history so it doesn't affect back/forward
-          window.history.replaceState({}, '');
-          return;
-        }
-      }
-
-      // Scroll to top by default (e.g. on refresh)
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 50); // Delay ensures DOM is fully rendered
+    const target = location.state?.scrollTarget;
+    if (target) {
+      // tiny delay so DOM is ready
+      setTimeout(() => {
+        scroller.scrollTo(target, {
+          smooth: 'easeInOutQuart',
+          duration: 600,
+          offset: -80, // adjust if you have a fixed header
+        });
+        // clear state so back/forward isn’t affected
+        window.history.replaceState({}, document.title);
+      }, 0);
+    }
   }, [location.key]);
 
-  /*------------------------------------------------------------------*/
-
   return (
-    <div>
-    <Header title="MECHABUST" />
-    <section id="hero" className="section container">
-    <Parallax speed={0}>
-      <Hero />
-    </Parallax>
-    </section>
+    <div className="landing-page">
+      <Header title="MECHABUST" />
 
-   <nav className="nav section container" >
-   
-        <button  className="menu-button" onClick={() => scrollTo('how-it-works')}>How It Works</button>
-        <button onClick={() => scrollTo('gallery')}>Gallery</button>
-        <button onClick={() => scrollTo('contact')}>Contact</button>
-        <Link to="/support">Support</Link>
+      <section id="hero" className="section container">
+        <Parallax speed={0}>
+          <Hero />
+        </Parallax>
+      </section>
+
+      <nav className="nav section container">
+        {/* react-scroll links */}
+        <ScrollLink
+          className="menu-button"
+          activeClass="active"
+          to="how-it-works"
+          spy
+          smooth="easeInOutQuart"
+          duration={600}
+          offset={-80}
+        >
+          How It Works
+        </ScrollLink>
+
+        <ScrollLink
+          activeClass="active"
+          to="gallery"
+          spy
+          smooth="easeInOutQuart"
+          duration={600}
+          offset={-80}
+        >
+          Gallery
+        </ScrollLink>
+
+        <ScrollLink
+          activeClass="active"
+          to="contact"
+          spy
+          smooth="easeInOutQuart"
+          duration={600}
+          offset={-80}
+        >
+          Contact
+        </ScrollLink>
+
+        {/* keep router link to Support page */}
+        <RouterLink to="/support">Support</RouterLink>
         <div className="divider"></div>
       </nav>
 
-      <section id="how-it-works" className="section container">
-        <Parallax speed={0}>
-          <HowItWorks />
-        </Parallax>
-      </section>
+      {/* Mark each section with <Element name="..."> */}
+      <Element name="how-it-works">
+        <section id="how-it-works" className="section container">
+          <Parallax speed={0}>
+            <HowItWorks />
+          </Parallax>
+        </section>
+      </Element>
 
-      <section id="gallery" className="section container">
-        <Parallax translateY={[0, 0]}>
-          <Gallery />
-        </Parallax>
-      </section>
+      <Element name="gallery">
+        <section id="gallery" className="section container">
+          <Parallax translateY={[0, 0]}>
+            <Gallery />
+          </Parallax>
+        </section>
+      </Element>
 
-      <section id="contact" className="section container">
-        <Parallax speed={0}>
-          <Contact />
-        </Parallax>
-      </section>
+      <Element name="contact">
+        <section id="contact" className="section container">
+          <Parallax speed={0}>
+            <Contact />
+          </Parallax>
+        </section>
+      </Element>
 
       <section id="footer" className="section container">
         <Footer />

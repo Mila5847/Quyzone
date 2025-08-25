@@ -1,9 +1,6 @@
-import {
-  Link,
-  useLocation,
-  useNavigate,
-} from 'react-router-dom';
+import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
 import { useCallback } from 'react';
+import { scroller } from 'react-scroll';
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 import '../styles/pages/_SupportPage.scss';
 
@@ -11,31 +8,24 @@ function Support() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const scrollTo = useCallback((id) => {
+  const scrollTo = useCallback((name) => {
     if (location.pathname !== '/') {
-      navigate('/', { state: { scrollTarget: id } });
+      // Go to LandingPage and let it scroll via useEffect
+      navigate('/', { state: { scrollTarget: name } });
     } else {
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      // If already on LandingPage, scroll immediately
+      scroller.scrollTo(name, {
+        smooth: 'easeInOutQuart',
+        duration: 600,
+        offset: -80,
+      });
     }
   }, [location.pathname, navigate]);
 
-  // Array of Q&A
   const faqs = [
-    {
-      q: 'What is Lorem Ipsum?',
-      a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-    },
-    {
-      q: 'Where does it come from?',
-      a: 'Quisque eget luctus mi, vehicula mollis lorem. Proin fringilla vel erat quis sodales. Nam ex enim, eleifend venenatis lectus vitae, accumsan auctor mi.'
-    },
-    {
-      q: 'Why do we use it?',
-      a: 'Suspendisse massa risus, pretium id interdum in, dictum sit amet ante. Fusce vulputate purus sed tempus feugiat.'
-    }
+    { q: 'What is Lorem Ipsum?', a: 'Lorem ipsum dolor sit amet...' },
+    { q: 'Where does it come from?', a: 'Quisque eget luctus mi...' },
+    { q: 'Why do we use it?', a: 'Suspendisse massa risus...' },
   ];
 
   return (
@@ -44,9 +34,9 @@ function Support() {
         <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
         <button onClick={() => scrollTo('gallery')}>Gallery</button>
         <button onClick={() => scrollTo('contact')}>Contact</button>
-        <Link to="/support">Support</Link>
+        <RouterLink to="/support">Support</RouterLink>
       </nav>
-    
+
       <section>
         <h2>Support</h2>
         <p>Include frequently asked questions, help guides, or contact options here.</p>
