@@ -1,6 +1,5 @@
 // src/components/BrandHeader.tsx
-import Logo from './Logo';
-import Hero from '../components/hero';
+import Logo from './logo';
 
 /**
  * @typedef {Object} HeaderProps
