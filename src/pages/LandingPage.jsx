@@ -5,10 +5,9 @@ import { Parallax } from 'react-scroll-parallax';
 import HowItWorks from '../components/HowItWorks';
 import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/hero';
-import Background from '../components/Background';
 
 import '../styles/layout/_nav.scss'
 
