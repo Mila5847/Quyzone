@@ -1,13 +1,15 @@
-.parallax-wallpaper {
+/* src/styles/components/_background.scss */
+.parallax-wallpaper.fixed-bg {
   position: fixed;
-  inset: -25vh -30vw;   
-  z-index: -1;
+  inset: -5vh -35vw;     /* overscan so edges don’t show */
+  z-index: 0;             /* behind your content */
   pointer-events: none;
-  will-change: transform;
-  backface-visibility: hidden; 
-  -webkit-font-smoothing: antialiased;
+  will-change: background-position;
 
-  background-image: url('/images/wallpaper.svg');
+  background-image: url('/images/wallpaper.svg'); /* put file in /public/images */
   background-repeat: repeat;
-  background-position: 60px 0;
+  background-position: 60px var(--bg-y, 0);
 }
+
+/* your main content should sit above the bg */
+.site-content { position: relative; z-index: 1; }

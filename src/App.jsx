@@ -8,6 +8,7 @@ import LandingPage from './pages/LandingPage';
 import SupportPage from './pages/SupportPage';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Background from './components/Background';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <MainApp />
       </Router>
+       <BackToTop threshold={300} duration={600} />
     </ParallaxProvider>
   );
 }
