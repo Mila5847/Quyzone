@@ -10,8 +10,9 @@ export default function Background() {
       // throttle with rAF for smoothness
       if (raf.current) cancelAnimationFrame(raf.current);
       raf.current = requestAnimationFrame(() => {
-        // “speed -20”: move 20% of page scroll upward
-        const y = -window.scrollY * 0.2;
+        // “speed -20”: move 20% of page scroll upward****************************
+        const y = -window.scrollY * 0.35;
+        // ****************************
         document.documentElement.style.setProperty('--bg-y', `${y}px`);
       });
     };

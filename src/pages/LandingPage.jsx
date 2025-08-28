@@ -35,7 +35,7 @@ function LandingPage() {
 
   return (
     <div className="landing-page">
-      <Header title="MECHABUST" />
+      <Header title="PIONEER3" />
 
       <section id="hero" className="section container">
         <Parallax speed={0}>
