@@ -43,8 +43,11 @@ function LandingPage() {
         </Parallax>
       </section>
 
-        <img class="foreground" src="./images/foreground-test.png"/>
+<div>
+   <img class="foreground" src="./images/foreground-test.png"/>
 
+</div>
+  
       <nav className="nav section container">
         {/* react-scroll links */}
         <ScrollLink
