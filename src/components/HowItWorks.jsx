@@ -1,5 +1,6 @@
 import VideoPlayer from "./VideoPlayer";
 import '../styles/components/_ImageCarousel.scss';
+import '../styles/components/_VideoPlayer.scss';
 
 function HowItWorks() {
   return (

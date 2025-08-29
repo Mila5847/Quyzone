@@ -1,3 +1,6 @@
+@use '../abstracts/variables'as *;
+@use "sass:math";
+
 .video-row {
   display: flex;
   justify-content: center;
@@ -7,6 +10,12 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
   ;
+}
+
+.video-row { background-color: $bg-color; isolation:isolate; }
+.video-row video { 
+  display:block;
+  filter: contrast(1.05);    
 }
 
 .video-wrapper {
