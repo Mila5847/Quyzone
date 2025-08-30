@@ -6,14 +6,14 @@
     width: 100%;
     height: $hero-separator-height;
     /* Or whatever height it needs */
-
     /* Good practice if children might extend beyond its bounds */
     /* For visibility during testing */
 
-    margin-bottom: 30px;
+    margin-bottom: $hero-margin-bottom;
 }
 
 .cta-button {
+    box-shadow: 2px 1px 1px 0px #000000;
     margin-left: 20px;
     display: flex;
     justify-content: left;

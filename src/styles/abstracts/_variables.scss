@@ -6,15 +6,25 @@ $breakpoint-md: 1200px;
 $hero-separator-width: 700px;
 $hero-separator-height: 330px;
 $hero-separator-step: 115px;
+$hero-margin-bottom: 30px;
 
+
+$cta-padding-top: 20px;
 $cta-font-size: 4.2em;
-$cta-line-height: 1.1;
-//------------------h1------------------
+$cta-line-height: 1em;
+//------------------h1.h2------------------
 
 $h1-font-size: 127px;
 $sub-h1-font-size: 31px;
-$sub-h1-width: 495px;
+$sub-h1-width: 515px;
 $letter-spacing: 0px;
+
+$font-weight:600;
+$h2-font-size: 50px;
+$sub-h2-font-size: 31px;
+$sub-h2-width: 530px;
+$letter-spacing: 0px;
+$h2-margin-bottom: 20px;
 
 $bg-color: #c4b782;
 $pattern: 300px;

@@ -2,11 +2,15 @@ import VideoPlayer from "./VideoPlayer";
 import '../styles/components/_ImageCarousel.scss';
 import '../styles/components/_VideoPlayer.scss';
 
+
+
 function HowItWorks() {
   return (
     <>
-    <h2>ABOUT THE PROJECT</h2>
-    <h3>"Printable - Posable - Perfectible"</h3>
+    <h2>What is the Product?</h2>
+    <q>Or Why You'll love Building My kit</q>
+    <p>I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're both here. In need of a brand new model kit to build? I hear ya.  
+At Quyzone you'll find quality kits designed by and for every hungry builders—brought to life with a unique cute whimsical touch!</p>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nos- </p>
     <div className="video-row">
       <VideoPlayer src="/videos/switch_video_1.webm" caption="3 seconds video" />

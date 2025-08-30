@@ -36,7 +36,7 @@ function LandingPage() {
   return (
     <div className="landing-page">
        <Parallax speed={0}>
-        <Header title="PIONEER3" />
+        <Header title="PIONEER.3" />
        </Parallax>
      
 
