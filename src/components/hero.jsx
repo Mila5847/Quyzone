@@ -8,10 +8,10 @@ const Hero = () => {
           
         <div>
           <p className="cta">Get <br />Started <br /><span>HERE!</span></p>
-                 <button>Get Started</button>
+                 <button className="cta-button"><img src="../images/logo/gumroad.svg" alt="Gumroad logo" className="cta-button-logo"/></button>
         </div>
           <div className="left-separator"></div>
-          <div className="hero-separator"><img src="./images/hero-separator.svg" alt="" /></div> 
+          <div className="hero-separator"><img src="/images/hero-separator.svg" alt="" /></div> 
           <div className="right-separator"></div>
         </div>
 

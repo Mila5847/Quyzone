@@ -13,6 +13,27 @@
     margin-bottom: 30px;
 }
 
+.cta-button {
+    margin-left: 20px;
+    display: flex;
+    justify-content: left;
+    border: none;
+    border-radius: 25px;
+    margin-top: -50px;
+    background-color: #38c5a9;
+    width: 400px;
+    height: 110px;
+
+    img {
+        width: 350px; // or 24px if you want it smaller
+        height: auto;
+        max-height: 100%;
+    }
+
+}
+
+
+
 .hero-separator {
     z-index: -1;
     position: absolute;

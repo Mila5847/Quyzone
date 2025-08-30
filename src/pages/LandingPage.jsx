@@ -47,8 +47,9 @@ function LandingPage() {
       </section>
 
 <div>
+  <Parallax speed={3}>
    <img class="foreground" src="./images/foreground-test.png"/>
-
+</Parallax>
 </div>
   
       <nav className="nav section container">
