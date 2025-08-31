@@ -14,7 +14,7 @@ import Logo from './logo';
 export default function BrandHeader({
   title = 'MECHABUST',
   id = 'Logo',
-  className = 'section container',
+  className = 'section ',
 }) {
   return (
     <section id={id} className={className}>

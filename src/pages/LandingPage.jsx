@@ -40,7 +40,7 @@ function LandingPage() {
        </Parallax>
      
 
-      <section id="hero" className="section container">
+      <section id="hero" className="section">
         <Parallax speed={0}>
           <Hero />
         </Parallax>
@@ -52,7 +52,7 @@ function LandingPage() {
 </Parallax>
 </div>
   
-      <nav className="nav section container">
+      <nav className="nav section ">
         <div>
         {/* react-scroll links */}
         <ScrollLink
