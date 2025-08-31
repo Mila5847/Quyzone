@@ -54,20 +54,13 @@ h2 {
   margin-left: -5px;
   margin-bottom: $h2-margin-bottom;
   font-family: $font-orbitron;
-  font-weight: $font-weight;
+  font-weight: $h2-font-weight;
   font-size: $h2-font-size;
   line-height: 0.9;
   color: $secondary-color;
 }
 
-q {
-  font-style: italic;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  max-width: 600px
-}
+
 
 .cta {
   padding-top: $cta-padding-top;

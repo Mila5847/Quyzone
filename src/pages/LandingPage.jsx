@@ -53,6 +53,7 @@ function LandingPage() {
 </div>
   
       <nav className="nav section container">
+        <div>
         {/* react-scroll links */}
         <ScrollLink
           className="menu-button"
@@ -90,8 +91,10 @@ function LandingPage() {
 
         {/* keep router link to Support page */}
         <RouterLink to="/support">Support</RouterLink>
-        <div className="divider"></div>
+        </div>
+        
       </nav>
+      <div className="divider"></div>
 
       {/* Mark each section with <Element name="..."> */}
       <Element name="how-it-works">

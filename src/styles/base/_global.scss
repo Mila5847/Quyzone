@@ -21,3 +21,27 @@
 body {
   background-color: $bg-color;
 }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+q {
+  font-style: italic;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+ul {
+  padding-left: 60px;
+  padding-right: 60px;
+}

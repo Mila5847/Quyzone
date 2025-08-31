@@ -19,9 +19,9 @@
     justify-content: left;
     border: none;
     border-radius: 25px;
-    margin-top: -50px;
+    margin-top: $cta-button-margin-top;
     background-color: #38c5a9;
-    width: 400px;
+    width: $cta-button-width;
     height: 110px;
 
     img {
@@ -72,4 +72,8 @@
     background-color: $secondary-color;
     /* For testing visibility */
 
+}
+
+strong {
+    padding-top: 40px;
 }
