@@ -13,7 +13,7 @@ function HowItWorks() {
     <h2>What is the Product?</h2>
     <q>Or Why You'll love Building My kit</q>
 
-    <img src="/images/art/placeholder_art_01.png" alt="mascot" />
+    <img src="/images/decorative/placeholder_art_01.png" alt="mascot" />
     <p>I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're both here. In need of a brand new model kit to build? I hear ya.  
 At Quyzone you'll find quality kits designed by and for every hungry builders—brought to life with a unique cute whimsical touch!</p>
    <ul>
