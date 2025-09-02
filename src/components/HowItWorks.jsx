@@ -9,7 +9,7 @@ function HowItWorks() {
   return (
 
     
-    <div className="howitworks ">
+    <div className="howitworks">
     <h2>What is the Product?</h2>
     <q>Or Why You'll love Building My kit</q>
 

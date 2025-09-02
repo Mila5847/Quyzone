@@ -1,0 +1,7 @@
+.manual-page {
+  min-height: 100dvh;
+  background: #fff;
+  color: #111;            /* readable text */
+  position: relative;     /* sits above any fixed stuff */
+  z-index: 1;
+}

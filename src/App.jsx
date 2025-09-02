@@ -1,9 +1,6 @@
 // App.jsx
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
+  BrowserRouter as Router, Routes, Route, Outlet, useLocation
 } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -12,6 +9,8 @@ import SupportPage from './pages/SupportPage';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Background from './components/Background';
 import BackToTop from './components/BackToTop';
+import DesignManual from './pages/DesignManual';
+
 
 function App() {
   return (
@@ -33,10 +32,23 @@ function MainApp() {
     <AnimatePresence mode="wait">
       {/* key by pathname so exit anim runs before the next page enters */}
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<PageFade><LandingPage /></PageFade>} />
-        <Route path="/support" element={<PageFade><SupportPage /></PageFade>} />
+        <Route>
+          <Route path="/" element={<PageFade><LandingPage /></PageFade>} />
+          <Route path="/support" element={<PageFade><SupportPage /></PageFade>} />
+        </Route>
+
+        {/* WITHOUT background */}
+        <Route element={<ManualLayout />}>
+          <Route path="/design-manual" element={<DesignManual />} />
+        </Route>
       </Routes>
     </AnimatePresence>
+  );
+}
+
+function ManualLayout() {
+  return (
+    <main className="manual-page site-content"><Outlet /></main>
   );
 }
 

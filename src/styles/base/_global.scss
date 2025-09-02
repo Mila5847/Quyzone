@@ -1,23 +1,6 @@
 @use '../abstracts/variables'as *;
 @use "sass:math";
 
-// body {
-//   padding: 5px 0;
-//   margin: 0 auto;
-//   background-color: $bg-color;
-//   background-image: url('../../../public/images/wallpaper.svg');
-//   background-repeat: no-repeat;
-//   background-size: $pattern auto;
-//   background-position: 60px 0,
-//   #{math.div($pattern,2)} #{math.div($pattern, 2)};
-
-
-//   box-sizing: border-box; // Makes sizing more intuitive
-//   // Prevent body from causing horizontal scroll due to 100vw issues
-//   overflow-x: hidden; // Recommended for the body to prevent general layout shifts
-
-// }
-
 body {
   background-color: $bg-color;
 }

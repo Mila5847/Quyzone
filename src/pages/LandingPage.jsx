@@ -48,7 +48,7 @@ function LandingPage() {
 
 <div>
   <Parallax speed={3}>
-   <img class="foreground" src="./images/foreground-test.png"/>
+   <img className="foreground" src="./images/foreground-test.png"/>
 </Parallax>
 </div>
   
@@ -90,6 +90,7 @@ function LandingPage() {
         </ScrollLink>
 
         {/* keep router link to Support page */}
+        <RouterLink to="/design-manual">Design Manual</RouterLink>
         <RouterLink to="/support">Support</RouterLink>
         </div>
         
