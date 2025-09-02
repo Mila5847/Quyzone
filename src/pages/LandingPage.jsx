@@ -78,17 +78,6 @@ function LandingPage() {
           Gallery
         </ScrollLink>
 
-        <ScrollLink
-          activeClass="active"
-          to="contact"
-          spy
-          smooth="easeInOutQuart"
-          duration={600}
-          offset={-80}
-        >
-          Contact
-        </ScrollLink>
-
         {/* keep router link to Support page */}
         <RouterLink to="/design-manual">Design Manual</RouterLink>
         <RouterLink to="/support">Support</RouterLink>
@@ -110,14 +99,6 @@ function LandingPage() {
         <section id="gallery" className="section container">
           <Parallax translateY={[0, 0]}>
             <Gallery />
-          </Parallax>
-        </section>
-      </Element>
-
-      <Element name="contact">
-        <section id="contact" className="section container">
-          <Parallax speed={0}>
-            <Contact />
           </Parallax>
         </section>
       </Element>

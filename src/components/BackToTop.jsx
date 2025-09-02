@@ -4,6 +4,7 @@ import '../styles/components/_backToTop.scss';
 
 export default function BackToTop({ threshold = 300, duration = 600 }) {
   const [show, setShow] = useState(false);
+  const [isHover, setIsHover] = useState(false);
   const raf = useRef(0);
 
   useEffect(() => {
@@ -22,9 +23,7 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
   }, [threshold]);
 
   const toTop = () => {
-    // react-scroll smooth scroll
     scroll.scrollToTop({ smooth: 'easeInOutQuart', duration });
-    // or: window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -32,9 +31,16 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
       type="button"
       className={`back-to-top ${show ? 'show' : ''}`}
       onClick={toTop}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+      onFocus={() => setIsHover(true)}   // keyboard focus = hover style
+      onBlur={() => setIsHover(false)}
       aria-label="Back to top"
     >
-      ↑
+      <img
+        src={isHover ? '/images/upArrowHover.svg' : '/images/upArrowNeutral.svg'}
+        alt=""
+      />
     </button>
   );
 }

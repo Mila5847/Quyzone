@@ -3,6 +3,7 @@ import { useCallback } from 'react';
 import { scroller } from 'react-scroll';
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 import '../styles/pages/_SupportPage.scss';
+import Contact from './Contact';
 
 function Support() {
   const location = useLocation();
@@ -33,7 +34,6 @@ function Support() {
       <nav className="nav">
         <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
         <button onClick={() => scrollTo('gallery')}>Gallery</button>
-        <button onClick={() => scrollTo('contact')}>Contact</button>
         <RouterLink to="/design-manual">Design Manual</RouterLink>
         <RouterLink to="/support">Support</RouterLink>
       </nav>
@@ -58,6 +58,8 @@ function Support() {
           </AccordionItem>
         ))}
       </Accordion>
+
+      <Contact />
     </>
   );
 }
