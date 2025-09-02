@@ -98,7 +98,7 @@ function LandingPage() {
 
       {/* Mark each section with <Element name="..."> */}
       <Element name="how-it-works">
-        <section id="how-it-works" className="section container">
+        <section id="how-it-works" className="section container" style={{ mixBlendMode: 'multiply' }}>
           <Parallax speed={0}>
             <HowItWorks />
           </Parallax>
