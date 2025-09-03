@@ -7,7 +7,7 @@ function SupportPage() {
     
     <div>
       <Parallax speed={0}>
-        <Header title="SUPPORT PAGE TITLE HERE" /> 
+        <Header title="CONTACT" /> 
       </Parallax>
       
       
