@@ -1,18 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-
-const Logo = () => {
+const Logo = ({ to = "/" }) => {
   return (
-     <Link to="/" style={{ textDecoration: 'none' }}>
-
     <section className="logo-section">
-      <img src="/images/logo.svg"
-      
-      
-      alt="Logo" />
+      <Link to={to} className="logo-link" aria-label="Go to home">
+        <img src="/images/logo.svg" alt="Logo" draggable="false" />
+      </Link>
     </section>
-     </Link>
-
   );
 };
 

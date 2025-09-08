@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
-import '../styles/components/_ImageCarousel.scss';
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import "../styles/components/_ImageCarousel.scss";
 
 function ImageCarousel({ images }) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -14,8 +14,8 @@ function ImageCarousel({ images }) {
     <div className="carousel-container">
       <Swiper
         style={{
-          '--swiper-navigation-color': '#fff',
-          '--swiper-pagination-color': '#fff',
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
         }}
         spaceBetween={10}
         navigation={true}

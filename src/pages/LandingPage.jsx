@@ -1,17 +1,16 @@
-import { useEffect } from 'react';
-import { Link as RouterLink, useLocation } from 'react-router-dom';
-import { Parallax } from 'react-scroll-parallax';
-import { Element, Link as ScrollLink, scroller } from 'react-scroll';
+import { useEffect } from "react";
+import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Parallax } from "react-scroll-parallax";
+import { Element, Link as ScrollLink, scroller } from "react-scroll";
 
-import HowItWorks from '../components/HowItWorks';
-import Contact from '../components/Contact';
-import Gallery from '../components/Gallery';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import Hero from '../components/hero';
+import HowItWorks from "../components/HowItWorks";
+import Gallery from "../components/Gallery";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Hero from "../components/hero";
 
-import '../styles/layout/_nav.scss'
-import '../styles/pages/_LandingPage.scss';
+import "../styles/layout/_nav.scss";
+import "../styles/pages/_LandingPage.scss";
 
 function LandingPage() {
   const location = useLocation();
@@ -20,14 +19,12 @@ function LandingPage() {
   useEffect(() => {
     const target = location.state?.scrollTarget;
     if (target) {
-      // tiny delay so DOM is ready
       setTimeout(() => {
         scroller.scrollTo(target, {
-          smooth: 'easeInOutQuart',
+          smooth: "easeInOutQuart",
           duration: 600,
-          offset: -80, // adjust if you have a fixed header
+          offset: -80,
         });
-        // clear state so back/forward isn’t affected
         window.history.replaceState({}, document.title);
       }, 0);
     }
@@ -35,10 +32,9 @@ function LandingPage() {
 
   return (
     <div className="landing-page">
-       <Parallax speed={0}>
+      <Parallax speed={0}>
         <Header title="PIONEER.3" />
-       </Parallax>
-     
+      </Parallax>
 
       <section id="hero" className="section">
         <Parallax speed={0}>
@@ -46,49 +42,49 @@ function LandingPage() {
         </Parallax>
       </section>
 
-<div>
-  <Parallax speed={3}>
-   <img className="foreground" src="./images/foreground-test.png"/>
-</Parallax>
-</div>
-  
+      <div>
+        <Parallax speed={3}>
+          <img className="foreground" src="./images/foreground-test.png" />
+        </Parallax>
+      </div>
+
       <nav className="nav section ">
         <div>
-        {/* react-scroll links */}
-        <ScrollLink
-          className="menu-button"
-          activeClass="active"
-          to="how-it-works"
-          spy
-          smooth="easeInOutQuart"
-          duration={600}
-          offset={-80}
-        >
-          How It Works
-        </ScrollLink>
+          <ScrollLink
+            className="menu-button"
+            activeClass="active"
+            to="how-it-works"
+            spy
+            smooth="easeInOutQuart"
+            duration={600}
+            offset={-80}
+          >
+            How It Works
+          </ScrollLink>
 
-        <ScrollLink
-          activeClass="active"
-          to="gallery"
-          spy
-          smooth="easeInOutQuart"
-          duration={600}
-          offset={-80}
-        >
-          Gallery
-        </ScrollLink>
+          <ScrollLink
+            activeClass="active"
+            to="gallery"
+            spy
+            smooth="easeInOutQuart"
+            duration={600}
+            offset={-80}
+          >
+            Gallery
+          </ScrollLink>
 
-        {/* keep router link to Support page */}
-        <RouterLink to="/design-manual">Design Manual</RouterLink>
-        <RouterLink to="/support">Support</RouterLink>
+          <RouterLink to="/design-manual">Design Manual</RouterLink>
+          <RouterLink to="/support">Support</RouterLink>
         </div>
-        
       </nav>
       <div className="divider"></div>
 
-      {/* Mark each section with <Element name="..."> */}
       <Element name="how-it-works">
-        <section id="how-it-works" className="section container" style={{ mixBlendMode: 'multiply' }}>
+        <section
+          id="how-it-works"
+          className="section container"
+          style={{ mixBlendMode: "multiply" }}
+        >
           <Parallax speed={0}>
             <HowItWorks />
           </Parallax>

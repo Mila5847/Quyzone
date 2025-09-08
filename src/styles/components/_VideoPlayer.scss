@@ -1,4 +1,4 @@
-@use '../abstracts/variables'as *;
+@use "../abstracts/variables" as *;
 @use "sass:math";
 
 .video-row {
@@ -9,7 +9,6 @@
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  ;
 }
 
 .video-row {

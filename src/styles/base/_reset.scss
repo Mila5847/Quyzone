@@ -71,7 +71,6 @@ select {
 
 /* Remove all animations and transitions for people who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {

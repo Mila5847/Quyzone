@@ -1,16 +1,19 @@
 // App.jsx
 import {
-  BrowserRouter as Router, Routes, Route, Outlet, useLocation
-} from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 
-import LandingPage from './pages/LandingPage';
-import SupportPage from './pages/SupportPage';
-import { ParallaxProvider } from 'react-scroll-parallax';
-import Background from './components/Background';
-import BackToTop from './components/BackToTop';
-import DesignManual from './pages/DesignManual';
-
+import LandingPage from "./pages/LandingPage";
+import SupportPage from "./pages/SupportPage";
+import { ParallaxProvider } from "react-scroll-parallax";
+import Background from "./components/Background";
+import BackToTop from "./components/BackToTop";
+import DesignManual from "./pages/DesignManual";
 
 function App() {
   return (
@@ -30,14 +33,26 @@ function MainApp() {
 
   return (
     <AnimatePresence mode="wait">
-      {/* key by pathname so exit anim runs before the next page enters */}
       <Routes location={location} key={location.pathname}>
         <Route>
-          <Route path="/" element={<PageFade><LandingPage /></PageFade>} />
-          <Route path="/support" element={<PageFade><SupportPage /></PageFade>} />
+          <Route
+            path="/"
+            element={
+              <PageFade>
+                <LandingPage />
+              </PageFade>
+            }
+          />
+          <Route
+            path="/support"
+            element={
+              <PageFade>
+                <SupportPage />
+              </PageFade>
+            }
+          />
         </Route>
 
-        {/* WITHOUT background */}
         <Route element={<ManualLayout />}>
           <Route path="/design-manual" element={<DesignManual />} />
         </Route>
@@ -48,19 +63,20 @@ function MainApp() {
 
 function ManualLayout() {
   return (
-    <main className="manual-page site-content"><Outlet /></main>
+    <main className="manual-page site-content">
+      <Outlet />
+    </main>
   );
 }
 
-// Reusable wrapper for page transitions
 function PageFade({ children }) {
   return (
     <motion.main
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
-      transition={{ duration: 0.28, ease: 'easeInOut' }}
-      style={{ minHeight: '100dvh' }} // avoids layout jumps during exit
+      transition={{ duration: 0.28, ease: "easeInOut" }}
+      style={{ minHeight: "100dvh" }}
     >
       {children}
     </motion.main>

@@ -1,4 +1,4 @@
-@use '../abstracts/variables'as v;
+@use "../abstracts/variables" as v;
 
 .container {
   padding: 0rem;
@@ -7,5 +7,4 @@
   @media (min-width: v.$breakpoint-sm) {
     padding-left: 1.5rem; // Slightly more padding on larger phones/small tablets
   }
-
 }

@@ -1,6 +1,6 @@
-import '../styles/components/_VideoPlayer.scss';
+import "../styles/components/_VideoPlayer.scss";
 
-function VideoPlayer({ src, caption = '' }) {
+function VideoPlayer({ src, caption = "" }) {
   return (
     <div className="video-wrapper">
       <video

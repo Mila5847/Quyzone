@@ -1,7 +1,12 @@
 .manual-page {
   min-height: 100dvh;
   background: #fff;
-  color: #111;            /* readable text */
-  position: relative;     /* sits above any fixed stuff */
-  z-index: 1;
+  color: #111; 
+
+  #Logo,
+  #Logo h1,
+  #Logo .sub-h1,
+  #Logo .sub-h1 span {
+    color: #111;
+  }
 }

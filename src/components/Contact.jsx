@@ -1,5 +1,5 @@
-import { useForm, ValidationError } from '@formspree/react';
-import '../styles/components/_contact.scss';
+import { useForm, ValidationError } from "@formspree/react";
+import "../styles/components/_contact.scss";
 
 function Contact() {
   const [state, handleSubmit] = useForm("mjkrqkya");
@@ -11,13 +11,7 @@ function Contact() {
     <div className="contact-container">
       <h2>Contact Me</h2>
       <form onSubmit={handleSubmit} className="contact-form">
-        <input
-          id="name"
-          type="text"
-          name="name"
-          placeholder="Name"
-          required
-        />
+        <input id="name" type="text" name="name" placeholder="Name" required />
         <ValidationError prefix="Name" field="name" errors={state.errors} />
 
         <input
@@ -29,13 +23,12 @@ function Contact() {
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Message"
-          required
+        <textarea id="message" name="message" placeholder="Message" required />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
         />
-        <ValidationError prefix="Message" field="message" errors={state.errors} />
 
         <button type="submit" disabled={state.submitting}>
           Send

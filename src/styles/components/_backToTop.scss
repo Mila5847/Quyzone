@@ -13,10 +13,10 @@
   font-size: 22px;
   line-height: 1;
   cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
   opacity: 0;
   transform: translateY(8px);
-  transition: opacity .2s ease, transform .2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
   pointer-events: none;
 }
 
@@ -25,4 +25,3 @@
   transform: translateY(0);
   pointer-events: auto;
 }
-

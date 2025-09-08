@@ -1,17 +1,13 @@
-import React from 'react';
-import '../styles/pages/_DesignManualPage.scss';
-import Logo from '../components/logo.jsx'; 
-import Header from '../components/Header';
-import Support from '../components/BuildManual';
-import BuildManual from '../components/BuildManual';
-
-
+import "../styles/pages/_DesignManualPage.scss";
+import Header from "../components/Header";
+import BuildManual from "../components/BuildManual";
 
 export default function DesignManual() {
-  return (<main id="design-manual-page">
-    <Header/>
-    hello
-    <BuildManual/>
-    
-    </main>);
+  return (
+    <main className="manual-page">
+      <Header />
+      hello
+      <BuildManual />
+    </main>
+  );
 }

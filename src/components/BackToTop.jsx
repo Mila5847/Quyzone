@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
-import '../styles/components/_backToTop.scss';
+import { useEffect, useRef, useState } from "react";
+import { animateScroll as scroll } from "react-scroll";
+import "../styles/components/_backToTop.scss";
 
 export default function BackToTop({ threshold = 300, duration = 600 }) {
   const [show, setShow] = useState(false);
@@ -15,30 +15,32 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
       });
     };
     onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => {
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener("scroll", onScroll);
       cancelAnimationFrame(raf.current);
     };
   }, [threshold]);
 
   const toTop = () => {
-    scroll.scrollToTop({ smooth: 'easeInOutQuart', duration });
+    scroll.scrollToTop({ smooth: "easeInOutQuart", duration });
   };
 
   return (
     <button
       type="button"
-      className={`back-to-top ${show ? 'show' : ''}`}
+      className={`back-to-top ${show ? "show" : ""}`}
       onClick={toTop}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
-      onFocus={() => setIsHover(true)}   // keyboard focus = hover style
+      onFocus={() => setIsHover(true)} // keyboard focus = hover style
       onBlur={() => setIsHover(false)}
       aria-label="Back to top"
     >
       <img
-        src={isHover ? '/images/upArrowHover.svg' : '/images/upArrowNeutral.svg'}
+        src={
+          isHover ? "/images/upArrowHover.svg" : "/images/upArrowNeutral.svg"
+        }
         alt=""
       />
     </button>
