@@ -3,11 +3,11 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
 import { Element, Link as ScrollLink, scroller } from "react-scroll";
 
-import HowItWorks from "../components/HowItWorks";
 import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/hero";
+import { HowItWorksPart1, HowItWorksPart2 } from "../components/HowItWorks";
 
 import "../styles/layout/_nav.scss";
 import "../styles/pages/_LandingPage.scss";
@@ -80,13 +80,17 @@ function LandingPage() {
       <div className="divider"></div>
 
       <Element name="how-it-works">
+        <section className="section container">
+          <HowItWorksPart1/>
+        </section>
+
         <section
           id="how-it-works"
           className="section container"
           style={{ mixBlendMode: "multiply" }}
         >
           <Parallax speed={0}>
-            <HowItWorks />
+            <HowItWorksPart2/>
           </Parallax>
         </section>
       </Element>

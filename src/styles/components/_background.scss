@@ -1,23 +1,19 @@
-/* src/styles/components/_background.scss */
 :root {
-  --bg-size: 270px; /* default tile size of the SVG pattern */
+  --bg-size: 270px;
 }
 
 .parallax-wallpaper.fixed-bg {
   position: fixed;
-  inset: -5vh -35vw; /* overscan so edges don’t show */
+  inset: -5vh -35vw;
   z-index: 0;
   pointer-events: none;
   will-change: background-position;
-
   background-image: url("/images/wallpaper.svg");
   background-repeat: repeat;
   background-position: 60px var(--bg-y, 0);
-  background-size: var(--bg-size) auto; /* 👈 variable-controlled tile size */
+  background-size: var(--bg-size) auto;
 }
 
-/* your main content sits above the bg */
-.site-content {
-  position: relative;
-  z-index: 1;
+.no-wallpaper .parallax-wallpaper.fixed-bg {
+  display: none;      
 }

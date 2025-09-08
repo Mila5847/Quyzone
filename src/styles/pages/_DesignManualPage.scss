@@ -1,7 +1,7 @@
 .manual-page {
   min-height: 100dvh;
-  background: #fff;
-  color: #111; 
+  background-color: #fff;
+  color: #111;
 
   #Logo,
   #Logo h1,
@@ -9,4 +9,19 @@
   #Logo .sub-h1 span {
     color: #111;
   }
+}
+
+
+/* Put this at the end of your main styles entry (the file with all the @use lines) */
+
+/* When body has .no-global, neutralize the common global effects */
+body.no-global {
+  background: #fff;
+  background-image: none;
+  color: #111;
+}
+
+body.parallax-wallpaper.fixed-bg {
+  background: #fff;
+  background-image: none;
 }

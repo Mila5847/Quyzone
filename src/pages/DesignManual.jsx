@@ -1,8 +1,19 @@
-import "../styles/pages/_DesignManualPage.scss";
-import Header from "../components/Header";
-import BuildManual from "../components/BuildManual";
+import { useEffect } from 'react';
+import '../styles/pages/_DesignManualPage.scss';
+import Header from '../components/Header';
+import BuildManual from '../components/BuildManual';
 
 export default function DesignManual() {
+  useEffect(() => {
+    document.body.classList.add('no-global');
+    return () => document.body.classList.remove('no-global');
+  }, []);
+
+    useEffect(() => {
+    document.body.classList.add('no-wallpaper');
+    return () => document.body.classList.remove('no-wallpaper');
+  }, []);
+
   return (
     <main className="manual-page">
       <Header />

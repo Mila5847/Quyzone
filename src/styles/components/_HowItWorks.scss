@@ -1,3 +1,18 @@
 .howitworks img {
   margin: auto;
 }
+
+/* Ensure the section itself doesn't block the backdrop */
+#how-it-works {
+  background: transparent; /* important: let the backdrop show through */
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply; /* applies on the transformed Parallax wrapper */
+}
+
+/* Optional: keep head clearly above blended bits */
+.howitworks-head {
+  position: relative;
+  z-index: 1;
+}

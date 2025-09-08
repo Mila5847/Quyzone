@@ -3,13 +3,19 @@ import "../styles/components/_ImageCarousel.scss";
 import "../styles/components/_VideoPlayer.scss";
 import "../styles/components/_HowItWorks.scss";
 
-function HowItWorks() {
+export function HowItWorksPart1() {
   return (
     <div className="howitworks">
       <h2>What is the Product?</h2>
       <q>Or Why You'll love Building My kit</q>
-
       <img src="/images/decorative/placeholder_art_01.png" alt="mascot" />
+    </div>
+  );
+}
+
+export function HowItWorksPart2() {
+  return (
+    <div className="howitworks">
       <p>
         I'm a huge fan of mechanical design, and let's be honest, so are you.
         That's why we're both here. In need of a brand new model kit to build? I
@@ -56,5 +62,3 @@ function HowItWorks() {
     </div>
   );
 }
-
-export default HowItWorks;
