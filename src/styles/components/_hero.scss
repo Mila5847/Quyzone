@@ -1,4 +1,4 @@
-@use "../abstracts/variables"as *;
+@use "../abstracts/variables" as *;
 
 .hero-bg {
   position: relative;
@@ -38,8 +38,7 @@
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
-.cta-button:hover,
-.cta-button:focus-visible {
+.cta-button:hover {
   transform: translate(-1px, -1px);
   box-shadow: 3px 3px 1px 0px #000000af;
 }
@@ -50,11 +49,7 @@
   top: 0;
   left: 0;
   width: $hero-separator-width;
-  /* Example value */
   height: auto;
-  /* Example value */
-  /* Or, if the SVG itself has intrinsic dimensions, you might not need these
-       on the wrapper, but it's often safer. */
 }
 
 .right-separator {

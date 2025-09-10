@@ -1,9 +1,8 @@
 import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import { useCallback } from "react";
 import { scroller } from "react-scroll";
-import { Accordion, AccordionItem } from "@szhsin/react-accordion";
 import "../styles/pages/_SupportPage.scss";
-import Contact from "./Contact";
+import MediaCarousel from "./MediaCarousel";
 
 function BuildManual() {
   const location = useLocation();
@@ -37,10 +36,10 @@ function BuildManual() {
 
       <section>
         <h2>Support</h2>
-        <p>
-          Include frequently asked questions, help guides, or contact options
-          here.
-        </p>
+       <section>
+        <h3>Showcase</h3>
+        <MediaCarousel />
+      </section>
       </section>
     </>
   );

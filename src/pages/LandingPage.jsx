@@ -44,9 +44,18 @@ function LandingPage() {
 
       <div>
         <Parallax speed={3}>
-          <img className="foreground" src="./images/foreground-test.png" />
+         <img
+  className="foreground"
+  src="./images/decorative/foregroundTest_01.png"
+  alt=""
+  width={400}
+  height={332}
+  style={{ maxWidth: 550, width: '100%', height: 'auto', display: 'block' }}
+/>
+
         </Parallax>
       </div>
+      
 
       <nav className="nav section ">
         <div>
