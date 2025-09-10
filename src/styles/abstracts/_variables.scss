@@ -4,22 +4,26 @@ $breakpoint-md: 1200px;
 
 //------------------hero section------------------
 $hero-separator-width: 700px;
-$hero-separator-height: 330px;
-$hero-separator-step: 115px;
+$hero-separator-height: 280px;
+$hero-separator-step: 75px;
 $hero-margin-bottom: 30px;
 
-$cta-padding-top: 20px;
-$cta-font-size: 4.2em;
+$cta-padding-left: 10px;
+$cta-padding-top: 0px;
+$cta-font-size: 3.5em;
+$cta-span-font-size: 1.3em;
 $cta-line-height: 1em;
 
-$cta-button-margin-top: 20px;
+$cta-button-margin-top: 7px;
 $cta-button-width: 350px;
 //------------------h1.h2------------------
 
-$h1-font-size: 127px;
-$sub-h1-font-size: 31px;
+$h1-font-size: 160px;
+$sub-h1-font-size: 38px;
 $sub-h1-width: 515px;
-$letter-spacing: 0px;
+$sub-h1-font-margin-top: -32px;
+$sub-letter-spacing: 2px;
+
 
 $h2-font-weight: 500;
 $h2-font-size: 45px;
@@ -39,7 +43,7 @@ $title-fontsize: 60px;
 $logo-size-small: 32px;
 $logo-size-medium: 50px; // This matches your current 50x50
 $logo-size-large: 80px;
-$logo-size-xl: 240px;
+$logo-size-xl: 170px;
 
 //background size
 //background position
