@@ -50,6 +50,23 @@ export function HowItWorksPart2() {
           src="/videos/switch_video_1.webm"
           caption="3 seconds video"
         />
+      </div>
+    </div>
+  );
+}
+
+export function HowItWorksPart3() {
+  return (
+    <div className="howitworks">
+      <h2>The Quyzone Signature</h2>
+    </div>
+  );
+}
+
+export function HowItWorksPart4() {
+  return (
+    <div className="howitworks">
+       <div className="video-row">
         <VideoPlayer
           src="/videos/switch_video_2.webm"
           caption="3 seconds video"

@@ -30,6 +30,16 @@
   }
 }
 
+.cta-gumroad {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/images/logo/gumroad.svg");
+
+  &:hover {
+    background-image: url("/images/logo/gumroadHover.svg");
+  }
+}
+
 .cta-button {
   position: relative;
   display: inline-grid;

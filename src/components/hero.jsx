@@ -9,13 +9,7 @@ const Hero = () => {
             Started <br />
             <span>HERE!</span>
           </div>
-          <button className="cta-button">
-            <img
-              src="../images/logo/gumroad.svg"
-              alt="Gumroad logo"
-              className="cta-button-logo"
-            />
-          </button>
+        <button className="cta-button cta-gumroad" aria-label="Buy on Gumroad"></button>
         </div>
         <div className="left-separator"></div>
         <div className="hero-separator">

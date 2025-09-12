@@ -7,7 +7,7 @@ import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/hero";
-import { HowItWorksPart1, HowItWorksPart2 } from "../components/HowItWorks";
+import { HowItWorksPart1, HowItWorksPart2, HowItWorksPart3, HowItWorksPart4 } from "../components/HowItWorks";
 
 import "../styles/layout/_nav.scss";
 import "../styles/pages/_LandingPage.scss";
@@ -45,13 +45,13 @@ function LandingPage() {
       <div>
         <Parallax speed={3}>
          <img
-  className="foreground"
-  src="./images/decorative/foregroundTest_01.png"
-  alt=""
-  width={400}
-  height={332}
-  style={{ maxWidth: 550, width: '100%', height: 'auto', display: 'block' }}
-/>
+          className="foreground"
+          src="./images/decorative/foregroundTest_01.png"
+          alt=""
+          width={400}
+          height={332}
+          style={{ maxWidth: 550, width: '100%', height: 'auto', display: 'block' }}
+        />
 
         </Parallax>
       </div>
@@ -71,7 +71,7 @@ function LandingPage() {
             How It Works
           </ScrollLink>
 
-          <ScrollLink
+          {/* <ScrollLink
             activeClass="active"
             to="gallery"
             spy
@@ -80,7 +80,7 @@ function LandingPage() {
             offset={-80}
           >
             Gallery
-          </ScrollLink>
+          </ScrollLink> */}
 
           <RouterLink to="/design-manual">Design Manual</RouterLink>
           <RouterLink to="/support">Support</RouterLink>
@@ -102,15 +102,45 @@ function LandingPage() {
             <HowItWorksPart2/>
           </Parallax>
         </section>
+
+         <section
+          id="how-it-works"
+          className="section container"
+        >
+          <Parallax speed={0}>
+            <HowItWorksPart3/>
+          </Parallax>
+        </section>
+
+        <section
+          id="how-it-works"
+          className="section container"
+          style={{ mixBlendMode: "multiply" }}
+        >
+          <Parallax speed={0}>
+            <HowItWorksPart4/>
+          </Parallax>
+        </section>
+         <section
+          id="how-it-works"
+          className="section container"
+        >
+          <h2>1 Printability</h2>
+          <h2>2 Posability</h2>
+          <h2>3 Perfectability</h2>
+        </section>
       </Element>
 
+
+
+{/* 
       <Element name="gallery">
         <section id="gallery" className="section container">
           <Parallax translateY={[0, 0]}>
             <Gallery />
           </Parallax>
         </section>
-      </Element>
+      </Element> */}
 
       <section id="footer" className="section container">
         <Footer />
