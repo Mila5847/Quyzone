@@ -16,7 +16,7 @@ export default function DesignManual() {
 
   return (
     <main className="manual-page">
-      <Header />
+      <Header title="BUILD MANUAL"/>
       <BuildManual />
     </main>
   );

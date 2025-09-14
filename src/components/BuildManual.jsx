@@ -34,12 +34,14 @@ function BuildManual() {
         <RouterLink to="/support">Support</RouterLink>
       </nav>
 
+      <br />
+      
       <section>
-        <h2>Support</h2>
-       <section>
-        <h3>Showcase</h3>
-        <MediaCarousel />
-      </section>
+        <h2>PIONEER.3</h2>
+        <h3>SUB ASSEMBLY A</h3>
+        <section>
+          <MediaCarousel />
+        </section>
       </section>
     </>
   );

@@ -3,11 +3,15 @@ import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
 import { Element, Link as ScrollLink, scroller } from "react-scroll";
 
-import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/hero";
-import { HowItWorksPart1, HowItWorksPart2, HowItWorksPart3, HowItWorksPart4 } from "../components/HowItWorks";
+import {
+  HowItWorksPart1,
+  HowItWorksPart2,
+  HowItWorksPart3,
+  HowItWorksPart4,
+} from "../components/HowItWorks";
 
 import "../styles/layout/_nav.scss";
 import "../styles/pages/_LandingPage.scss";
@@ -44,18 +48,21 @@ function LandingPage() {
 
       <div>
         <Parallax speed={3}>
-         <img
-          className="foreground"
-          src="./images/decorative/foregroundTest_01.png"
-          alt=""
-          width={400}
-          height={332}
-          style={{ maxWidth: 550, width: '100%', height: 'auto', display: 'block' }}
-        />
-
+          <img
+            className="foreground"
+            src="./images/decorative/foregroundTest_01.png"
+            alt=""
+            width={400}
+            height={332}
+            style={{
+              maxWidth: 550,
+              width: "100%",
+              height: "auto",
+              display: "block",
+            }}
+          />
         </Parallax>
       </div>
-      
 
       <nav className="nav section ">
         <div>
@@ -90,7 +97,7 @@ function LandingPage() {
 
       <Element name="how-it-works">
         <section className="section container">
-          <HowItWorksPart1/>
+          <HowItWorksPart1 />
         </section>
 
         <section
@@ -99,48 +106,77 @@ function LandingPage() {
           style={{ mixBlendMode: "multiply" }}
         >
           <Parallax speed={0}>
-            <HowItWorksPart2/>
+            <HowItWorksPart2 />
           </Parallax>
         </section>
 
-         <section
-          id="how-it-works"
-          className="section container"
-        >
+        <section id="how-it-works" className="section container">
           <Parallax speed={0}>
-            <HowItWorksPart3/>
+            <div className="howitworks">
+              <h2>The Quyzone Signature</h2>
+            </div>
           </Parallax>
         </section>
 
-        <section
-          id="how-it-works"
-          className="section container"
-          style={{ mixBlendMode: "multiply" }}
-        >
-          <Parallax speed={0}>
-            <HowItWorksPart4/>
-          </Parallax>
+        <section className="section container">
+          <div className="hiw-grid">
+            {/* 1 */}
+            <div className="hiw-item">
+            <div style={{ mixBlendMode: "multiply" }}>
+              <Parallax speed={0}>
+                <HowItWorksPart3
+                  videos={[
+                    {
+                      src: "/videos/switch_video_2.webm",
+                      caption: "3 seconds video",
+                    },
+                  ]}
+                />
+              </Parallax>
+              </div>
+               <h2>1 Printability</h2>
+            </div>
+
+            {/* 2 */}
+            <div className="hiw-item">
+               <div style={{ mixBlendMode: "multiply" }}>
+              <Parallax speed={0}>
+                <HowItWorksPart3
+                  videos={[
+                    {
+                      src: "/videos/switch_video_3.webm",
+                      caption: "3 seconds video",
+                    },
+                  ]}
+                />
+              </Parallax>
+              </div>
+              <h2>2 Possability</h2>
+            </div>
+
+            {/* 3 centered below */}
+            <div className="hiw-item hiw-item--full">
+              <div style={{ mixBlendMode: "multiply" }}>
+              <Parallax speed={0}>
+                <HowItWorksPart3
+                  videos={[
+                    {
+                      src: "/videos/switch_video_3.webm",
+                      caption: "3 seconds video",
+                    },
+                  ]}
+                />
+              </Parallax>
+              </div>
+              <h2>3 Perfectability</h2>
+            </div>
+          </div>
         </section>
-         <section
-          id="how-it-works"
-          className="section container"
-        >
-          <h2>1 Printability</h2>
-          <h2>2 Posability</h2>
-          <h2>3 Perfectability</h2>
+
+        <section className="section container">
+          <HowItWorksPart4 />
         </section>
       </Element>
-
-
-
-{/* 
-      <Element name="gallery">
-        <section id="gallery" className="section container">
-          <Parallax translateY={[0, 0]}>
-            <Gallery />
-          </Parallax>
-        </section>
-      </Element> */}
 
       <section id="footer" className="section container">
         <Footer />

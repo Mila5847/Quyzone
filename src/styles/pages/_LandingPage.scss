@@ -37,3 +37,28 @@
     line-height: 90px;
   }
 }
+
+.hiw-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 1 | 2 side by side */
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.hiw-item--full {
+  grid-column: 1 / -1; /* span both columns */
+  justify-self: center;
+  text-align: center;
+  max-width: 900px; /* optional: keep it tidy */
+}
+
+/* Responsive stack */
+@media (max-width: 900px) {
+  .hiw-grid {
+    grid-template-columns: 1fr;
+  }
+  .hiw-item--full {
+    justify-self: stretch;
+    text-align: left;
+  }
+}

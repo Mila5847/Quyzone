@@ -10,40 +10,56 @@ function MediaCarousel() {
   const items = useMemo(
     () => [
       <div className="item" data-value="1" key="1">
-        <img src="/images/sample_image_2.jpg" alt="Slide 1" className="media" />
+        <div className="carousel-frame">
+          <img src="/images/manual/pres_coverBot.jpg" alt="Slide 1" className="media" />
+        </div>
       </div>,
       <div className="item" data-value="2" key="2">
-        <img src="/images/sample_image_1.jpg" alt="Slide 2" className="media" />
+        <div className="carousel-frame">
+          <img src="/images/manual/ori_receiver.jpg" alt="Slide 2" className="media" />
+        </div>
       </div>,
       <div className="item" data-value="3" key="3">
-        <img src="/images/sample_image_2.jpg" alt="Slide 3" className="media" />
+        <div className="carousel-frame">
+          <img src="/images/manual/ori_coverBot.jpg" alt="Slide 3" className="media" />
+        </div>
       </div>,
       <div className="item" data-value="4" key="4">
-        <img src="/images/sample_image_1.jpg" alt="Slide 4" className="media" />
+        <div className="carousel-frame">
+          <video className="media" controls playsInline preload="metadata">
+            <source src="/videos/manual/anim-coverBotR.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>,
       <div className="item" data-value="5" key="5">
-        <video className="media" controls>
-          <source src="/videos/manual/assembly_100001.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="carousel-frame">
+          <video className="media" controls playsInline preload="metadata">
+            <source src="/videos/manual/anim-coverBotL.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>,
     ],
     []
   );
 
+  const total = items.length;
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
-    <div className="carousel">
+    <>
+     <h2>A1</h2>
+
+      <div className="carousel">
       <AliceCarousel
-        ref={carouselRef}
-        items={items}
-        mouseTracking
-        touchTracking
         disableDotsControls
         disableButtonsControls
-        onSlideChanged={({ item }) => setIndex(item)}
+        ref={carouselRef}
+        items={items}
+        activeIndex={activeIndex}
+        onSlideChanged={(e) => setActiveIndex((e.item))}
       />
-
-      <p className="index">{`${index + 1}/${items.length}`}</p>
+      
+      <p className="index">{`${activeIndex + 1}/${total}`}</p>
       <div className="caption-container">
         <p className="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
       </div>
@@ -65,6 +81,7 @@ function MediaCarousel() {
         &rang;
       </button>
     </div>
+    </>
   );
 }
 

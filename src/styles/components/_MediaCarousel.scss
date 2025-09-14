@@ -1,66 +1,45 @@
-.media {
-  width: 100%;
-  height: 30rem;
-  object-fit: contain;
-}
-
+/* --- Carousel contour (border) --- */
 .carousel {
   position: relative;
+  width: min(100%, 900px);
+  margin-inline: auto;
+  border: 2px solid #000;   /* black contour */
+  border-radius: 12px;      /* optional */
+  box-sizing: border-box;
+  padding: 8px;             /* optional breathing room */
 }
 
-.item {
-  background-color: black;
-}
+/* --- Slides --- */
+.item { background: transparent; } /* no grey fill behind media */
 
-.index {
-  position: absolute;
-  top: 0.1rem;
-  font-size: 0.7rem;
-  font-weight: bold;
-  font-family: Roboto;
-  color: black;
-  padding: 0.1rem 0.3rem;
-  background-color: lightgray;
-  left: 1rem;
-  opacity: 0.75;
-}
-
-.caption-container {
-  position: absolute;
-  bottom: 0;
-  left: 20rem;
-  right: 20rem;
-}
-
-.caption {
-  padding: 0.3rem 0.5rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-  font-family: Roboto;
-  background-color: lightgray;
-  color: black;
-  width: fit-content;
-  margin: 0 auto;
-  opacity: 0.75;
-}
-
-.btn-prev {
-  left: 1rem;
-}
+/* --- Arrows: black, no grey circles --- */
+.btn-prev,
 .btn-next {
-  right: 1rem;
-}
-
-.btn-prev, .btn-next {
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  width: 40px; height: 40px;
-  border: 0; border-radius: 999px;
-  background: rgba(0,0,0,.45);
-  position: absolute;
-  font-size: 50px;
-  color: lightgray;
+  /* remove the grey rounds */
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  /* arrow look */
+  font-size: 48px;          /* adjust as needed */
+  line-height: 1;
+  color: #000;              /* black arrows */
   cursor: pointer;
+  width: auto;
+  height: auto;
+  padding: 0 6px;           /* small click area padding */
 }
 
+/* positions */
+.btn-prev { left: 1rem; }
+.btn-next { right: 1rem; }
+
+/* optional: focus style (keyboard users) */
+.btn-prev:focus-visible,
+.btn-next:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}

@@ -54,28 +54,49 @@ export function HowItWorksPart2() {
     </div>
   );
 }
+import PropTypes from "prop-types";
 
-export function HowItWorksPart3() {
+export function HowItWorksPart3({ videos = [], className = "" }) {
   return (
-    <div className="howitworks">
-      <h2>The Quyzone Signature</h2>
+    <div className={`howitworks ${className}`}>
+      <div className="video-row">
+        {videos.map((v, i) => (
+          <VideoPlayer
+            key={v.src || i}
+            src={v.src}
+            caption={v.caption}
+            poster={v.poster}
+            autoPlay={v.autoPlay}
+            loop={v.loop}
+            muted={v.muted}
+            controls={v.controls}
+          />
+        ))}
+      </div>
     </div>
   );
 }
 
+HowItWorksPart3.propTypes = {
+  videos: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      caption: PropTypes.string,
+      poster: PropTypes.string,
+      autoPlay: PropTypes.bool,
+      loop: PropTypes.bool,
+      muted: PropTypes.bool,
+      controls: PropTypes.bool,
+    }),
+  ),
+  className: PropTypes.string,
+};
+
 export function HowItWorksPart4() {
   return (
     <div className="howitworks">
-       <div className="video-row">
-        <VideoPlayer
-          src="/videos/switch_video_2.webm"
-          caption="3 seconds video"
-        />
-        <VideoPlayer
-          src="/videos/switch_video_3.webm"
-          caption="3 seconds video"
-        />
-      </div>
+       <h2>Me Quy and the Mechabust</h2>
+       <p>....</p>
     </div>
   );
 }
