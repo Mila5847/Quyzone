@@ -32,9 +32,6 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
       className={`back-to-top ${show ? "show" : ""}`}
       onClick={toTop}
       onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
-      onFocus={() => setIsHover(true)} // keyboard focus = hover style
-      onBlur={() => setIsHover(false)}
       aria-label="Back to top"
     >
       <img

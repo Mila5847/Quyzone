@@ -1,8 +1,8 @@
 import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import { useCallback } from "react";
 import { scroller } from "react-scroll";
-import "../styles/pages/_SupportPage.scss";
 import MediaCarousel from "./MediaCarousel";
+import "../styles/components/_BuildManual.scss";
 
 function BuildManual() {
   const location = useLocation();
@@ -27,6 +27,8 @@ function BuildManual() {
 
   return (
     <>
+    <div className="build-manual">
+
       <nav className="nav">
         <button onClick={() => scrollTo("how-it-works")}>How It Works</button>
         <button onClick={() => scrollTo("gallery")}>Gallery</button>
@@ -43,6 +45,7 @@ function BuildManual() {
           <MediaCarousel />
         </section>
       </section>
+      </div>
     </>
   );
 }

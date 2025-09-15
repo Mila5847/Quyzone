@@ -97,7 +97,9 @@ function LandingPage() {
 
       <Element name="how-it-works">
         <section className="section container">
-          <HowItWorksPart1 />
+          <Parallax speed={0}>
+            <HowItWorksPart1 />
+          </Parallax>
         </section>
 
         <section
