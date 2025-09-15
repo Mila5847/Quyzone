@@ -8,7 +8,7 @@ export function HowItWorksPart1() {
     <div className="howitworks">
       <h2>What is the Product?</h2>
       <q>Or Why You'll love Building My kit</q>
-      <img src="/images/decorative/placeholder_art_01.png" alt="mascot" />
+      <img src="/images/decorative/me.png" alt="mascot" />
     </div>
   );
 }
