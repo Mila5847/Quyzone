@@ -27,19 +27,19 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
   };
 
   return (
-    <button
-      type="button"
-      className={`back-to-top ${show ? "show" : ""}`}
-      onClick={toTop}
-      onMouseEnter={() => setIsHover(true)}
-      aria-label="Back to top"
-    >
-      <img
-        src={
-          isHover ? "/images/upArrowHover.svg" : "/images/upArrowNeutral.svg"
-        }
-        alt=""
-      />
-    </button>
+   <button
+  type="button"
+  className={`back-to-top ${show ? "show" : ""}`}
+  onClick={toTop}
+  onMouseEnter={() => setIsHover(true)}
+  onMouseLeave={() => setIsHover(false)}
+  aria-label="Back to top"
+>
+  <img
+    src={isHover ? "/images/upArrowHover.svg" : "/images/upArrowNeutral.svg"}
+    alt=""
+  />
+</button>
+
   );
 }
