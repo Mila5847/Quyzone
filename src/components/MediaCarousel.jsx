@@ -103,14 +103,14 @@ function MediaCarousel() {
         <div className="caption-container">
           <p className="caption">{captions[activeIndex]}</p> 
         </div>
-
+        
         <button
           type="button"
           className="btn-prev"
           aria-label="Previous"
           onClick={() => carouselRef.current?.slidePrev()}
         >
-          &lang;
+          <img src="/images/ui/buttonGalleryBack.svg" alt="" aria-hidden="true" />
         </button>
         <button
           type="button"
@@ -118,7 +118,7 @@ function MediaCarousel() {
           aria-label="Next"
           onClick={() => carouselRef.current?.slideNext()}
         >
-          &rang;
+          <img src="/images/ui/buttonGalleryForward.svg" alt="" aria-hidden="true" />
         </button>
       </div>
     </>

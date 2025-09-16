@@ -36,7 +36,7 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
   aria-label="Back to top"
 >
   <img
-    src={isHover ? "/images/upArrowHover.svg" : "/images/upArrowNeutral.svg"}
+    src={isHover ? "/images/ui/upArrowHover.svg" : "/images/ui/upArrowNeutral.svg"}
     alt=""
   />
 </button>

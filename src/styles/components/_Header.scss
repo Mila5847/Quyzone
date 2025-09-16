@@ -1,0 +1,15 @@
+.brand-header {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 3vw, 24px);
+}
+
+.brand-header .brand-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-header .sub-h1 {
+  display: flex;
+  align-items: center;
+}

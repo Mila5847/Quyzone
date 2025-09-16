@@ -1,45 +1,32 @@
-/* --- Carousel contour (border) --- */
 .carousel {
   position: relative;
-  width: min(100%, 900px);
+  width: 490px;
+  height: 269px;
   margin-inline: auto;
-  border: 2px solid #000;   /* black contour */
-  border-radius: 12px;      /* optional */
   box-sizing: border-box;
-  padding: 8px;             /* optional breathing room */
+  padding: 8px;             
 }
 
-/* --- Slides --- */
-.item { background: transparent; } /* no grey fill behind media */
-
-/* --- Arrows: black, no grey circles --- */
 .btn-prev,
 .btn-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  /* remove the grey rounds */
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  /* arrow look */
-  font-size: 48px;          /* adjust as needed */
-  line-height: 1;
-  color: #000;              /* black arrows */
+  width: 44px;
+  height: 44px;
+  border: 0;
+  padding: 0;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
   cursor: pointer;
-  width: auto;
-  height: auto;
-  padding: 0 6px;           /* small click area padding */
+  background: transparent;
+  transform: translateY(-50%);
 }
 
-/* positions */
-.btn-prev { left: 1rem; }
-.btn-next { right: 1rem; }
+/* --- push them just OUTSIDE the frame edges --- */
+:root { --nav-outside: clamp(8px, 2vw, 24px); } /* how far outside */
+.btn-prev  { left: 0;  transform: translate(calc(-100% - var(--nav-outside)), -50%); }
+.btn-next  { right: 0; transform: translate(calc(100%  + var(--nav-outside)), -50%); }
 
-/* optional: focus style (keyboard users) */
-.btn-prev:focus-visible,
-.btn-next:focus-visible {
-  outline: 2px solid #000;
-  outline-offset: 2px;
-}
+
+
