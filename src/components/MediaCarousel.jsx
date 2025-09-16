@@ -1,11 +1,23 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "../styles/components/_MediaCarousel.scss";
 
 function MediaCarousel() {
-  const [index, setIndex] = useState(0);
   const carouselRef = useRef(null);
+
+  const captions = useMemo(
+    () => [
+      "Cover bottom — presentation",
+      "Receiver — orientation reference",
+      "Cover bottom — orientation",
+      "Animation: CoverBot movement (right)",
+      "Animation: CoverBot movement (left)",
+    ],
+    []
+  );
+
+  const videoRefs = useRef([]);
 
   const items = useMemo(
     () => [
@@ -26,14 +38,30 @@ function MediaCarousel() {
       </div>,
       <div className="item" data-value="4" key="4">
         <div className="carousel-frame">
-          <video className="media" controls playsInline preload="metadata">
+          <video
+            className="media"
+            controls
+            muted
+            playsInline
+            preload="metadata"
+            loop
+            ref={(el) => (videoRefs.current[3] = el)}  
+          >
             <source src="/videos/manual/anim-coverBotR.mp4" type="video/mp4" />
           </video>
         </div>
       </div>,
       <div className="item" data-value="5" key="5">
         <div className="carousel-frame">
-          <video className="media" controls playsInline preload="metadata">
+          <video
+            className="media"
+            controls
+            muted
+            playsInline
+            preload="metadata"
+            loop
+            ref={(el) => (videoRefs.current[4] = el)} 
+          >
             <source src="/videos/manual/anim-coverBotL.mp4" type="video/mp4" />
           </video>
         </div>
@@ -45,42 +73,54 @@ function MediaCarousel() {
   const total = items.length;
   const [activeIndex, setActiveIndex] = useState(0);
 
+  useEffect(() => {
+    for (const v of videoRefs.current) {
+      if (v) v.pause();
+    }
+    const v = videoRefs.current[activeIndex];
+    if (v) {
+      const p = v.play();
+      if (p && typeof p.then === "function") p.catch(() => {});
+    }
+  }, [activeIndex]);
+
   return (
     <>
-     <h2>A1</h2>
+      <h2>A1</h2>
 
       <div className="carousel">
-      <AliceCarousel
-        disableDotsControls
-        disableButtonsControls
-        ref={carouselRef}
-        items={items}
-        activeIndex={activeIndex}
-        onSlideChanged={(e) => setActiveIndex((e.item))}
-      />
-      
-      <p className="index">{`${activeIndex + 1}/${total}`}</p>
-      <div className="caption-container">
-        <p className="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      </div>
+        <AliceCarousel
+          disableDotsControls
+          disableButtonsControls
+          ref={carouselRef}
+          items={items}
+          activeIndex={activeIndex}
+          onSlideChanged={(e) => setActiveIndex(e.item)}
+        />
 
-      <button
-        type="button"
-        className="btn-prev"
-        aria-label="Previous"
-        onClick={() => carouselRef.current?.slidePrev()}
-      >
-        &lang;
-      </button>
-      <button
-        type="button"
-        className="btn-next"
-        aria-label="Next"
-        onClick={() => carouselRef.current?.slideNext()}
-      >
-        &rang;
-      </button>
-    </div>
+        <p className="index">{`${activeIndex + 1}/${total}`}</p>
+
+        <div className="caption-container">
+          <p className="caption">{captions[activeIndex]}</p> 
+        </div>
+
+        <button
+          type="button"
+          className="btn-prev"
+          aria-label="Previous"
+          onClick={() => carouselRef.current?.slidePrev()}
+        >
+          &lang;
+        </button>
+        <button
+          type="button"
+          className="btn-next"
+          aria-label="Next"
+          onClick={() => carouselRef.current?.slideNext()}
+        >
+          &rang;
+        </button>
+      </div>
     </>
   );
 }
