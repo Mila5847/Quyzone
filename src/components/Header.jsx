@@ -1,4 +1,4 @@
-import Logo from "./Logo";
+import Logo from "./logo";
 import "../styles/components/_Header.scss";
 
 export default function BrandHeader({
