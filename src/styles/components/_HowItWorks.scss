@@ -4,15 +4,60 @@
 
 /* Ensure the section itself doesn't block the backdrop */
 #how-it-works {
-  background: transparent; /* important: let the backdrop show through */
+  background: transparent;
+  /* important: let the backdrop show through */
 }
 
 .blend-multiply {
-  mix-blend-mode: multiply; /* applies on the transformed Parallax wrapper */
+  mix-blend-mode: multiply;
+  /* applies on the transformed Parallax wrapper */
 }
 
 /* Optional: keep head clearly above blended bits */
 .howitworks-head {
   position: relative;
   z-index: 1;
+}
+
+
+.howitworks ul li {
+  /* This is crucial. It creates a positioning context for the pseudo-element. */
+  position: relative;
+  /* Add padding to the left to create space for your custom bullet point. Adjust as needed. */
+  padding-left: 20px;
+  /* Add some bottom margin to the list items for spacing between the lines of text. */
+  margin-bottom: 10px;
+}
+
+
+.howitworks ul li::before {
+  /* This is the key. It takes the pseudo-element out of the normal document flow */
+  position: absolute;
+  /* Position the element relative to the li's top-left corner. */
+  top: -43px;
+  /* Adjust this value to control the vertical overlap between the "L" shapes. */
+  left: -16px;
+
+  /* Set the size of the pseudo-element to match your SVG */
+  width: 35px;
+  /* Adjust to the width of your SVG */
+  height: 60px;
+  /* Adjust to the height of your SVG */
+
+  /* Use the background-image property to point to your SVG file. */
+  background-image: url('/images/decorative/bulletPoint.svg');
+
+  /* Prevent the image from repeating */
+  background-repeat: no-repeat;
+
+  /* Ensure the SVG scales correctly within the pseudo-element's box */
+  background-size: contain;
+
+  /* An empty content property is necessary for the pseudo-element to render. */
+  content: "";
+}
+
+.howitworks ul li:first-child::before {
+  background-image: url('/images/decorative/bulletStem.svg');
+  /* No need to change other properties if the SVGs are the same size */
 }
