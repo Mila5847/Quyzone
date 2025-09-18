@@ -49,16 +49,19 @@ function LandingPage() {
       <div>
         <Parallax speed={3}>
           <img
+
             className="foreground"
             src="./images/decorative/foregroundTest_01.png"
             alt=""
             width={400}
             height={332}
             style={{
-              maxWidth: 550,
+              maxWidth: 1150,
               width: "100%",
               height: "auto",
-              display: "block",
+              display: "block", 
+              left: "-460px",
+              top:"-230px"
             }}
           />
         </Parallax>

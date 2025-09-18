@@ -14,6 +14,8 @@ $cta-font-size: 3.5em;
 $cta-span-font-size: 1.3em;
 $cta-line-height: 1em;
 
+
+$cta-button-top: 150px;
 $cta-button-margin-top: 7px;
 $cta-button-width: 350px;
 //------------------h1.h2------------------
@@ -38,11 +40,17 @@ $primary-color: rgb(0, 0, 0);
 $secondary-color: #fff;
 
 $title-fontsize: 60px;
+//------------------brand-header------------------
 
 $logo-size-small: 32px;
 $logo-size-medium: 50px; // This matches your current 50x50
 $logo-size-large: 80px;
-$logo-size-xl: 170px;
+$logo-size: 200px;
+
+$logo-margin-top: 33px;
+
+$brand-heading-margin-left: -17px;
+
 
 //background size
 //background position
