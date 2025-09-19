@@ -1,3 +1,5 @@
+
+
 import { useEffect } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
@@ -15,6 +17,7 @@ import {
 
 import "../styles/layout/_nav.scss";
 import "../styles/pages/_LandingPage.scss";
+
 
 function LandingPage() {
   const location = useLocation();
@@ -55,14 +58,16 @@ function LandingPage() {
             alt=""
             width={400}
             height={332}
+            /*
             style={{
-              maxWidth: 1150,
+              maxWidth: 970px,
               width: "100%",
               height: "auto",
               display: "block", 
-              left: "-460px",
-              top:"-230px"
+              left: "-380px",
+              top:"-180px"
             }}
+              */
           />
         </Parallax>
       </div>

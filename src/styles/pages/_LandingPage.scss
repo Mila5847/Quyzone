@@ -1,4 +1,4 @@
-@use "../abstracts/variables" as *;
+@use "../abstracts/variables"as *;
 
 .sub-h1 {
   display: flex;
@@ -15,6 +15,16 @@
   position: absolute;
   margin-left: 60rem;
   margin-top: -25rem;
+
+  max-width: $hero_foreground_maxWidth;
+  width: 100%;
+  height: auto;
+  display: block;
+  left: $hero_foreground_horizMove;
+  top: $hero_foreground_vertMove;
+
+
+
 }
 
 @media (max-width: 636px) {
@@ -40,16 +50,19 @@
 
 .hiw-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 1 | 2 side by side */
+  grid-template-columns: 1fr 1fr;
+  /* 1 | 2 side by side */
   gap: clamp(1rem, 3vw, 2rem);
   align-items: start;
 }
 
 .hiw-item--full {
-  grid-column: 1 / -1; /* span both columns */
+  grid-column: 1 / -1;
+  /* span both columns */
   justify-self: center;
   text-align: center;
-  max-width: 900px; /* optional: keep it tidy */
+  max-width: 900px;
+  /* optional: keep it tidy */
 }
 
 /* Responsive stack */
@@ -57,6 +70,7 @@
   .hiw-grid {
     grid-template-columns: 1fr;
   }
+
   .hiw-item--full {
     justify-self: stretch;
     text-align: left;
