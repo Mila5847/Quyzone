@@ -55,7 +55,7 @@ function LandingPage() {
 
             className="foreground"
             src="./images/decorative/foregroundTest_01.png"
-            alt=""
+            alt="beauty Shot"
             width={400}
             height={332}
             /*

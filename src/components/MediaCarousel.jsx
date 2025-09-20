@@ -86,7 +86,7 @@ function MediaCarousel() {
 
   return (
     <>
-      <h2>A1</h2>
+      <h4>A1</h4>
 
       <div className="carousel">
         <AliceCarousel
