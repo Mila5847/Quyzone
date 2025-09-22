@@ -58,16 +58,16 @@ function LandingPage() {
             alt="beauty Shot"
             width={400}
             height={332}
-            /*
-            style={{
-              maxWidth: 970px,
-              width: "100%",
-              height: "auto",
-              display: "block", 
-              left: "-380px",
-              top:"-180px"
-            }}
-              */
+          /*
+          style={{
+            maxWidth: 970px,
+            width: "100%",
+            height: "auto",
+            display: "block", 
+            left: "-380px",
+            top:"-180px"
+          }}
+            */
           />
         </Parallax>
       </div>
@@ -132,53 +132,68 @@ function LandingPage() {
           <div className="hiw-grid">
             {/* 1 */}
             <div className="hiw-item">
-            <div style={{ mixBlendMode: "multiply" }}>
-              <Parallax speed={0}>
-                <HowItWorksPart3
-                  videos={[
-                    {
-                      src: "/videos/switch_video_2.webm",
-                      caption: "3 seconds video",
-                    },
-                  ]}
-                />
-              </Parallax>
+              <div style={{ mixBlendMode: "multiply" }}>
+                <Parallax speed={0}>
+                  <HowItWorksPart3
+                    videos={[
+                      {
+                        src: "/videos/switch_video_2.webm",
+                        caption: "3 seconds video",
+                      },
+                    ]}
+                  />
+                </Parallax>
               </div>
-               <h2>1 Printability</h2>
+              <h3>1 Printability</h3>
+              <ol>
+                <li>-designed with ease of print in mind</li>
+                <li>-largest pieces fit conveniently on the smaller of machines.</li>
+                <li>-More time building less time troubleshooting.</li>
+              </ol>
+
             </div>
 
             {/* 2 */}
             <div className="hiw-item">
-               <div style={{ mixBlendMode: "multiply" }}>
-              <Parallax speed={0}>
-                <HowItWorksPart3
-                  videos={[
-                    {
-                      src: "/videos/switch_video_3.webm",
-                      caption: "3 seconds video",
-                    },
-                  ]}
-                />
-              </Parallax>
+              <div style={{ mixBlendMode: "multiply" }}>
+                <Parallax speed={0}>
+                  <HowItWorksPart3
+                    videos={[
+                      {
+                        src: "/videos/switch_video_3.webm",
+                        caption: "3 seconds video",
+                      },
+                    ]}
+                  />
+                </Parallax>
               </div>
-              <h2>2 Possability</h2>
+              <h3>2 Poseability</h3>
+              <ol>
+                <li>-meant for expressiveness</li>
+                <li>-articulations resistance and smoothness set to ensure reliable posing</li>
+                <li>-subtil tuned  to truly give it life.</li>
+              </ol>
             </div>
 
             {/* 3 centered below */}
             <div className="hiw-item hiw-item--full">
               <div style={{ mixBlendMode: "multiply" }}>
-              <Parallax speed={0}>
-                <HowItWorksPart3
-                  videos={[
-                    {
-                      src: "/videos/switch_video_3.webm",
-                      caption: "3 seconds video",
-                    },
-                  ]}
-                />
-              </Parallax>
+                <Parallax speed={0}>
+                  <HowItWorksPart3
+                    videos={[
+                      {
+                        src: "/videos/switch_video_3.webm",
+                        caption: "3 seconds video",
+                      },
+                    ]}
+                  />
+                </Parallax>
               </div>
-              <h2>3 Perfectability</h2>
+              <h3>3 Perfectability</h3>
+              <ol>
+                <li>-Modular assembly allows switching in and out components.</li>
+                <li>-Community's library to add to your build or show off your work.</li>
+              </ol>
             </div>
           </div>
         </section>
