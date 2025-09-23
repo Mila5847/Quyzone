@@ -25,10 +25,36 @@ function BuildManual() {
     [location.pathname, navigate],
   );
 
-  return (
-    <>
-    <div className="build-manual">
+  // 👉 Data for first carousel
+  const carousel1Items = [
+    { type: "img", src: "/images/manual/pres_coverBot.jpg", alt: "Slide 1" },
+    { type: "img", src: "/images/manual/ori_receiver.jpg", alt: "Slide 2" },
+    { type: "img", src: "/images/manual/ori_coverBot.jpg", alt: "Slide 3" },
+    { type: "video", src: "/videos/manual/anim-coverBotR.mp4", alt: "Slide 4" },
+    { type: "video", src: "/videos/manual/anim-coverBotL.mp4", alt: "Slide 5" },
+  ];
+  const carousel1Captions = [
+    "Cover bottom — presentation",
+    "Receiver — orientation reference",
+    "Cover bottom — orientation",
+    "Animation: CoverBot movement (right)",
+    "Animation: CoverBot movement (left)",
+  ];
 
+  // 👉 Data for second carousel
+  const carousel2Items = [
+    { type: "img", src: "/images/manual/alt_view1.jpg", alt: "Alt 1" },
+    { type: "img", src: "/images/manual/alt_view2.jpg", alt: "Alt 2" },
+    { type: "video", src: "/videos/manual/alt_anim.mp4", alt: "Alt video" },
+  ];
+  const carousel2Captions = [
+    "Alternative view — 1",
+    "Alternative view — 2",
+    "Alternative animation",
+  ];
+
+  return (
+    <div className="build-manual">
       <nav className="nav">
         <button onClick={() => scrollTo("how-it-works")}>How It Works</button>
         <button onClick={() => scrollTo("gallery")}>Gallery</button>
@@ -37,16 +63,36 @@ function BuildManual() {
       </nav>
 
       <br />
-      
+
       <section>
         <h2>PIONEER.3</h2>
-        <h3 className="subassembly-title">SUB ASSEMBLY A <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" /></h3>
+        <h3 className="subassembly-title">
+          SUB ASSEMBLY A{" "}
+          <img
+            className="overflow-image"
+            src="./images/decorative/assemblyA.png"
+            alt="assemblyA"
+          />
+        </h3>
+
         <section>
-          <MediaCarousel />
+          <MediaCarousel
+            itemsData={carousel1Items}
+            captions={carousel1Captions}
+            title="A1"
+          />
+        </section>
+
+        {/* Second carousel for additional media */}
+        <section>
+          <MediaCarousel
+            itemsData={carousel2Items}
+            captions={carousel2Captions}
+            title="A2"
+          />
         </section>
       </section>
-      </div>
-    </>
+    </div>
   );
 }
 

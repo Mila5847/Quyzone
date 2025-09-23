@@ -3,76 +3,41 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "../styles/components/_MediaCarousel.scss";
 
-function MediaCarousel() {
+function MediaCarousel({ itemsData, captions, title }) {
   const carouselRef = useRef(null);
-
-  const captions = useMemo(
-    () => [
-      "Cover bottom — presentation",
-      "Receiver — orientation reference",
-      "Cover bottom — orientation",
-      "Animation: CoverBot movement (right)",
-      "Animation: CoverBot movement (left)",
-    ],
-    []
-  );
-
   const videoRefs = useRef([]);
 
+  // Build items from props
   const items = useMemo(
-    () => [
-      <div className="item" data-value="1" key="1">
-        <div className="carousel-frame">
-          <img src="/images/manual/pres_coverBot.jpg" alt="Slide 1" className="media" />
+    () =>
+      itemsData.map((data, index) => (
+        <div className="item" data-value={index + 1} key={index + 1}>
+          <div className="carousel-frame">
+            {data.type === "img" ? (
+              <img src={data.src} alt={data.alt} className="media" />
+            ) : (
+              <video
+                className="media"
+                controls
+                muted
+                playsInline
+                preload="metadata"
+                loop
+                ref={(el) => (videoRefs.current[index] = el)}
+              >
+                <source src={data.src} type="video/mp4" />
+              </video>
+            )}
+          </div>
         </div>
-      </div>,
-      <div className="item" data-value="2" key="2">
-        <div className="carousel-frame">
-          <img src="/images/manual/ori_receiver.jpg" alt="Slide 2" className="media" />
-        </div>
-      </div>,
-      <div className="item" data-value="3" key="3">
-        <div className="carousel-frame">
-          <img src="/images/manual/ori_coverBot.jpg" alt="Slide 3" className="media" />
-        </div>
-      </div>,
-      <div className="item" data-value="4" key="4">
-        <div className="carousel-frame">
-          <video
-            className="media"
-            controls
-            muted
-            playsInline
-            preload="metadata"
-            loop
-            ref={(el) => (videoRefs.current[3] = el)}  
-          >
-            <source src="/videos/manual/anim-coverBotR.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>,
-      <div className="item" data-value="5" key="5">
-        <div className="carousel-frame">
-          <video
-            className="media"
-            controls
-            muted
-            playsInline
-            preload="metadata"
-            loop
-            ref={(el) => (videoRefs.current[4] = el)} 
-          >
-            <source src="/videos/manual/anim-coverBotL.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>,
-    ],
-    []
+      )),
+    [itemsData]
   );
 
   const total = items.length;
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // Play/pause logic for videos
   useEffect(() => {
     for (const v of videoRefs.current) {
       if (v) v.pause();
@@ -86,7 +51,7 @@ function MediaCarousel() {
 
   return (
     <>
-      <h4>A1</h4>
+      {title && <h4>{title}</h4>}
 
       <div className="carousel">
         <AliceCarousel
@@ -100,10 +65,12 @@ function MediaCarousel() {
 
         <p className="index">{`${activeIndex + 1}/${total}`}</p>
 
-        <div className="caption-container">
-          <p className="caption">{captions[activeIndex]}</p> 
-        </div>
-        
+        {captions && (
+          <div className="caption-container">
+            <p className="caption">{captions[activeIndex]}</p>
+          </div>
+        )}
+
         <button
           type="button"
           className="btn-prev"
