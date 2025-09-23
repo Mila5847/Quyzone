@@ -20,34 +20,35 @@ export function HowItWorksPart2() {
         I'm a huge fan of mechanical design, and let's be honest, so are you.
         That's why we're both here. In need of a brand new model kit to build? I
         hear ya.  At Quyzone you'll find quality kits designed by and for every
-        hungry builders—brought to life with a unique cute whimsical touch!
+        hungry builders—brought to life with a unique cute whimsical touch! How about kicking things off with this little guy?
+        The <strong> Pioneer.3</strong> is the pint-sized sub → cute, compact, and ready to dive built for underwater epicness.
+
       </p>
       <ul>
         <li>
-          "PayWhatYouWant" to start off -yup!- Go ahead and pick it up
+          🎁"PayWhatYouWant" to start off -yup!- Go ahead and pick it up
           digitally. Support the project as you see fit.
         </li>
         <li>
-          Sick of copy-paste bland looks? The beast hums mechanical designs and
+          🔧Sick of copy-paste bland looks? The beast hums mechanical designs and
           exudes charming personality.
         </li>
         <li>
-          Small resin printer? No problem. The largest pieces are designed to
+          🧊Small resin printer? No problem. The largest pieces are designed to
           fit inside a 3"x3" footprint.
         </li>
         <li>
-          Lacking a PHD in model making? Got you covered with my animated
+          📘Lacking a PHD in model making? Got you covered with my animated
           manual.
         </li>
         <li>
-          No glue required. Every piece is made to snap-fit like a boss, for
-          super satisfying haptic feeback.
+          No glue → precision snap → tactile bliss → BOOM.donezo
         </li>
       </ul>
 
-      <div className="video-row">
-        <VideoPlayer
-          src="/videos/switch_video_1.webm"
+      <div className="video-row video-glueless">
+        <VideoPlayer style={{ width: "40%" }}
+          src="/videos/decorative/glueless.webm"
           caption="3 seconds video"
         />
       </div>
@@ -95,8 +96,8 @@ HowItWorksPart3.propTypes = {
 export function HowItWorksPart4() {
   return (
     <div className="howitworks">
-       <h2>Me Quy and the Mechabust</h2>
-       <p>....</p>
+      <h2>Me Quy and the Mechabust</h2>
+      <p>....</p>
     </div>
   );
 }

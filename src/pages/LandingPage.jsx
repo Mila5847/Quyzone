@@ -144,7 +144,7 @@ function LandingPage() {
                   />
                 </Parallax>
               </div>
-              <h3>1 Printability</h3>
+              <h3>Printability</h3>
               <ol>
                 <li>-designed with ease of print in mind</li>
                 <li>-largest pieces fit conveniently on the smaller of machines.</li>
@@ -167,7 +167,7 @@ function LandingPage() {
                   />
                 </Parallax>
               </div>
-              <h3>2 Poseability</h3>
+              <h3>Poseability</h3>
               <ol>
                 <li>-meant for expressiveness</li>
                 <li>-articulations resistance and smoothness set to ensure reliable posing</li>
@@ -189,7 +189,7 @@ function LandingPage() {
                   />
                 </Parallax>
               </div>
-              <h3>3 Perfectability</h3>
+              <h3>Perfectability</h3>
               <ol>
                 <li>-Modular assembly allows switching in and out components.</li>
                 <li>-Community's library to add to your build or show off your work.</li>

@@ -87,6 +87,14 @@ p {
   margin-bottom: 1em;
 }
 
+strong {
+  font-weight: 1200;
+  text-decoration: solid;
+  text-shadow: 1px 1px 0px rgb(60, 22, 130);
+
+}
+
+
 /* Utility Font Classes */
 .font-smythe {
   font-family: $font-smythe;
