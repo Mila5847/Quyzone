@@ -2,6 +2,7 @@ import VideoPlayer from "./VideoPlayer";
 import "../styles/components/_ImageCarousel.scss";
 import "../styles/components/_VideoPlayer.scss";
 import "../styles/components/_HowItWorks.scss";
+import TimeLine from "./Timeline";
 
 export function HowItWorksPart1() {
   return (
@@ -97,7 +98,7 @@ export function HowItWorksPart4() {
   return (
     <div className="howitworks">
       <h2>Me Quy and the Mechabust</h2>
-      <p>....</p>
+      <TimeLine />
     </div>
   );
 }

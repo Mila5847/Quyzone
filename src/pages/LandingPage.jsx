@@ -17,6 +17,7 @@ import {
 
 import "../styles/layout/_nav.scss";
 import "../styles/pages/_LandingPage.scss";
+import TimeLine from "../components/Timeline";
 
 
 function LandingPage() {
@@ -199,7 +200,7 @@ function LandingPage() {
         </section>
 
         <section className="section container">
-          <HowItWorksPart4 />
+          <TimeLine />
         </section>
       </Element>
 
