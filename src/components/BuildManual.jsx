@@ -43,9 +43,9 @@ function BuildManual() {
 
   // 👉 Data for second carousel
   const carousel2Items = [
+    { type: "video", src: "/videos/manual/anim-a02-back.mp4", alt: "Alt video" },
+    { type: "video", src: "/videos/manual/anim-a02-front.mp4", alt: "Alt video" },
     { type: "img", src: "/images/manual/alt_view1.jpg", alt: "Alt 1" },
-    { type: "img", src: "/images/manual/alt_view2.jpg", alt: "Alt 2" },
-    { type: "video", src: "/videos/manual/alt_anim.mp4", alt: "Alt video" },
   ];
   const carousel2Captions = [
     "Alternative view — 1",
