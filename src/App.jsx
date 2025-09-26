@@ -53,7 +53,7 @@ function MainApp() {
           />
         </Route>
 
-        <Route element={<ManualLayout />}>
+        <Route location={location} key={location.pathname}>
           <Route path="/design-manual" element={<DesignManual />} />
         </Route>
       </Routes>

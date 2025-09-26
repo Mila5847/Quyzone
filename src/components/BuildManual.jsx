@@ -75,7 +75,7 @@ function BuildManual() {
           />
         </h3>
 
-        <section>
+        <section className="carousel-section">
           <MediaCarousel
             itemsData={carousel1Items}
             captions={carousel1Captions}
@@ -84,7 +84,7 @@ function BuildManual() {
         </section>
 
         {/* Second carousel for additional media */}
-        <section>
+        <section className="carousel-section">
           <MediaCarousel
             itemsData={carousel2Items}
             captions={carousel2Captions}
