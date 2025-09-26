@@ -57,7 +57,6 @@ function BuildManual() {
     <div className="build-manual">
       <nav className="nav">
         <button onClick={() => scrollTo("how-it-works")}>How It Works</button>
-        <button onClick={() => scrollTo("gallery")}>Gallery</button>
         <RouterLink to="/design-manual">Design Manual</RouterLink>
         <RouterLink to="/support">Support</RouterLink>
       </nav>

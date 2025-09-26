@@ -51,9 +51,6 @@ function MainApp() {
               </PageFade>
             }
           />
-        </Route>
-
-        <Route location={location} key={location.pathname}>
           <Route path="/design-manual" element={<DesignManual />} />
         </Route>
       </Routes>
