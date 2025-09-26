@@ -1,6 +1,6 @@
 // App.jsx
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Outlet,

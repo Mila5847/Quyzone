@@ -51,8 +51,6 @@ function MediaCarousel({ itemsData, captions, title }) {
 
   return (
     <>
-      {title && <h4>{title}</h4>}
-
       <div className="carousel">
         <AliceCarousel
           disableDotsControls
@@ -62,14 +60,12 @@ function MediaCarousel({ itemsData, captions, title }) {
           activeIndex={activeIndex}
           onSlideChanged={(e) => setActiveIndex(e.item)}
         />
-
-        <p className="index">{`${activeIndex + 1}/${total}`}</p>
-
-        {captions && (
-          <div className="caption-container">
-            <p className="caption">{captions[activeIndex]}</p>
-          </div>
-        )}
+        
+        <div>
+          <p className="carousel-number">{title}</p>
+          <p className="media-index">{`${activeIndex + 1}/${total}`}</p>
+          <p className="media-caption">{captions[activeIndex]}</p>
+        </div>
 
         <button
           type="button"

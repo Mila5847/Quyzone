@@ -1,32 +1,60 @@
 .carousel {
   position: relative;
-  width: 490px;
-  height: 269px;
+  width: 489px;
+  height: 325px;
   margin-inline: auto;
   box-sizing: border-box;
-  padding: 8px;             
+  padding: 8px;      
+  border-style: solid;   
+  border-radius: 25px;    
 }
 
 .btn-prev,
 .btn-next {
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: 44px;
   height: 44px;
   border: 0;
-  padding: 0;
+  padding: 2px;
   border-radius: 999px;
   display: grid;
   place-items: center;
   cursor: pointer;
   background: transparent;
   transform: translateY(-50%);
+  margin: 10px;
 }
 
-/* --- push them just OUTSIDE the frame edges --- */
-:root { --nav-outside: clamp(8px, 2vw, 24px); } /* how far outside */
 .btn-prev  { left: 0;  transform: translate(calc(-100% - var(--nav-outside)), -50%); }
 .btn-next  { right: 0; transform: translate(calc(100%  + var(--nav-outside)), -50%); }
 
+.carousel-number {
+  position: absolute;
+  top: -15px;
+  left: -17px;
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 14px;
+  width: 50px;
+  text-align: center;
+}
 
+.media-index {
+  position: absolute;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 20px;
+  color: black  ;
+} 
 
+.media-caption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+}
