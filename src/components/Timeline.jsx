@@ -52,7 +52,10 @@ function TimeLine() {
     >
       <h2>  Me Quy and the Mechabust</h2>
       <q>To go fast, run alone. To go far, walk together.</q>
-      
+      <p>The Mechabust project started. It was a downtime for me professionally—a perfect time to reflect on how to change the world. I&apos;d like to call
+        myself an artist: besides my passion for games and animation, I just love to create things. I love mechs, I love 3D printing—so this whole thing was a
+        no-brainer. </p>
+
       <Timeline position="right" sx={{ pl: 0, ml: 0 }}>
         <TimelineItem>
           <TimelineOppositeContent sx={{ pr: 2 }}>
@@ -62,21 +65,49 @@ function TimeLine() {
           <WhiteSeparator />
 
 
-        {/* NOW 2022 */}
-          <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              2022
-            </Typography>
+          {/* 2022 */}
+          <TimelineContent sx={{ py: '0px', px: 2 }}>
+
             <Typography sx={{ width: { xs: '30rem' } }}>
-              The Mechabust project started. It was a downtime for me professionally—a
-              perfect time to reflect on how to change the world. I&apos;d like to call
-              myself an artist: besides my passion for games and animation, I just love to
-              create things. I love mechs, I love 3D printing—so this whole thing was a
-              no-brainer. I began designing, testing, and iterating slowly with whatever
+              I began designing, testing, and iterating slowly with whatever
               resources I could get my hands on.
             </Typography>
           </TimelineContent>
         </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent sx={{ pr: 2 }}>
+            <LeftLabel lines={['2022']} />
+          </TimelineOppositeContent>
+
+          <WhiteSeparator />
+
+          {/* 2022 */}
+          <TimelineContent sx={{ py: '0px', px: 2 }}>
+
+            <Typography sx={{ width: { xs: '30rem' } }}>
+              Pioneer-1
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent sx={{ pr: 2 }}>
+            <LeftLabel lines={['2022']} />
+          </TimelineOppositeContent>
+
+          <WhiteSeparator />
+
+          {/* 2022 */}
+          <TimelineContent sx={{ py: '0px', px: 2 }}>
+
+            <Typography sx={{ width: { xs: '30rem' } }}>
+              Pioneer-2
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+
+
 
         {/* NOW 2025 */}
         <TimelineItem>
@@ -91,7 +122,7 @@ function TimeLine() {
               Today
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
-              The Mech Head MVP is Live! The base kit is fully designed and ready for you
+              The Mech Head, Pioneer-3 MVP is Live! The base kit is fully designed and ready for you
               to download. This is our starting point.
             </Typography>
           </TimelineContent>
@@ -106,10 +137,10 @@ function TimeLine() {
           <WhiteSeparator />
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-           <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
+            <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
               Next Step
             </Typography>
-           <Typography sx={{ width: { xs: '30rem' } }}>Community building… stay tuned guys!</Typography>
+            <Typography sx={{ width: { xs: '30rem' } }}>Community building… stay tuned guys!</Typography>
           </TimelineContent>
         </TimelineItem>
       </Timeline>

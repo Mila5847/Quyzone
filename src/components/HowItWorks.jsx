@@ -22,7 +22,7 @@ export function HowItWorksPart2() {
         That's why we're both here. In need of a brand new model kit to build? I
         hear ya.  At Quyzone you'll find quality kits designed by and for every
         hungry builders—brought to life with a unique cute whimsical touch! How about kicking things off with this little guy?
-        The <strong> Pioneer.3</strong> is the pint-sized sub → cute, compact, and ready to dive built for underwater epicness.
+        The <strong> Pioneer-3</strong> is a pint-sized sub, cute, compact, and ready to dive built for deepsea epicness.
 
       </p>
       <ul>
@@ -43,7 +43,7 @@ export function HowItWorksPart2() {
           manual.
         </li>
         <li>
-          No glue → precision snap → tactile bliss → BOOM.donezo
+          &nbsp; &nbsp; No glue → precision snap → tactile bliss → BOOM.donezo
         </li>
       </ul>
 
