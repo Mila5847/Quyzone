@@ -9,7 +9,9 @@ function ContactPage() {
         <Header title="CONTACT" />
       </Parallax>
 
-      <QAndA />
+      <Parallax speed={0}>
+        <QAndA />
+      </Parallax>
     </div>
   );
 }
