@@ -33,7 +33,7 @@ nav {
   /* Arrow Effect (::before pseudo-element) */
   a::before,
   button::before {
-    content: "▷";
+    content: '▷';
     margin-right: 0.5rem;
     transition: content 0.3s ease;
     /* This transition won't work but keeps code clean */
@@ -42,7 +42,7 @@ nav {
   /* Underline Effect (::after pseudo-element) */
   a::after,
   button::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -63,7 +63,7 @@ nav {
   /* Hover state for the Arrow */
   a:hover::before,
   button:hover::before {
-    content: "▶";
+    content: '▶';
   }
 
   /* Hover state for the Underline */

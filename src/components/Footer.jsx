@@ -5,9 +5,7 @@ const Footer = () => {
         <p>Facebook</p>
         <p>Youtube</p>
         <p>Insta</p>
-        <div>
-          © 2025 Your Name. Design by You. Development by Mila Kehayova.
-        </div>
+        <div>© 2025 Your Name. Design by You. Development by Mila Kehayova.</div>
       </div>
     </section>
   );

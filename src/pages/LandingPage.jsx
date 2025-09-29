@@ -1,21 +1,21 @@
-import { useEffect } from "react";
-import { Link as RouterLink, useLocation } from "react-router-dom";
-import { Parallax } from "react-scroll-parallax";
-import { Element, Link as ScrollLink, scroller } from "react-scroll";
+import { useEffect } from 'react';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
+import { Parallax } from 'react-scroll-parallax';
+import { Element, Link as ScrollLink, scroller } from 'react-scroll';
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Hero from "../components/hero";
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Hero from '../components/hero';
 import {
   HowItWorksPart1,
   HowItWorksPart2,
   HowItWorksPart3,
   HowItWorksPart4,
-} from "../components/HowItWorks";
+} from '../components/HowItWorks';
 
-import "../styles/layout/_nav.scss";
-import "../styles/pages/_LandingPage.scss";
-import TimeLine from "../components/Timeline";
+import '../styles/layout/_nav.scss';
+import '../styles/pages/_LandingPage.scss';
+import TimeLine from '../components/Timeline';
 
 function LandingPage() {
   const location = useLocation();
@@ -26,7 +26,7 @@ function LandingPage() {
     if (target) {
       setTimeout(() => {
         scroller.scrollTo(target, {
-          smooth: "easeInOutQuart",
+          smooth: 'easeInOutQuart',
           duration: 600,
           offset: -80,
         });
@@ -110,7 +110,7 @@ function LandingPage() {
         <section
           id="how-it-works"
           className="section container"
-          style={{ mixBlendMode: "multiply" }}
+          style={{ mixBlendMode: 'multiply' }}
         >
           <Parallax speed={0}>
             <HowItWorksPart2 />
@@ -129,13 +129,13 @@ function LandingPage() {
           <div className="hiw-grid">
             {/* 1 */}
             <div className="hiw-item">
-              <div style={{ mixBlendMode: "multiply" }}>
+              <div style={{ mixBlendMode: 'multiply' }}>
                 <Parallax speed={0}>
                   <HowItWorksPart3
                     videos={[
                       {
-                        src: "/videos/switch_video_2.webm",
-                        caption: "3 seconds video",
+                        src: '/videos/switch_video_2.webm',
+                        caption: '3 seconds video',
                       },
                     ]}
                   />
@@ -144,22 +144,20 @@ function LandingPage() {
               <h3>Printability</h3>
               <ol>
                 <li>-designed with ease of print in mind</li>
-                <li>
-                  -largest pieces fit conveniently on the smaller of machines.
-                </li>
+                <li>-largest pieces fit conveniently on the smaller of machines.</li>
                 <li>-More time building less time troubleshooting.</li>
               </ol>
             </div>
 
             {/* 2 */}
             <div className="hiw-item">
-              <div style={{ mixBlendMode: "multiply" }}>
+              <div style={{ mixBlendMode: 'multiply' }}>
                 <Parallax speed={0}>
                   <HowItWorksPart3
                     videos={[
                       {
-                        src: "/videos/switch_video_3.webm",
-                        caption: "3 seconds video",
+                        src: '/videos/switch_video_3.webm',
+                        caption: '3 seconds video',
                       },
                     ]}
                   />
@@ -168,23 +166,20 @@ function LandingPage() {
               <h3>Poseability</h3>
               <ol>
                 <li>-meant for expressiveness</li>
-                <li>
-                  -articulations resistance and smoothness set to ensure
-                  reliable posing
-                </li>
+                <li>-articulations resistance and smoothness set to ensure reliable posing</li>
                 <li>-subtil tuned to truly give it life.</li>
               </ol>
             </div>
 
             {/* 3 centered below */}
             <div className="hiw-item hiw-item--full">
-              <div style={{ mixBlendMode: "multiply" }}>
+              <div style={{ mixBlendMode: 'multiply' }}>
                 <Parallax speed={0}>
                   <HowItWorksPart3
                     videos={[
                       {
-                        src: "/videos/switch_video_3.webm",
-                        caption: "3 seconds video",
+                        src: '/videos/switch_video_3.webm',
+                        caption: '3 seconds video',
                       },
                     ]}
                   />
@@ -192,13 +187,8 @@ function LandingPage() {
               </div>
               <h3>Perfectability</h3>
               <ol>
-                <li>
-                  -Modular assembly allows switching in and out components.
-                </li>
-                <li>
-                  -Community's library to add to your build or show off your
-                  work.
-                </li>
+                <li>-Modular assembly allows switching in and out components.</li>
+                <li>-Community's library to add to your build or show off your work.</li>
               </ol>
             </div>
           </div>

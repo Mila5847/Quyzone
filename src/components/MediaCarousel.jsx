@@ -1,7 +1,7 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-import "../styles/components/_MediaCarousel.scss";
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
+import '../styles/components/_MediaCarousel.scss';
 
 function MediaCarousel({ itemsData, captions, title }) {
   const [hoverPrev, setHoverPrev] = useState(false);
@@ -15,7 +15,7 @@ function MediaCarousel({ itemsData, captions, title }) {
       itemsData.map((data, index) => (
         <div className="item" data-value={index + 1} key={index + 1}>
           <div className="carousel-frame">
-            {data.type === "img" ? (
+            {data.type === 'img' ? (
               <img src={data.src} alt={data.alt} className="media" />
             ) : (
               <video
@@ -33,7 +33,7 @@ function MediaCarousel({ itemsData, captions, title }) {
           </div>
         </div>
       )),
-    [itemsData]
+    [itemsData],
   );
 
   const total = items.length;
@@ -44,7 +44,7 @@ function MediaCarousel({ itemsData, captions, title }) {
     const v = videoRefs.current[activeIndex];
     if (v) {
       const p = v.play();
-      if (p && typeof p.then === "function") p.catch(() => {});
+      if (p && typeof p.then === 'function') p.catch(() => {});
     }
   }, [activeIndex]);
 
@@ -76,8 +76,8 @@ function MediaCarousel({ itemsData, captions, title }) {
         <img
           src={
             hoverPrev
-              ? "/images/ui/buttonGalleryBack-hover.svg"
-              : "/images/ui/buttonGalleryBack.svg"
+              ? '/images/ui/buttonGalleryBack-hover.svg'
+              : '/images/ui/buttonGalleryBack.svg'
           }
           alt=""
         />
@@ -94,8 +94,8 @@ function MediaCarousel({ itemsData, captions, title }) {
         <img
           src={
             hoverNext
-              ? "/images/ui/buttonGalleryForward-hover.svg"
-              : "/images/ui/buttonGalleryForward.svg"
+              ? '/images/ui/buttonGalleryForward-hover.svg'
+              : '/images/ui/buttonGalleryForward.svg'
           }
           alt=""
         />

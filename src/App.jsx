@@ -1,19 +1,13 @@
 // App.jsx
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-  Outlet,
-  useLocation,
-} from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { HashRouter as Router, Routes, Route, Outlet, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 
-import LandingPage from "./pages/LandingPage";
-import { ParallaxProvider } from "react-scroll-parallax";
-import Background from "./components/Background";
-import BackToTop from "./components/BackToTop";
-import BuildingManual from "./pages/BuildingManual";
-import ContactPage from "./pages/ContactPage";
+import LandingPage from './pages/LandingPage';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import Background from './components/Background';
+import BackToTop from './components/BackToTop';
+import BuildingManual from './pages/BuildingManual';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -72,8 +66,8 @@ function PageFade({ children }) {
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -8 }}
-      transition={{ duration: 0.28, ease: "easeInOut" }}
-      style={{ minHeight: "100dvh" }}
+      transition={{ duration: 0.28, ease: 'easeInOut' }}
+      style={{ minHeight: '100dvh' }}
     >
       {children}
     </motion.main>

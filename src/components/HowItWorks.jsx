@@ -1,8 +1,8 @@
-import VideoPlayer from "./VideoPlayer";
-import "../styles/components/_ImageCarousel.scss";
-import "../styles/components/_VideoPlayer.scss";
-import "../styles/components/_HowItWorks.scss";
-import TimeLine from "./Timeline";
+import VideoPlayer from './VideoPlayer';
+import '../styles/components/_ImageCarousel.scss';
+import '../styles/components/_VideoPlayer.scss';
+import '../styles/components/_HowItWorks.scss';
+import TimeLine from './Timeline';
 
 export function HowItWorksPart1() {
   return (
@@ -18,39 +18,32 @@ export function HowItWorksPart2() {
   return (
     <div className="howitworks">
       <p>
-        I'm a huge fan of mechanical design, and let's be honest, so are you.
-        That's why we're both here. In need of a brand new model kit to build? I
-        hear ya.  At Quyzone you'll find quality kits designed by and for every
-        hungry builders—brought to life with a unique cute whimsical touch! How
-        about kicking things off with this little guy? The{" "}
-        <strong> Pioneer-3</strong> is a pint-sized sub, cute, compact, and
-        ready to dive built for deepsea epicness.
+        I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're both
+        here. In need of a brand new model kit to build? I hear ya.  At Quyzone you'll find quality
+        kits designed by and for every hungry builders—brought to life with a unique cute whimsical
+        touch! How about kicking things off with this little guy? The <strong> Pioneer-3</strong> is
+        a pint-sized sub, cute, compact, and ready to dive built for deepsea epicness.
       </p>
       <ul>
         <li>
-          🎁"PayWhatYouWant" to start off -yup!- Go ahead and pick it up
-          digitally. Support the project as you see fit.
+          🎁"PayWhatYouWant" to start off -yup!- Go ahead and pick it up digitally. Support the
+          project as you see fit.
         </li>
         <li>
-          🔧Sick of copy-paste bland looks? The beast hums mechanical designs
-          and exudes charming personality.
+          🔧Sick of copy-paste bland looks? The beast hums mechanical designs and exudes charming
+          personality.
         </li>
         <li>
-          🧊Small resin printer? No problem. The largest pieces are designed to
-          fit inside a 3"x3" footprint.
+          🧊Small resin printer? No problem. The largest pieces are designed to fit inside a 3"x3"
+          footprint.
         </li>
-        <li>
-          📘Lacking a PHD in model making? Got you covered with my animated
-          manual.
-        </li>
-        <li>
-          &nbsp; &nbsp; No glue → precision snap → tactile bliss → BOOM.donezo
-        </li>
+        <li>📘Lacking a PHD in model making? Got you covered with my animated manual.</li>
+        <li>&nbsp; &nbsp; No glue → precision snap → tactile bliss → BOOM.donezo</li>
       </ul>
 
       <div className="video-row video-glueless">
         <VideoPlayer
-          style={{ width: "40%" }}
+          style={{ width: '40%' }}
           src="/videos/decorative/glueless.webm"
           caption="3 seconds video"
         />
@@ -58,9 +51,9 @@ export function HowItWorksPart2() {
     </div>
   );
 }
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-export function HowItWorksPart3({ videos = [], className = "" }) {
+export function HowItWorksPart3({ videos = [], className = '' }) {
   return (
     <div className={`howitworks ${className}`}>
       <div className="video-row">
@@ -91,7 +84,7 @@ HowItWorksPart3.propTypes = {
       loop: PropTypes.bool,
       muted: PropTypes.bool,
       controls: PropTypes.bool,
-    })
+    }),
   ),
   className: PropTypes.string,
 };

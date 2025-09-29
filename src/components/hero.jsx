@@ -1,4 +1,4 @@
-import "../styles/components/_hero.scss";
+import '../styles/components/_hero.scss';
 const Hero = () => {
   return (
     <section className="hero-section">
@@ -9,10 +9,7 @@ const Hero = () => {
             Started <br />
             <span>HERE!</span>
           </div>
-          <button
-            className="cta-button cta-gumroad"
-            aria-label="Buy on Gumroad"
-          ></button>
+          <button className="cta-button cta-gumroad" aria-label="Buy on Gumroad"></button>
         </div>
         <div className="left-separator"></div>
         <div className="hero-separator">

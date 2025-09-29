@@ -43,7 +43,7 @@
   /* Adjust to the height of your SVG */
 
   /* Use the background-image property to point to your SVG file. */
-  background-image: url("/images/decorative/bulletPoint.svg");
+  background-image: url('/images/decorative/bulletPoint.svg');
 
   /* Prevent the image from repeating */
   background-repeat: no-repeat;
@@ -52,10 +52,10 @@
   background-size: contain;
 
   /* An empty content property is necessary for the pseudo-element to render. */
-  content: "";
+  content: '';
 }
 
 .howitworks ul li:first-child::before {
-  background-image: url("/images/decorative/bulletStem.svg");
+  background-image: url('/images/decorative/bulletStem.svg');
   /* No need to change other properties if the SVGs are the same size */
 }

@@ -1,6 +1,6 @@
 // src/components/Background.jsx
-import { useEffect, useRef } from "react";
-import "../styles/components/_background.scss";
+import { useEffect, useRef } from 'react';
+import '../styles/components/_background.scss';
 
 export default function Background() {
   const raf = useRef(0);
@@ -13,14 +13,14 @@ export default function Background() {
         // “speed -20”: move 20% of page scroll upward****************************
         const y = -window.scrollY * 0.35;
         // ****************************
-        document.documentElement.style.setProperty("--bg-y", `${y}px`);
+        document.documentElement.style.setProperty('--bg-y', `${y}px`);
       });
     };
 
     onScroll(); // set initial position
-    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => {
-      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener('scroll', onScroll);
       cancelAnimationFrame(raf.current);
     };
   }, []);

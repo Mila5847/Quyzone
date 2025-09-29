@@ -1,11 +1,7 @@
-import Logo from "./logo";
-import "../styles/components/_Header.scss";
+import Logo from './logo';
+import '../styles/components/_Header.scss';
 
-export default function BrandHeader({
-  title = "MECHABUST",
-  id = "Logo",
-  className = "section ",
-}) {
+export default function BrandHeader({ title = 'MECHABUST', id = 'Logo', className = 'section ' }) {
   return (
     <section id={id} className={`${className} brand-header`}>
       <Logo />

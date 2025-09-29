@@ -1,31 +1,31 @@
 // abstracts
-@use "./abstracts/variables";
-@use "./abstracts/mixins";
+@use './abstracts/variables';
+@use './abstracts/mixins';
 //@import 'abstracts/functions';
 
 // base
-@use "./base/reset";
-@use "./base/typography";
-@use "./base/global";
+@use './base/reset';
+@use './base/typography';
+@use './base/global';
 
 // layout
 //@import 'layout/header';
 //@import 'layout/footer';
 // @use './layout/section';
-@use "layout/container";
-@use "layout/section";
+@use 'layout/container';
+@use 'layout/section';
 
 // components
-@use "components/hero";
-@use "components/button";
-@use "components/logo";
-@use "components/HowItWorks";
+@use 'components/hero';
+@use 'components/button';
+@use 'components/logo';
+@use 'components/HowItWorks';
 
 // @use 'components/ImageCarousel';
 //@import 'components/card';
 
 // pages
-@use "./pages/LandingPage";
+@use './pages/LandingPage';
 //@import 'pages/supportpage';
 
 // themes

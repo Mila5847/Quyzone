@@ -1,5 +1,5 @@
-@use "../abstracts/variables" as *;
-@use "sass:math";
+@use '../abstracts/variables' as *;
+@use 'sass:math';
 
 body {
   background-color: $bg-color;

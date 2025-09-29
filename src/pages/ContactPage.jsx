@@ -1,6 +1,6 @@
-import Header from "../components/Header";
-import { Parallax } from "react-scroll-parallax";
-import QAndA from "../components/QAndA";
+import Header from '../components/Header';
+import { Parallax } from 'react-scroll-parallax';
+import QAndA from '../components/QAndA';
 
 function ContactPage() {
   return (
