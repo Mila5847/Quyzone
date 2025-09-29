@@ -21,9 +21,10 @@ export function HowItWorksPart2() {
         I'm a huge fan of mechanical design, and let's be honest, so are you.
         That's why we're both here. In need of a brand new model kit to build? I
         hear ya.  At Quyzone you'll find quality kits designed by and for every
-        hungry builders—brought to life with a unique cute whimsical touch! How about kicking things off with this little guy?
-        The <strong> Pioneer-3</strong> is a pint-sized sub, cute, compact, and ready to dive built for deepsea epicness.
-
+        hungry builders—brought to life with a unique cute whimsical touch! How
+        about kicking things off with this little guy? The{" "}
+        <strong> Pioneer-3</strong> is a pint-sized sub, cute, compact, and
+        ready to dive built for deepsea epicness.
       </p>
       <ul>
         <li>
@@ -31,8 +32,8 @@ export function HowItWorksPart2() {
           digitally. Support the project as you see fit.
         </li>
         <li>
-          🔧Sick of copy-paste bland looks? The beast hums mechanical designs and
-          exudes charming personality.
+          🔧Sick of copy-paste bland looks? The beast hums mechanical designs
+          and exudes charming personality.
         </li>
         <li>
           🧊Small resin printer? No problem. The largest pieces are designed to
@@ -48,7 +49,8 @@ export function HowItWorksPart2() {
       </ul>
 
       <div className="video-row video-glueless">
-        <VideoPlayer style={{ width: "40%" }}
+        <VideoPlayer
+          style={{ width: "40%" }}
           src="/videos/decorative/glueless.webm"
           caption="3 seconds video"
         />
@@ -89,7 +91,7 @@ HowItWorksPart3.propTypes = {
       loop: PropTypes.bool,
       muted: PropTypes.bool,
       controls: PropTypes.bool,
-    }),
+    })
   ),
   className: PropTypes.string,
 };

@@ -1,5 +1,3 @@
-
-
 import { useEffect } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Parallax } from "react-scroll-parallax";
@@ -18,7 +16,6 @@ import {
 import "../styles/layout/_nav.scss";
 import "../styles/pages/_LandingPage.scss";
 import TimeLine from "../components/Timeline";
-
 
 function LandingPage() {
   const location = useLocation();
@@ -53,13 +50,12 @@ function LandingPage() {
       <div>
         <Parallax speed={3}>
           <img
-
             className="foreground"
             src="./images/decorative/foregroundTest_01.png"
             alt="beauty Shot"
             width={400}
             height={332}
-          /*
+            /*
           style={{
             maxWidth: 970px,
             width: "100%",
@@ -98,8 +94,8 @@ function LandingPage() {
             Gallery
           </ScrollLink> */}
 
-          <RouterLink to="/design-manual">Design Manual</RouterLink>
-          <RouterLink to="/support">Support</RouterLink>
+          <RouterLink to="/building-manual">Building Manual</RouterLink>
+          <RouterLink to="/contact">Contact</RouterLink>
         </div>
       </nav>
       <div className="divider"></div>
@@ -148,10 +144,11 @@ function LandingPage() {
               <h3>Printability</h3>
               <ol>
                 <li>-designed with ease of print in mind</li>
-                <li>-largest pieces fit conveniently on the smaller of machines.</li>
+                <li>
+                  -largest pieces fit conveniently on the smaller of machines.
+                </li>
                 <li>-More time building less time troubleshooting.</li>
               </ol>
-
             </div>
 
             {/* 2 */}
@@ -171,8 +168,11 @@ function LandingPage() {
               <h3>Poseability</h3>
               <ol>
                 <li>-meant for expressiveness</li>
-                <li>-articulations resistance and smoothness set to ensure reliable posing</li>
-                <li>-subtil tuned  to truly give it life.</li>
+                <li>
+                  -articulations resistance and smoothness set to ensure
+                  reliable posing
+                </li>
+                <li>-subtil tuned to truly give it life.</li>
               </ol>
             </div>
 
@@ -192,8 +192,13 @@ function LandingPage() {
               </div>
               <h3>Perfectability</h3>
               <ol>
-                <li>-Modular assembly allows switching in and out components.</li>
-                <li>-Community's library to add to your build or show off your work.</li>
+                <li>
+                  -Modular assembly allows switching in and out components.
+                </li>
+                <li>
+                  -Community's library to add to your build or show off your
+                  work.
+                </li>
               </ol>
             </div>
           </div>

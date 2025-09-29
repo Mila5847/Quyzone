@@ -1,17 +1,17 @@
-import Support from "../components/Support";
 import Header from "../components/Header";
 import { Parallax } from "react-scroll-parallax";
+import QAndA from "../components/QAndA";
 
-function SupportPage() {
+function ContactPage() {
   return (
     <div>
       <Parallax speed={0}>
         <Header title="CONTACT" />
       </Parallax>
 
-      <Support />
+      <QAndA />
     </div>
   );
 }
 
-export default SupportPage;
+export default ContactPage;

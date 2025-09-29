@@ -19,7 +19,6 @@
   z-index: 1;
 }
 
-
 .howitworks ul li {
   /* This is crucial. It creates a positioning context for the pseudo-element. */
   position: relative;
@@ -28,7 +27,6 @@
   /* Add some bottom margin to the list items for spacing between the lines of text. */
   margin-bottom: 10px;
 }
-
 
 .howitworks ul li::before {
   /* This is the key. It takes the pseudo-element out of the normal document flow */
@@ -45,7 +43,7 @@
   /* Adjust to the height of your SVG */
 
   /* Use the background-image property to point to your SVG file. */
-  background-image: url('/images/decorative/bulletPoint.svg');
+  background-image: url("/images/decorative/bulletPoint.svg");
 
   /* Prevent the image from repeating */
   background-repeat: no-repeat;
@@ -58,6 +56,6 @@
 }
 
 .howitworks ul li:first-child::before {
-  background-image: url('/images/decorative/bulletStem.svg');
+  background-image: url("/images/decorative/bulletStem.svg");
   /* No need to change other properties if the SVGs are the same size */
 }

@@ -45,7 +45,9 @@
   display: inline-grid;
   place-items: center;
   cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .cta-button:hover {

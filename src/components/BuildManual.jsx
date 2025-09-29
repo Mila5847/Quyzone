@@ -22,7 +22,7 @@ function BuildManual() {
         });
       }
     },
-    [location.pathname, navigate],
+    [location.pathname, navigate]
   );
 
   // 👉 Data for first carousel
@@ -43,8 +43,16 @@ function BuildManual() {
 
   // 👉 Data for second carousel
   const carousel2Items = [
-    { type: "video", src: "/videos/manual/anim-a02-back.mp4", alt: "Alt video" },
-    { type: "video", src: "/videos/manual/anim-a02-front.mp4", alt: "Alt video" },
+    {
+      type: "video",
+      src: "/videos/manual/anim-a02-back.mp4",
+      alt: "Alt video",
+    },
+    {
+      type: "video",
+      src: "/videos/manual/anim-a02-front.mp4",
+      alt: "Alt video",
+    },
     { type: "img", src: "/images/manual/alt_view1.jpg", alt: "Alt 1" },
   ];
   const carousel2Captions = [
@@ -57,8 +65,8 @@ function BuildManual() {
     <div className="build-manual">
       <nav className="nav">
         <button onClick={() => scrollTo("how-it-works")}>How It Works</button>
-        <RouterLink to="/design-manual">Design Manual</RouterLink>
-        <RouterLink to="/support">Support</RouterLink>
+        <RouterLink to="/building-manual">Building Manual</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
       </nav>
 
       <br />

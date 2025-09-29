@@ -2,10 +2,10 @@ import { Link as RouterLink, useLocation, useNavigate } from "react-router-dom";
 import { useCallback } from "react";
 import { scroller } from "react-scroll";
 import { Accordion, AccordionItem } from "@szhsin/react-accordion";
-import "../styles/pages/_SupportPage.scss";
-import Contact from "./Contact";
+import "../styles/pages/_ContactPage.scss";
+import ContactForm from "./ContactForm";
 
-function Support() {
+function QAndA() {
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ function Support() {
         });
       }
     },
-    [location.pathname, navigate],
+    [location.pathname, navigate]
   );
 
   const faqs = [
@@ -36,13 +36,12 @@ function Support() {
     <>
       <nav className="nav">
         <button onClick={() => scrollTo("how-it-works")}>How It Works</button>
-        <button onClick={() => scrollTo("gallery")}>Gallery</button>
-        <RouterLink to="/design-manual">Design Manual</RouterLink>
-        <RouterLink to="/support">Support</RouterLink>
+        <RouterLink to="/building-manual">Building Manual</RouterLink>
+        <RouterLink to="/contact">Contact</RouterLink>
       </nav>
 
       <section>
-        <h2>Support</h2>
+        <h2>Contact</h2>
         <p>
           Include frequently asked questions, help guides, or contact options
           here.
@@ -70,9 +69,9 @@ function Support() {
         ))}
       </Accordion>
 
-      <Contact />
+      <ContactForm />
     </>
   );
 }
 
-export default Support;
+export default QAndA;

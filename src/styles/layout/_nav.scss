@@ -24,7 +24,10 @@ nav {
     overflow: hidden;
 
     /* Smooth transitions for all the effects */
-    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease,
+      text-shadow 0.3s ease;
   }
 
   /* Arrow Effect (::before pseudo-element) */

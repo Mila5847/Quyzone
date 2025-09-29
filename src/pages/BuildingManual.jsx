@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import "../styles/pages/_DesignManualPage.scss";
+import "../styles/pages/_BuildingManualPage.scss";
 import Header from "../components/Header";
 import BuildManual from "../components/BuildManual";
 
-export default function DesignManual() {
+export default function BuildingManual() {
   useEffect(() => {
     document.body.classList.add("no-global");
     return () => document.body.classList.remove("no-global");
@@ -16,7 +16,7 @@ export default function DesignManual() {
 
   return (
     <main className="manual-page">
-      <Header title="BUILD MANUAL"/>
+      <Header title="BUILD MANUAL" />
       <BuildManual />
     </main>
   );

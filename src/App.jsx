@@ -9,11 +9,11 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 
 import LandingPage from "./pages/LandingPage";
-import SupportPage from "./pages/SupportPage";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Background from "./components/Background";
 import BackToTop from "./components/BackToTop";
-import DesignManual from "./pages/DesignManual";
+import BuildingManual from "./pages/BuildingManual";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -44,14 +44,14 @@ function MainApp() {
             }
           />
           <Route
-            path="/support"
+            path="/contact"
             element={
               <PageFade>
-                <SupportPage />
+                <ContactPage />
               </PageFade>
             }
           />
-          <Route path="/design-manual" element={<DesignManual />} />
+          <Route path="/building-manual" element={<BuildingManual />} />
         </Route>
       </Routes>
     </AnimatePresence>
