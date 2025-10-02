@@ -3,15 +3,19 @@
    ----------------------------------- */
 
 /* Font Imports (Google Fonts) */
-@use '../abstracts/variables' as *;
+@use '../abstracts/variables'as *;
 @import url('https://fonts.googleapis.com/css2?family=Smythe&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&family=Sofia+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 
 /* Font Stacks */
-$font-smythe: 'Smythe', cursive;
-$font-orbitron: 'Orbitron', sans-serif;
-$font-rajdhani: 'Rajdhani', sans-serif;
-$font-sofia: 'Sofia Sans', sans-serif;
+$font-smythe: 'Smythe',
+cursive;
+$font-orbitron: 'Orbitron',
+sans-serif;
+$font-rajdhani: 'Rajdhani',
+sans-serif;
+$font-sofia: 'Sofia Sans',
+sans-serif;
 
 /* Base Typography */
 body {
@@ -19,6 +23,10 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: $primary-color;
+}
+
+p {
+  text-indent: $text-indent;
 }
 
 /* Headings */
@@ -48,6 +56,8 @@ h2 {
   font-size: $h2-font-size;
   line-height: 0.9;
   color: $secondary-color;
+  text-Shadow: $h2-text-shadow;
+  letter-spacing: $h2-letter-spacing;
 }
 
 .cta {

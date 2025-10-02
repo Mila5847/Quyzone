@@ -2,6 +2,8 @@ $breakpoint-sm: 400px;
 $breakpoint-md: 768px;
 $breakpoint-md: 1200px;
 
+$text-indent: 2em;
+
 //------------------hero section------------------
 $hero-separator-width: 700px;
 $hero-separator-height: 280px;
@@ -34,8 +36,10 @@ $h2-font-weight: 500;
 $h2-font-size: 45px;
 $sub-h2-font-size: 31px;
 $sub-h2-width: 530px;
-$letter-spacing: 0px;
+$h2-letter-spacing: 3px;
 $h2-margin-bottom: 20px;
+$h2-text-shadow: 3px 0 0 #ffffff;
+
 
 $bg-color: #c4b782;
 $pattern: 300px;

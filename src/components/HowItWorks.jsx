@@ -17,7 +17,7 @@ export function HowItWorksPart1() {
 export function HowItWorksPart2() {
   return (
     <div className="howitworks">
-      <p>
+      <p className='text-indent'>
         I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're both
         here. In need of a brand new model kit to build? I hear ya.  At Quyzone you'll find quality
         kits designed by and for every hungry builders—brought to life with a unique cute whimsical
@@ -44,7 +44,7 @@ export function HowItWorksPart2() {
       <div className="video-row video-glueless">
         <VideoPlayer
           style={{ width: '40%' }}
-          src="/videos/decorative/glueless.webm"
+          src="/videos/manual/anim-a02-back.webm"
           caption="3 seconds video"
         />
       </div>
