@@ -59,9 +59,9 @@ function TimeLine() {
     >
       <h2> Me Quy and the Mechabust</h2>
       <q>To go fast, run alone. To go far, walk together.</q>
-      <p> After a professional "imposed period of reflection" came about, I grabbed the opportunity with both hands to begin my work on the Mecha Bust project. It was born out of my biggest passions: storytelling, drawing, sculpting, mechs, 3D printing, and design. </p>
-      <p> A lot of factors lined up to push the dream past the starting line: i had to have the ressources, free time, mental and physical energy and especially the urgency.  I would never have a chance again to do this: design my very own customizable model kit of the bust of a mech.</p>
-      <p> I had a general idea but wasn't sure exactly how but I just truted the iterative process.  I'm still figuring it out right now.</p>
+      <p className='text-indent'> After a professional "imposed period of reflection" came about, I grabbed the opportunity with both hands to begin my work on the Mecha Bust project. It was born out of my biggest passions: storytelling, drawing, sculpting, mechs, 3D printing, and design. </p>
+      <p className='text-indent'> A lot of factors lined up to push the dream past the starting line: i had to have the ressources, free time, mental and physical energy and especially the urgency.  I would never have a chance again to do this: design my very own customizable model kit of the bust of a mech.</p>
+      <p className='text-indent'> I had a general idea but wasn't sure exactly how but I just truted the iterative process.  I'm still figuring it out right now.</p>
 
       <Timeline position="right" sx={{ pl: 0, ml: 0 }}>
         <TimelineItem>
@@ -110,7 +110,7 @@ function TimeLine() {
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
               🔧Pioneer-2
             </Typography>
-            <Typography sx={{ width: { xs: '30rem' } }}>🔧Didn’t win last year? All the more reason to go at it again. I revisited my original model, but this time I wasn’t starting from scratch. I rebuilt it to be far more modular designed for customization and community remixing.</Typography>
+            <Typography sx={{ width: { xs: '30rem' } }}>Didn’t win last year? All the more reason to go at it again. I revisited my original model, but this time I wasn’t starting from scratch. I rebuilt it to be far more modular designed for customization and community remixing.</Typography>
           </TimelineContent>
         </TimelineItem>
 
