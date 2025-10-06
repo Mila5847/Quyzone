@@ -43,7 +43,7 @@ function MediaCarousel({ itemsData, captions, title }) {
     const v = videoRefs.current[activeIndex];
     if (v) {
       const p = v.play();
-      if (p && typeof p.then === 'function') p.catch(() => { });
+      if (p && typeof p.then === 'function') p.catch(() => {});
     }
   }, [activeIndex]);
 

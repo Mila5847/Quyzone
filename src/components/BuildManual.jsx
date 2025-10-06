@@ -11,17 +11,9 @@ function BuildManual() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location.pathname]);
 
-
-
   // 👉 Data for carousel 0
-  const carousel0Items = [
-    { type: 'img', src: '/images/manual/ori_receiver.jpg', alt: 'Slide 1' },
-
-  ];
-  const carousel0Captions = [
-    'Part A-0',
-
-  ];
+  const carousel0Items = [{ type: 'img', src: '/images/manual/ori_receiver.jpg', alt: 'Slide 1' }];
+  const carousel0Captions = ['Part A-0'];
 
   // 👉 Data for carousel 1
   const carousel1Items = [
@@ -51,7 +43,6 @@ function BuildManual() {
       src: '/videos/manual/anim-a02-front.mp4',
       alt: 'Alt video',
     },
-
   ];
   const carousel2Captions = [
     'Step 3 \u27A4 A-0 + A-3',

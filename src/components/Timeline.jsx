@@ -7,6 +7,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import '../styles/components/_timeline.scss';
 
 function LeftLabel({ lines }) {
   return (
@@ -94,6 +95,17 @@ function TimeLine() {
             <Typography sx={{ width: { xs: '30rem' } }}>
               I began designing, testing, and iterating slowly with whatever resources I could get
               my hands on.
+              <div className="timeline-row">
+                <div className="timeline-column">
+                  <img className="timeline-img" src="/images/decorative/placeholder.jpg" alt="" />
+                </div>
+                <div className="timeline-column">
+                  <img className="timeline-img" src="/images/decorative/placeholder.jpg" alt="" />
+                </div>
+                <div className="timeline-column">
+                  <img className="timeline-img" src="/images/decorative/placeholder.jpg" alt="" />
+                </div>
+              </div>
             </Typography>
           </TimelineContent>
         </TimelineItem>
