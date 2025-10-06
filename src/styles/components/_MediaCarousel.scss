@@ -1,3 +1,5 @@
+@use '../abstracts/variables'as *;
+
 .carousel {
   position: relative;
   width: 489px;
@@ -37,17 +39,18 @@
 }
 
 .carousel-number {
+  font-family: radhani, sans-serif;
   position: absolute;
-  min-width: 90px;
+  min-width: $media-carousel-min-width;
   top: -17px;
   left: -18px;
   background: black;
   color: white;
   padding: 0px 5px;
-  border: 0px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   border-radius: 15px;
-  font-size: 29px;
-  width: 50px;
+  line-height: $media-line-height;
+  font-size: $media-font-size;
   text-align: center;
 }
 
