@@ -20,7 +20,7 @@ function MediaCarousel({ itemsData, captions, title }) {
             ) : (
               <video
                 className="media"
-                controls
+               
                 muted
                 playsInline
                 preload="metadata"
