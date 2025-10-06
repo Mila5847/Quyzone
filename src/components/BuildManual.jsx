@@ -1,29 +1,15 @@
 import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
-import { useCallback } from 'react';
-import { scroller } from 'react-scroll';
+import { useEffect } from 'react';
 import MediaCarousel from './MediaCarousel';
 import '../styles/components/_BuildManual.scss';
+import Nav from './Nav';
 
 function BuildManual() {
   const location = useLocation();
-  const navigate = useNavigate();
 
-  const scrollTo = useCallback(
-    (name) => {
-      if (location.pathname !== '/') {
-        // Go to LandingPage and let it scroll via useEffect
-        navigate('/', { state: { scrollTarget: name } });
-      } else {
-        // If already on LandingPage, scroll immediately
-        scroller.scrollTo(name, {
-          smooth: 'easeInOutQuart',
-          duration: 600,
-          offset: -80,
-        });
-      }
-    },
-    [location.pathname, navigate],
-  );
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
 
   // 👉 Data for first carousel
   const carousel1Items = [
@@ -63,11 +49,7 @@ function BuildManual() {
 
   return (
     <div className="build-manual">
-      <nav className="nav">
-        <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
-        <RouterLink to="/building-manual">Building Manual</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-      </nav>
+      <Nav />
 
       <br />
 

@@ -20,7 +20,6 @@ function MediaCarousel({ itemsData, captions, title }) {
             ) : (
               <video
                 className="media"
-               
                 muted
                 playsInline
                 preload="metadata"
@@ -65,41 +64,46 @@ function MediaCarousel({ itemsData, captions, title }) {
         <p className="media-caption">{captions[activeIndex]}</p>
       </div>
 
-      <button
-        type="button"
-        className="btn-prev"
-        aria-label="Previous"
-        onClick={() => carouselRef.current?.slidePrev()}
-        onMouseEnter={() => setHoverPrev(true)}
-        onMouseLeave={() => setHoverPrev(false)}
-      >
-        <img
-          src={
-            hoverPrev
-              ? '/images/ui/buttonGalleryBack-hover.svg'
-              : '/images/ui/buttonGalleryBack.svg'
-          }
-          alt=""
-        />
-      </button>
+      {/* Hide prev button if on first slide */}
+      {activeIndex > 0 && (
+        <button
+          type="button"
+          className="btn-prev"
+          aria-label="Previous"
+          onClick={() => carouselRef.current?.slidePrev()}
+          onMouseEnter={() => setHoverPrev(true)}
+          onMouseLeave={() => setHoverPrev(false)}
+        >
+          <img
+            src={
+              hoverPrev
+                ? '/images/ui/buttonGalleryBack-hover.svg'
+                : '/images/ui/buttonGalleryBack.svg'
+            }
+            alt=""
+          />
+        </button>
+      )}
 
-      <button
-        type="button"
-        className="btn-next"
-        aria-label="Next"
-        onClick={() => carouselRef.current?.slideNext()}
-        onMouseEnter={() => setHoverNext(true)}
-        onMouseLeave={() => setHoverNext(false)}
-      >
-        <img
-          src={
-            hoverNext
-              ? '/images/ui/buttonGalleryForward-hover.svg'
-              : '/images/ui/buttonGalleryForward.svg'
-          }
-          alt=""
-        />
-      </button>
+      {activeIndex < total - 1 && (
+        <button
+          type="button"
+          className="btn-next"
+          aria-label="Next"
+          onClick={() => carouselRef.current?.slideNext()}
+          onMouseEnter={() => setHoverNext(true)}
+          onMouseLeave={() => setHoverNext(false)}
+        >
+          <img
+            src={
+              hoverNext
+                ? '/images/ui/buttonGalleryForward-hover.svg'
+                : '/images/ui/buttonGalleryForward.svg'
+            }
+            alt=""
+          />
+        </button>
+      )}
     </div>
   );
 }

@@ -6,34 +6,19 @@ import { Element, Link as ScrollLink, scroller } from 'react-scroll';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/hero';
-import {
-  HowItWorksPart1,
-  HowItWorksPart2,
-  HowItWorksPart3,
-  HowItWorksPart4,
-} from '../components/HowItWorks';
+import { HowItWorksPart1, HowItWorksPart2, HowItWorksPart3 } from '../components/HowItWorks';
 
 import '../styles/layout/_nav.scss';
 import '../styles/pages/_LandingPage.scss';
 import TimeLine from '../components/Timeline';
+import Nav from '../components/Nav';
 
 function LandingPage() {
   const location = useLocation();
 
-  // If navigated here with { state: { scrollTarget } }, scroll after mount
   useEffect(() => {
-    const target = location.state?.scrollTarget;
-    if (target) {
-      setTimeout(() => {
-        scroller.scrollTo(target, {
-          smooth: 'easeInOutQuart',
-          duration: 600,
-          offset: -80,
-        });
-        window.history.replaceState({}, document.title);
-      }, 0);
-    }
-  }, [location.key]);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
 
   return (
     <div className="landing-page">
@@ -69,35 +54,7 @@ function LandingPage() {
         </Parallax>
       </div>
 
-      <nav className="nav section ">
-        <div>
-          <ScrollLink
-            className="menu-button"
-            activeClass="active"
-            to="how-it-works"
-            spy
-            smooth="easeInOutQuart"
-            duration={600}
-            offset={-80}
-          >
-            How It Works
-          </ScrollLink>
-
-          {/* <ScrollLink
-            activeClass="active"
-            to="gallery"
-            spy
-            smooth="easeInOutQuart"
-            duration={600}
-            offset={-80}
-          >
-            Gallery
-          </ScrollLink> */}
-
-          <RouterLink to="/building-manual">Building Manual</RouterLink>
-          <RouterLink to="/contact">Contact</RouterLink>
-        </div>
-      </nav>
+      <Nav />
       <div className="divider"></div>
 
       <Element name="how-it-works">
@@ -172,7 +129,7 @@ function LandingPage() {
             </div>
 
             {/* 3 centered below */}
-            <div className="hiw-item hiw-item--full">
+            <div className="hiw-item">
               <div style={{ mixBlendMode: 'multiply' }}>
                 <Parallax speed={0}>
                   <HowItWorksPart3
