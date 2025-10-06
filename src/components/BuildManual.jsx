@@ -25,6 +25,18 @@ function BuildManual() {
     [location.pathname, navigate],
   );
 
+
+
+  // 👉 Data for carousel 0
+  const carousel0Items = [
+    { type: 'img', src: '/images/manual/pres_coverBot.jpg', alt: 'Slide 1' },
+
+  ];
+  const carousel0Captions = [
+    'Cover bottom — presentation',
+
+  ];
+
   // 👉 Data for first carousel
   const carousel1Items = [
     { type: 'img', src: '/images/manual/pres_coverBot.jpg', alt: 'Slide 1' },
@@ -79,12 +91,16 @@ function BuildManual() {
         </h3>
 
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="A1" />
+          <MediaCarousel itemsData={carousel0Items} captions={carousel0Captions} title="A-99" />
+        </section>
+
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="A-1" />
         </section>
 
         {/* Second carousel for additional media */}
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="A2" />
+          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="A-2" />
         </section>
       </section>
     </div>
