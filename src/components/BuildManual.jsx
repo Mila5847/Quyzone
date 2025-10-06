@@ -29,32 +29,32 @@ function BuildManual() {
 
   // 👉 Data for carousel 0
   const carousel0Items = [
-    { type: 'img', src: '/images/manual/pres_coverBot.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori_receiver.jpg', alt: 'Slide 1' },
 
   ];
   const carousel0Captions = [
-    'Cover bottom — presentation',
+    'Part A-0',
 
   ];
 
-  // 👉 Data for first carousel
+  // 👉 Data for carousel 1
   const carousel1Items = [
     { type: 'img', src: '/images/manual/pres_coverBot.jpg', alt: 'Slide 1' },
-    { type: 'img', src: '/images/manual/ori_receiver.jpg', alt: 'Slide 2' },
     { type: 'img', src: '/images/manual/ori_coverBot.jpg', alt: 'Slide 3' },
     { type: 'video', src: '/videos/manual/anim-coverBotR.mp4', alt: 'Slide 4' },
     { type: 'video', src: '/videos/manual/anim-coverBotL.mp4', alt: 'Slide 5' },
   ];
   const carousel1Captions = [
-    'Cover bottom — presentation',
-    'Receiver — orientation reference',
-    'Cover bottom — orientation',
-    'Animation: CoverBot movement (right)',
-    'Animation: CoverBot movement (left)',
+    'Step 2 \u27A4 A-0 + A-1',
+    'Part A-1(R)',
+    'A-1(R) \u27A4 A-0',
+    'A-1(L) \u27A4 A-0',
   ];
 
-  // 👉 Data for second carousel
+  // 👉 Data for carousel 2
   const carousel2Items = [
+    { type: 'img', src: '/images/manual/pres-3.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/A-3.jpg', alt: 'Slide 1' },
     {
       type: 'video',
       src: '/videos/manual/anim-a02-back.mp4',
@@ -65,12 +65,13 @@ function BuildManual() {
       src: '/videos/manual/anim-a02-front.mp4',
       alt: 'Alt video',
     },
-    { type: 'img', src: '/images/manual/alt_view1.jpg', alt: 'Alt 1' },
+
   ];
   const carousel2Captions = [
-    'Alternative view — 1',
-    'Alternative view — 2',
-    'Alternative animation',
+    'Step 3 \u27A4 A-0 + A-3',
+    'Part A-3',
+    'A-3 \u27A4 A-0',
+    'A-3 \u27A4 A-0',
   ];
 
   return (
@@ -91,16 +92,16 @@ function BuildManual() {
         </h3>
 
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel0Items} captions={carousel0Captions} title="A-99" />
+          <MediaCarousel itemsData={carousel0Items} captions={carousel0Captions} title="1" />
         </section>
 
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="A-1" />
+          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="2" />
         </section>
 
         {/* Second carousel for additional media */}
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="A-2" />
+          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="3" />
         </section>
       </section>
     </div>
