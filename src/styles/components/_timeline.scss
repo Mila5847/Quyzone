@@ -1,0 +1,29 @@
+.timeline-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-column {
+  flex: 0 0 auto;
+}
+
+.timeline-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 1530px) {
+  .timeline-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-img {
+    width: 250px;
+    height: 250px;
+  }
+}

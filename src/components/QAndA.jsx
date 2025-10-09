@@ -1,30 +1,16 @@
-import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
-import { useCallback } from 'react';
-import { scroller } from 'react-scroll';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 import '../styles/pages/_ContactPage.scss';
 import ContactForm from './ContactForm';
+import { useEffect } from 'react';
+import Nav from './Nav';
 
 function QAndA() {
   const location = useLocation();
-  const navigate = useNavigate();
 
-  const scrollTo = useCallback(
-    (name) => {
-      if (location.pathname !== '/') {
-        // Go to LandingPage and let it scroll via useEffect
-        navigate('/', { state: { scrollTarget: name } });
-      } else {
-        // If already on LandingPage, scroll immediately
-        scroller.scrollTo(name, {
-          smooth: 'easeInOutQuart',
-          duration: 600,
-          offset: -80,
-        });
-      }
-    },
-    [location.pathname, navigate],
-  );
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
 
   const faqs = [
     { q: 'What is Lorem Ipsum?', a: 'Lorem ipsum dolor sit amet...' },
@@ -34,11 +20,7 @@ function QAndA() {
 
   return (
     <>
-      <nav className="nav">
-        <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
-        <RouterLink to="/building-manual">Building Manual</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-      </nav>
+      <Nav />
 
       <section>
         <h2>Contact</h2>

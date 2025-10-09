@@ -1,41 +1,19 @@
 import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
-import { useCallback } from 'react';
-import { scroller } from 'react-scroll';
+import { useEffect } from 'react';
 import MediaCarousel from './MediaCarousel';
 import '../styles/components/_BuildManual.scss';
+import Nav from './Nav';
 
 function BuildManual() {
   const location = useLocation();
-  const navigate = useNavigate();
 
-  const scrollTo = useCallback(
-    (name) => {
-      if (location.pathname !== '/') {
-        // Go to LandingPage and let it scroll via useEffect
-        navigate('/', { state: { scrollTarget: name } });
-      } else {
-        // If already on LandingPage, scroll immediately
-        scroller.scrollTo(name, {
-          smooth: 'easeInOutQuart',
-          duration: 600,
-          offset: -80,
-        });
-      }
-    },
-    [location.pathname, navigate],
-  );
-
-
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
 
   // 👉 Data for carousel 0
-  const carousel0Items = [
-    { type: 'img', src: '/images/manual/ori_receiver.jpg', alt: 'Slide 1' },
-
-  ];
-  const carousel0Captions = [
-    'Part A-0',
-
-  ];
+  const carousel0Items = [{ type: 'img', src: '/images/manual/ori_receiver.jpg', alt: 'Slide 1' }];
+  const carousel0Captions = ['Part A-0'];
 
   // 👉 Data for carousel 1
   const carousel1Items = [
@@ -65,7 +43,6 @@ function BuildManual() {
       src: '/videos/manual/anim-a02-front.mp4',
       alt: 'Alt video',
     },
-
   ];
   const carousel2Captions = [
     'Step 3 \u27A4 A-0 + A-3',
@@ -76,11 +53,7 @@ function BuildManual() {
 
   return (
     <div className="build-manual">
-      <nav className="nav">
-        <button onClick={() => scrollTo('how-it-works')}>How It Works</button>
-        <RouterLink to="/building-manual">Building Manual</RouterLink>
-        <RouterLink to="/contact">Contact</RouterLink>
-      </nav>
+      <Nav />
 
       <br />
 
