@@ -1,10 +1,22 @@
 .howitworks {
+  margin-bottom: 30px;
+
+  p {
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  hr {
+    width: 400px;
+  }
+
   .howitworks-row {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 0;
     text-align: left;
+
   }
 
   .howitworks-image {
@@ -13,6 +25,7 @@
   }
 
   .howitworks-text {
+
     width: 50%;
   }
 
@@ -34,7 +47,8 @@
   margin-left: calc(30% - 50vw);
   margin-right: calc(30% - 50vw);
   background: #fff;
-  padding: 2.25rem 0 2rem; /* a bit taller like the mock */
+  padding: 2.25rem 0 2rem;
+  /* a bit taller like the mock */
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 
@@ -48,7 +62,8 @@
     grid-template-columns: repeat(5, minmax(150px, 1fr));
     justify-items: center;
     align-items: start;
-    gap: 2.5rem; /* more breathing room between items */
+    gap: 2.5rem;
+    /* more breathing room between items */
   }
 
   .feature {
@@ -75,9 +90,10 @@
 
   .feature__desc {
     margin: 0;
-    font-size: 0.9rem;
+    /*font-size: 0.9rem;*/
     line-height: 1.35;
-    color: #222; /* strong black like the reference */
+    color: #222;
+    /* strong black like the reference */
   }
 
   .feature__list {
@@ -111,10 +127,12 @@
 
   @media (max-width: 640px) {
     padding: 1.5rem 0;
+
     .white-banner__inner {
       grid-template-columns: 1fr;
       gap: 1.5rem;
     }
+
     .feature {
       max-width: 280px;
     }

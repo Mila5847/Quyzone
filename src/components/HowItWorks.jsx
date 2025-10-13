@@ -18,23 +18,19 @@ export function HowItWorksPart1() {
         />
 
         <div className="howitworks-text">
-          <p>
+          <p className=' text-indent'>
             I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're
-            both here.
-          </p>
-          <p>
-            Quyzone has quality kits designed by and for every hungry builder, brought to life with
-            a unique, cute, whimsical touch! Our first model, the Pioneer-3 sub, is pint-sized,
+            both here.Quyzone has quality kits designed by and for every hungry builder, brought to life with
+            a unique, cute, whimsical touch! Our first model, the <strong>Pioneer-3</strong> sub, is pint-sized,
             compact, and ready for deep-sea epicness.
           </p>
-          <ul>
-            <li>Printable: friendly for even smaller resin printers.</li>
-            <li>Posable: looks awesome on shelf, thanks to precision joints.</li>
-            <li>
-              Perfectible: features modular assembly allowing for easy upgrades and deep
-              customization.
-            </li>
-          </ul>
+          <hr />
+          <p>→ <strong>Printable:</strong> friendly for even smaller resin printers.</p>
+          <p>→ <strong>Posable:</strong>  looks awesome on shelf with precision joints.</p>
+          <p>→ <strong>Perfectible:</strong> features modular assembly allowing for easy upgrades and deep
+            customization.
+          </p>
+
         </div>
       </div>
     </div>
@@ -56,15 +52,14 @@ export function HowItWorksPart2() {
           <div className="feature">
             <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
             <p className="feature__desc">
-              <strong>Unique Aesthetic</strong> Fresh stylized IP as mechanically detailed as
-              whimsical.
+              <strong>Unique Aesthetic</strong> Fresh IP as detailed as whimsical.
             </p>
           </div>
 
           <div className="feature">
             <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
             <p className="feature__desc">
-              Small Resin Printer? No problem. Parts designed for <strong>Small Footprints</strong>.
+              Small Resin Printer? Parts are designed for <strong>Small Footprints</strong>.
             </p>
           </div>
 
@@ -78,10 +73,10 @@ export function HowItWorksPart2() {
           <div className="feature">
             <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
             <ul className="feature__list">
-              <li>No Glue Needed</li>
-              <li>precision snap</li>
-              <li>tactile bliss</li>
-              <li>“Click”</li>
+              <p>→ <strong>No Glue Needed</strong></p>
+              <p>→ precision snap</p>
+              <p>→ tactile bliss</p>
+
             </ul>
           </div>
         </div>
