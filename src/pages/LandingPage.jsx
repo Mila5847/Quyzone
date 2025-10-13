@@ -55,7 +55,9 @@ function LandingPage() {
       </div>
 
       <Nav />
-      <div className="divider"></div>
+      <Parallax speed={0}>
+        <div className="divider"></div>
+      </Parallax>
 
       <Element name="how-it-works">
         <section className="section container">
