@@ -66,91 +66,16 @@ function LandingPage() {
           </Parallax>
         </section>
 
-        <section
-          id="how-it-works"
-          className="section container"
-          style={{ mixBlendMode: 'multiply' }}
-        >
+        <section id="how-it-works" className="section container">
           <Parallax speed={0}>
             <HowItWorksPart2 />
           </Parallax>
         </section>
 
         <section id="how-it-works" className="section container">
-          <Parallax speed={0}>
-            <div className="howitworks">
-              <h2>The Quyzone Signature</h2>
-            </div>
+          <Parallax speed={-5}>
+            <img src="/images/decorative/exploded_01.png" />
           </Parallax>
-        </section>
-
-        <section className="section container">
-          <div className="hiw-grid">
-            {/* 1 */}
-            <div className="hiw-item">
-              <div style={{ mixBlendMode: 'multiply' }}>
-                <Parallax speed={0}>
-                  <HowItWorksPart3
-                    videos={[
-                      {
-                        src: '/videos/switch_video_2.webm',
-                        caption: '3 seconds video',
-                      },
-                    ]}
-                  />
-                </Parallax>
-              </div>
-              <h3>Printability</h3>
-              <ol>
-                <li>-designed with ease of print in mind</li>
-                <li>-largest pieces fit conveniently on the smaller of machines.</li>
-                <li>-More time building less time troubleshooting.</li>
-              </ol>
-            </div>
-
-            {/* 2 */}
-            <div className="hiw-item">
-              <div style={{ mixBlendMode: 'multiply' }}>
-                <Parallax speed={0}>
-                  <HowItWorksPart3
-                    videos={[
-                      {
-                        src: '/videos/switch_video_3.webm',
-                        caption: '3 seconds video',
-                      },
-                    ]}
-                  />
-                </Parallax>
-              </div>
-              <h3>Poseability</h3>
-              <ol>
-                <li>-meant for expressiveness</li>
-                <li>-articulations resistance and smoothness set to ensure reliable posing</li>
-                <li>-subtil tuned to truly give it life.</li>
-              </ol>
-            </div>
-
-            {/* 3 centered below */}
-            <div className="hiw-item">
-              <div style={{ mixBlendMode: 'multiply' }}>
-                <Parallax speed={0}>
-                  <HowItWorksPart3
-                    videos={[
-                      {
-                        src: '/videos/switch_video_3.webm',
-                        caption: '3 seconds video',
-                      },
-                    ]}
-                  />
-                </Parallax>
-              </div>
-              <h3>Perfectability</h3>
-              <ol>
-                <li>-Modular assembly allows switching in and out components.</li>
-                <li>-Community's library to add to your build or show off your work.</li>
-              </ol>
-            </div>
-          </div>
         </section>
 
         <section className="section container">

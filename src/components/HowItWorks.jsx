@@ -8,8 +8,35 @@ export function HowItWorksPart1() {
   return (
     <div className="howitworks">
       <h2>What is the Product?</h2>
-      <q>Or Why You'll love Building My kit</q>
-      <img src="/images/decorative/me.png" alt="mascot" />
+      <q>Or Why You'll Love Building My Kit</q>
+
+      <div className="howitworks-row">
+        <img
+          src="/images/decorative/ortho_01.png"
+          alt="Pioneer-3 model"
+          className="howitworks-image"
+        />
+
+        <div className="howitworks-text">
+          <p>
+            I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're
+            both here.
+          </p>
+          <p>
+            Quyzone has quality kits designed by and for every hungry builder, brought to life with
+            a unique, cute, whimsical touch! Our first model, the Pioneer-3 sub, is pint-sized,
+            compact, and ready for deep-sea epicness.
+          </p>
+          <ul>
+            <li>Printable: friendly for even smaller resin printers.</li>
+            <li>Posable: looks awesome on shelf, thanks to precision joints.</li>
+            <li>
+              Perfectible: features modular assembly allowing for easy upgrades and deep
+              customization.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
@@ -17,40 +44,52 @@ export function HowItWorksPart1() {
 export function HowItWorksPart2() {
   return (
     <div className="howitworks">
-      <p className="text-indent">
-        I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're both
-        here. In need of a brand new model kit to build? I hear ya.  At Quyzone you'll find quality
-        kits designed by and for every hungry builders—brought to life with a unique cute whimsical
-        touch! How about kicking things off with this little guy? The <strong> Pioneer-3</strong> is
-        a pint-sized sub, cute, compact, and ready to dive built for deepsea epicness.
-      </p>
-      <ul>
-        <li>
-          🎁"PayWhatYouWant" to start off -yup!- Go ahead and pick it up digitally. Support the
-          project as you see fit.
-        </li>
-        <li>
-          🔧Sick of copy-paste bland looks? The beast hums mechanical designs and exudes charming
-          personality.
-        </li>
-        <li>
-          🧊Small resin printer? No problem. The largest pieces are designed to fit inside a 3"x3"
-          footprint.
-        </li>
-        <li>📘Lacking a PHD in model making? Got you covered with my animated manual.</li>
-        <li>&nbsp; &nbsp; No glue → precision snap → tactile bliss → BOOM.donezo</li>
-      </ul>
+      <div className="white-banner">
+        <div className="white-banner__inner">
+          <div className="feature">
+            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <p className="feature__desc">
+              <strong>“PayWhatYouWant”</strong> Support the project as you see fit.
+            </p>
+          </div>
 
-      <div className="video-row video-glueless">
-        <VideoPlayer
-          style={{ width: '40%' }}
-          src="/videos/manual/anim-a02-back.webm"
-          caption="3 seconds video"
-        />
+          <div className="feature">
+            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <p className="feature__desc">
+              <strong>Unique Aesthetic</strong> Fresh stylized IP as mechanically detailed as
+              whimsical.
+            </p>
+          </div>
+
+          <div className="feature">
+            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <p className="feature__desc">
+              Small Resin Printer? No problem. Parts designed for <strong>Small Footprints</strong>.
+            </p>
+          </div>
+
+          <div className="feature">
+            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <p className="feature__desc">
+              New to Model Making? My <strong>Animated Manual</strong> has you covered.
+            </p>
+          </div>
+
+          <div className="feature">
+            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <ul className="feature__list">
+              <li>No Glue Needed</li>
+              <li>precision snap</li>
+              <li>tactile bliss</li>
+              <li>“Click”</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
 import PropTypes from 'prop-types';
 
 export function HowItWorksPart3({ videos = [], className = '' }) {
@@ -88,12 +127,3 @@ HowItWorksPart3.propTypes = {
   ),
   className: PropTypes.string,
 };
-
-export function HowItWorksPart4() {
-  return (
-    <div className="howitworks">
-      <h2>Me Quy and the Mechabust</h2>
-      <TimeLine />
-    </div>
-  );
-}

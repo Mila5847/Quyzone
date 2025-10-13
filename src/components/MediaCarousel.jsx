@@ -48,8 +48,8 @@ function MediaCarousel({ itemsData, captions, title }) {
   }, [activeIndex]);
 
   // add helpers (optional but clean)
-const atStart = activeIndex === 0;
-const atEnd = activeIndex === total - 1;
+  const atStart = activeIndex === 0;
+  const atEnd = activeIndex === total - 1;
 
 
   return (
@@ -69,45 +69,45 @@ const atEnd = activeIndex === total - 1;
         <p className="media-caption">{captions[activeIndex]}</p>
       </div>
 
-    <button
-  type="button"
-  className="btn-prev"
-  aria-label="Previous"
-  onClick={() => !atStart && carouselRef.current?.slidePrev()}
-  onMouseEnter={() => setHoverPrev(true)}
-  onMouseLeave={() => setHoverPrev(false)}
->
-  <img
-    src={
-      atStart
-        ? '/images/ui/buttonGalleryBack-greyed.svg' // show alt on first slide
-        : hoverPrev
-        ? '/images/ui/buttonGalleryBack-hover.svg'
-        : '/images/ui/buttonGalleryBack.svg'
-    }
-    alt=""
-  />
-</button>
+      <button
+        type="button"
+        className="btn-prev"
+        aria-label="Previous"
+        onClick={() => !atStart && carouselRef.current?.slidePrev()}
+        onMouseEnter={() => setHoverPrev(true)}
+        onMouseLeave={() => setHoverPrev(false)}
+      >
+        <img
+          src={
+            atStart
+              ? '/images/ui/buttonGalleryBack-greyed.svg' // show alt on first slide
+              : hoverPrev
+                ? '/images/ui/buttonGalleryBack-hover.svg'
+                : '/images/ui/buttonGalleryBack.svg'
+          }
+          alt=""
+        />
+      </button>
 
-<button
-  type="button"
-  className="btn-next"
-  aria-label="Next"
-  onClick={() => !atEnd && carouselRef.current?.slideNext()}
-  onMouseEnter={() => setHoverNext(true)}
-  onMouseLeave={() => setHoverNext(false)}
->
-  <img
-    src={
-      atEnd
-        ? '/images/ui/buttonGalleryForward-greyed.svg' // only grey on last slide
-        : hoverNext
-        ? '/images/ui/buttonGalleryForward-hover.svg'
-        : '/images/ui/buttonGalleryForward.svg'
-    }
-    alt=""
-  />
-</button>
+      <button
+        type="button"
+        className="btn-next"
+        aria-label="Next"
+        onClick={() => !atEnd && carouselRef.current?.slideNext()}
+        onMouseEnter={() => setHoverNext(true)}
+        onMouseLeave={() => setHoverNext(false)}
+      >
+        <img
+          src={
+            atEnd
+              ? '/images/ui/buttonGalleryForward-greyed.svg' // only grey on last slide
+              : hoverNext
+                ? '/images/ui/buttonGalleryForward-hover.svg'
+                : '/images/ui/buttonGalleryForward.svg'
+          }
+          alt=""
+        />
+      </button>
 
     </div>
   );

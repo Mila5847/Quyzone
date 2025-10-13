@@ -27,3 +27,23 @@
     height: 250px;
   }
 }
+
+.mechabust-content {
+  /* wide, centered row */
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: minmax(520px, 1fr) auto; /* text left, image right */
+  align-items: start;
+  column-gap: clamp(1.25rem, 4vw, 3rem);
+  position: relative;
+}
+
+.img {
+  max-width: 0;
+}
+
+
+

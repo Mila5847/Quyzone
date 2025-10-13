@@ -58,26 +58,29 @@ function TimeLine() {
         textAlign: 'left',
       }}
     >
-      <h2> Me Quy and the Mechabust</h2>
+     <div className="mechabust-section">
+  <div className="mechabust-content">
+    <div className="mechabust-text">
+      <h2>Me Quy and the Mechabust</h2>
       <q>To go fast, run alone. To go far, walk together.</q>
+
       <p className="text-indent">
-        {' '}
-        After a professional "imposed period of reflection" came about, I grabbed the opportunity
-        with both hands to begin my work on the Mecha Bust project. It was born out of my biggest
-        passions: storytelling, drawing, sculpting, mechs, 3D printing, and design.{' '}
+        Like many, I went through a period of “professional reflection” in 2019. Bored out of my mind,
+        I grabbed the opportunity to begin work on the Mechabust project.
       </p>
       <p className="text-indent">
-        {' '}
-        A lot of factors lined up to push the dream past the starting line: i had to have the
-        ressources, free time, mental and physical energy and especially the urgency. I would never
-        have a chance again to do this: design my very own customizable model kit of the bust of a
-        mech.
+        This kit was born directly out of my biggest passions: storytelling, drawing, sculpting, mechs,
+        3D printing, and design. Many factors lined up to push this dream past the starting line: the time,
+        energy, and, most importantly, the urgency. I knew I might never have this chance again; to design my
+        very own customizable model kit of a mech bust. From that moment on, I simply trusted the iterative
+        creative process to bring it to life.
       </p>
-      <p className="text-indent">
-        {' '}
-        I had a general idea but wasn't sure exactly how but I just truted the iterative process.
-        I'm still figuring it out right now.
-      </p>
+    </div>
+
+    <img src="/images/decorative/me.png" alt="mascot" className="mechabust-image" />
+  </div>
+</div>
+
 
       <Timeline position="right" sx={{ pl: 0, ml: 0 }}>
         <TimelineItem>

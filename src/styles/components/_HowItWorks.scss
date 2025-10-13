@@ -1,26 +1,122 @@
-.howitworks img {
-  margin: auto;
+.howitworks {
+  .howitworks-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    text-align: left;
+  }
+
+  .howitworks-image {
+    width: 50%;
+    height: auto;
+  }
+
+  .howitworks-text {
+    width: 50%;
+  }
+
+  @media (max-width: 1020px) {
+    .howitworks-row {
+      flex-direction: column;
+      gap: 1.5rem;
+      text-align: center;
+    }
+
+    .howitworks-image,
+    .howitworks-text {
+      width: 100%;
+    }
+  }
 }
 
-/* Ensure the section itself doesn't block the backdrop 
-#how-it-works {
-  background: transparent;}
-  /* important: let the backdrop show through */
+.white-banner {
+  margin-left: calc(30% - 50vw);
+  margin-right: calc(30% - 50vw);
+  background: #fff;
+  padding: 2.25rem 0 2rem; /* a bit taller like the mock */
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 
-.blend-multiply {
-  mix-blend-mode: multiply;
-  /* applies on the transformed Parallax wrapper */
-}
+  .white-banner__inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1rem;
 
-/* Optional: keep head clearly above blended bits */
-.howitworks-head {
-  position: relative;
-  z-index: 1;
-}
+    /* five even columns, centered content */
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    justify-items: center;
+    align-items: start;
+    gap: 2.5rem; /* more breathing room between items */
+  }
 
-.howitworks ul li {
-  list-style-type: square;
-  /* or circle, square, none */
-  margin-left: 20px;
-  font-weight: 400;
+  .feature {
+    /* stack icon over text, centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .feature__icon {
+    width: 80%;
+    margin-bottom: 0.65rem;
+    object-fit: contain;
+  }
+
+  .feature__title {
+    font-weight: 800;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    margin-bottom: 0.35rem;
+  }
+
+  .feature__desc {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.35;
+    color: #222; /* strong black like the reference */
+  }
+
+  .feature__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      font-size: 0.9rem;
+      line-height: 1.35;
+      margin: 0.15rem 0;
+
+      position: relative;
+      padding-left: 1.05rem;
+
+      &::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .white-banner__inner {
+      grid-template-columns: repeat(3, minmax(150px, 1fr));
+      gap: 2rem 1.5rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 1.5rem 0;
+    .white-banner__inner {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .feature {
+      max-width: 280px;
+    }
+  }
 }
