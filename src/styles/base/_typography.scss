@@ -115,3 +115,11 @@ strong {
 .font-sofia {
   font-family: $font-sofia;
 }
+
+q {
+  font-style: italic;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $q-margin-bottom;
+}

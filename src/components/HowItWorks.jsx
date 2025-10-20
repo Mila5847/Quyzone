@@ -20,7 +20,7 @@ export function HowItWorksPart1() {
         <div className="howitworks-text">
           <p className=' text-indent'>
             I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're
-            both here. Quyzone has quality <strong>resin</strong> kits designed by and for every hungry builder, brought to life with
+            both here. Quyzone offers high-quality files kits for <strong>resin printers</strong> designed by and for every hungry builder, brought to life with
             a unique, cute, whimsical touch! Our first model, the <strong>Pioneer-3</strong> sub, is pint-sized,
             compact, and ready for deep-sea epicness.
           </p>
