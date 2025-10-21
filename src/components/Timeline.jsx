@@ -3,7 +3,6 @@ import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -49,16 +48,15 @@ function TimeLine() {
             <q>To go fast, run alone. To go far, walk together.</q>
 
             <p className="text-indent">
-              Like many, I went through a period of “professional reflection” in 2019. Bored out of
-              my mind, I grabbed the opportunity to begin work on the Mechabust project.
+              Like many, I went through a period of “professional reflection” in 2019. Bored out of my mind,
+              I grabbed the opportunity to begin work on the Mechabust project.
             </p>
             <p className="text-indent">
-              This kit was born directly out of my biggest passions: storytelling, drawing,
-              sculpting, mechs, 3D printing, and design. Many factors lined up to push this dream
-              past the starting line: the time, energy, and, most importantly, the urgency. I knew I
-              might never have this chance again; to design my very own customizable model kit of a
-              mech bust. From that moment on, I simply trusted the iterative creative process to
-              bring it to life.
+              This kit was born directly out of my biggest passions: storytelling, drawing, sculpting, mechs,
+              3D printing, and design. Many factors lined up to push this dream past the starting line: the time,
+              energy, and, most importantly, the urgency. I knew I might never have this chance again; to design my
+              very own customizable model kit of a mech bust. From that moment on, I simply trusted the iterative
+              creative process to bring it to life.
             </p>
           </div>
 
