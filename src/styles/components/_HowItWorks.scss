@@ -1,3 +1,5 @@
+@use '../abstracts/variables'as *;
+
 .howitworks {
   margin-bottom: 30px;
 
@@ -47,11 +49,12 @@
   margin-left: calc(30% - 50vw);
   margin-right: calc(30% - 50vw);
   background: #fff;
-  padding: 25px 0;
-  /* a bit taller like the mock */
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: $feature__icon-vertical-padding;
+  padding-bottom: $feature__icon-vertical-padding;
 
+  /* a bit taller like the mock 
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);*/
   .white-banner__inner {
     max-width: 1180px;
     margin: 0 auto;
@@ -76,8 +79,8 @@
   }
 
   .feature__icon {
-    width: 80%;
-    margin-bottom: 0.65rem;
+    width: $feature__icon-width;
+    margin-bottom: 0rem;
     object-fit: contain;
   }
 

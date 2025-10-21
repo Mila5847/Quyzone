@@ -43,35 +43,35 @@ export function HowItWorksPart2() {
       <div className="white-banner">
         <div className="white-banner__inner">
           <div className="feature">
-            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <img src="/images/decorative/5iconsA.jpg" alt="paywhatyouwant" className="feature__icon" />
             <p className="feature__desc">
-              <strong>“PayWhatYouWant”</strong> Support the project as you see fit.
+              “<strong>PayWhatYouWant</strong>” Support the project as you see fit.
             </p>
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <img src="/images/decorative/5iconsB.jpg" alt="" className="feature__icon" />
             <p className="feature__desc">
               <strong>Unique Aesthetic</strong> Fresh IP as detailed as whimsical.
             </p>
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <img src="/images/decorative/5iconsC.jpg" alt="small footprint" className="feature__icon" />
             <p className="feature__desc">
               Small Resin Printer? Parts are designed for <strong>Small Footprints</strong>.
             </p>
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <img src="/images/decorative/5iconsC.jpg" alt="animated manual" className="feature__icon" />
             <p className="feature__desc">
               New to Model Making? My <strong>Animated Manual</strong> has you covered.
             </p>
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/iconPlaceholder.png" alt="" className="feature__icon" />
+            <img src="/images/decorative/5iconsE.jpg" alt="No glue needed" className="feature__icon" />
             <ul className="feature__list">
               <p>→ <strong>No Glue Needed</strong></p>
               <p>→ precision snap</p>
