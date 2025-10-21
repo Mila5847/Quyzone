@@ -51,7 +51,6 @@ function MediaCarousel({ itemsData, captions, title }) {
   const atStart = activeIndex === 0;
   const atEnd = activeIndex === total - 1;
 
-
   return (
     <div className="carousel">
       <AliceCarousel
@@ -108,7 +107,6 @@ function MediaCarousel({ itemsData, captions, title }) {
           alt=""
         />
       </button>
-
     </div>
   );
 }

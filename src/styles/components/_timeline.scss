@@ -16,18 +16,20 @@
   border-radius: 8px;
 }
 
+.timeline-label {
+  padding-left: 1rem;
+}
+
 @media (max-width: 1530px) {
   .timeline-row {
     flex-direction: column;
     align-items: center;
   }
-
-  .timeline-img {
-    width: 250px;
-    height: 250px;
-  }
 }
 
+.mechabust-image {
+  max-width: none;
+}
 .mechabust-content {
   /* wide, centered row */
   max-width: 1180px;
@@ -44,6 +46,3 @@
 .img {
   max-width: 0;
 }
-
-
-
