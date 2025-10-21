@@ -83,9 +83,9 @@ function LandingPage() {
         </section>
       </Element>
 
-      <section id="footer" className="section container">
+      <Parallax speed={0}>
         <Footer />
-      </section>
+      </Parallax>
     </div>
   );
 }

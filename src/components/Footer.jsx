@@ -1,13 +1,25 @@
+import '../styles/components/_footer.scss';
+
 const Footer = () => {
   return (
-    <section>
-      <div>
-        <p>Facebook</p>
-        <p>Youtube</p>
-        <p>Insta</p>
-        <div>© 2025 Your Name. Design by You. Development by Mila Kehayova.</div>
+    <div className="footer">
+        <div className="social-icons">
+        <a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener noreferrer">
+          <img src="/images/logo/YouTube.svg" alt="YouTube" width={130} height={130} />
+        </a>
+        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <img src="/images/logo/Instagram.svg" alt="Instagram" width={130} height={130} />
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <img src="/images/logo/X-logo.svg" alt="X (Twitter)" width={130} height={130} />
+        </a>
+        <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <img src="/images/logo/Facebook.svg" alt="Facebook" width={130} height={130} />
+        </a>
       </div>
-    </section>
+      <div className='meetMe'> &gt; Contact</div>
+      <div>© 2025 quyzone.com - Design by Quy Tran. Development by Mila Kehayova.</div>
+    </div>
   );
 };
 

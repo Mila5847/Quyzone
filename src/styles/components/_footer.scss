@@ -43,3 +43,33 @@
 //     }
 //   }
 // }
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: white;
+
+  .meetMe {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; // space between icons
+    flex-wrap: wrap; // wraps on smaller screens
+    margin-bottom: 1.5rem;
+
+    img {
+      transition: transform 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
