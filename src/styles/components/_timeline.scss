@@ -11,7 +11,7 @@
 
 .timeline-img {
   width: 300px;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -30,6 +30,7 @@
 .mechabust-image {
   max-width: none;
 }
+
 .mechabust-content {
   /* wide, centered row */
   max-width: 1180px;
@@ -37,7 +38,8 @@
   padding: 0 1rem;
 
   display: grid;
-  grid-template-columns: minmax(520px, 1fr) auto; /* text left, image right */
+  grid-template-columns: minmax(520px, 1fr) auto;
+  /* text left, image right */
   align-items: start;
   column-gap: clamp(1.25rem, 4vw, 3rem);
   position: relative;

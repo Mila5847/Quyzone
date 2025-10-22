@@ -84,7 +84,7 @@ function TimeLine() {
           {/* 2022 */}
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              🌱Laying the Foundation
+              Laying the Foundation🌱
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               I began designing, testing, and iterating slowly with whatever resources I could get
@@ -117,7 +117,7 @@ function TimeLine() {
           {/* 2022 */}
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              🚀Pioneer-1
+              Pioneer-1🚀
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               My first public attempt . I submitted it to an international contest. The concept of
@@ -146,7 +146,7 @@ function TimeLine() {
           {/* 2022 */}
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              🔧Pioneer-2
+              Pioneer-2🔧
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Didn’t win last year? All the more reason to go at it again. I revisited my original
@@ -176,7 +176,7 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              🎯New Goals!
+              New Goals!🎯
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Time to be set some goals. Can’t always rely on contests. I officially decide to
@@ -204,7 +204,7 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              🔥Pioneer-3 The Mech Head
+              Pioneer-3 The Mech Head🔥
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               MVP is Live! The base kit is fully designed and ready for you to download. This is our
@@ -233,7 +233,7 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              📈Next Step
+              Next Step📈
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Community building. Lets get the ball rolling … stay tuned guys!

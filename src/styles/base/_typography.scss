@@ -54,7 +54,7 @@ h2 {
   font-family: $font-orbitron;
   font-weight: $h2-font-weight;
   font-size: $h2-font-size;
-  line-height: 0.9;
+  line-height: $h2-font-height;
   color: $secondary-color;
   text-shadow: $h2-text-shadow;
   letter-spacing: $h2-letter-spacing;
