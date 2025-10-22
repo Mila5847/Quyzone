@@ -1,4 +1,5 @@
 import '../styles/components/_footer.scss';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,7 +18,11 @@ const Footer = () => {
           <img src="/images/logo/Facebook.svg" alt="Facebook" width={130} height={130} />
         </a>
       </div>
-      <div className='meetMe'> &gt; Contact</div>
+      <div className="meetMe">
+        <RouterLink to="/contact" onClick={() => handleClick('/contact')}>
+          &gt; Contact
+        </RouterLink>
+      </div>
       <div>© 2025 quyzone.com - Design by Quy Tran. Development by Mila Kehayova.</div>
     </div>
   );
