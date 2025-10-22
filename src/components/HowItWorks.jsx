@@ -64,7 +64,7 @@ export function HowItWorksPart2() {
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/5iconsC.jpg" alt="animated manual" className="feature__icon" />
+            <img src="/images/decorative/5iconsD.gif" alt="animated manual" className="feature__icon" />
             <p className="feature__desc">
               New to Model Making? My <strong>Animated Manual</strong> has you covered.
             </p>
