@@ -83,6 +83,12 @@ function LandingPage() {
         </section>
       </Element>
 
+{/* IMAGE AFTER TIMELINE*/}
+      <Parallax speed={0}>
+        <img src='/images/decorative/placeholder.jpg' />
+      </Parallax>
+     
+
       <Parallax speed={0}>
         <Footer />
       </Parallax>
