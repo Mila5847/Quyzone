@@ -49,8 +49,8 @@ function TimeLine() {
 
             <p className="text-indent">
               Like many, I went through a period of “professional reflection” in 2022. Bored out of my mind,
-              I grabbed the opportunity to begin work on the Mechabust project.
-            </p>
+              I grabbed the opportunity to begin work on the Mechabust project. I mean ... how cool would it be ... to have in my room ... a standing bust ... of a mech ... geared in samurai-style armor?!?🫨 I mean COME ON!</p>
+
             <p className="text-indent">
               This kit was born directly out of my biggest passions: storytelling, drawing, sculpting, mechs,
               3D printing, and design. Many factors lined up to push this dream past the starting line: the time,
@@ -87,7 +87,7 @@ function TimeLine() {
               Laying the Foundation🌱
             </Typography>
             <Typography className='timeline-right' sx={{ width: { xs: '30rem' } }}>
-              Back then, it was just a spark — a birthing graphic novel. All I knew was I had to carve out a universe, a lore where my designs could finally take shape.
+              Back then, it was a birthing graphic novel. All I knew was I needed a universe, a lore for my designs to take shape.
               <div className="timeline-row">
                 <div className="timeline-column">
                   <img width={300} src="/images/decorative/timeline-2022.jpg" alt="comic frame" />
