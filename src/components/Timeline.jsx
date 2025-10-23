@@ -48,7 +48,7 @@ function TimeLine() {
             <q>To go fast, run alone. To go far, walk together.</q>
 
             <p className="text-indent">
-              Like many, I went through a period of “professional reflection” in 2019. Bored out of my mind,
+              Like many, I went through a period of “professional reflection” in 2022. Bored out of my mind,
               I grabbed the opportunity to begin work on the Mechabust project.
             </p>
             <p className="text-indent">
@@ -87,11 +87,10 @@ function TimeLine() {
               Laying the Foundation🌱
             </Typography>
             <Typography className='timeline-right' sx={{ width: { xs: '30rem' } }}>
-              I began designing, testing, and iterating slowly with whatever resources I could get
-              my hands on.
+              Back then, it was just a spark — a birthing graphic novel. All I knew was I had to carve out a universe, a lore where my designs could finally take shape.
               <div className="timeline-row">
                 <div className="timeline-column">
-                  <img className="timeline-img" src="/images/decorative/placeholder.jpg" alt="" />
+                  <img width={300} src="/images/decorative/timeline-2022.jpg" alt="comic frame" />
                 </div>
               </div>
             </Typography>
