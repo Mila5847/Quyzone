@@ -82,11 +82,11 @@ function TimeLine() {
           </TimelineSeparator>
 
           {/* 2022 */}
-          <TimelineContent sx={{ py: '0px', px: 2 }}>
-            <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
+          <TimelineContent className='timeline-acolade' sx={{ py: '0px', px: 2 }}>
+            <Typography className='timeline-right' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
               Laying the Foundation🌱
             </Typography>
-            <Typography sx={{ width: { xs: '30rem' } }}>
+            <Typography className='timeline-right' sx={{ width: { xs: '30rem' } }}>
               I began designing, testing, and iterating slowly with whatever resources I could get
               my hands on.
               <div className="timeline-row">
@@ -114,12 +114,12 @@ function TimeLine() {
             <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
           </TimelineSeparator>
 
-          {/* 2022 */}
-          <TimelineContent sx={{ py: '0px', px: 2 }}>
-            <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
+          {/* 2024 */}
+          <TimelineContent className='timeline-acolade' sx={{ py: '0px', px: 2 }}>
+            <Typography className='timeline-right' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
               Pioneer-1🚀
             </Typography>
-            <Typography sx={{ width: { xs: '30rem' } }}>
+            <Typography className='timeline-right' sx={{ width: { xs: '30rem' } }}>
               My first public attempt . I submitted it to an international contest. The concept of
               the Mech Bust was already alive in my mind and it had a head I could morph into an
               ice-shipping craft for the contest theme.

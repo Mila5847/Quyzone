@@ -48,3 +48,36 @@
 .img {
   max-width: 0;
 }
+
+
+.timeline-acolade {
+  position: relative;
+  /* space for accolade */
+
+}
+
+
+
+.timeline-acolade::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 95%;
+  margin-top: 4px;
+  margin-left: 32px;
+  width: 12px;
+  border-right: 4px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 0 10px 10px 0;
+  transform: translateX(-50%) rotate(180deg);
+
+}
+
+
+.timeline-right {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
