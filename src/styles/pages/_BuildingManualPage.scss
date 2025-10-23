@@ -24,3 +24,27 @@ body.parallax-wallpaper.fixed-bg {
   background: #fff;
   background-image: none;
 }
+
+@media (max-width: 600px) {
+  #Logo h1 {
+    font-size: 50px;
+  }
+
+  #Logo .sub-h1 {
+    font-size: 20px;
+    width: auto;
+  }
+
+  .brand-header {
+    display: block;
+    text-align: -webkit-center;
+  }
+
+  .brand-heading {
+    margin-left: 0;
+  }
+
+   .brand-heading h1 {
+    margin-bottom: 40px;
+  }
+}

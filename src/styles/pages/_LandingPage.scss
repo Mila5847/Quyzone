@@ -24,49 +24,8 @@
   top: $hero_foreground_vertMove;
 }
 
-@media (max-width: 636px) {
-  .logo-section {
-    width: 130px;
-  }
-
-  .sub-h1 {
-    flex-direction: column;
-    line-height: 30px;
-    margin-top: 0;
-  }
-
-  .spacer-horizontal {
-    display: none;
-  }
-
-  h1 {
-    margin-top: 4px;
-    line-height: 90px;
-  }
-}
-
-.hiw-grid {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: 1fr; // mobile: 1 per row
-  justify-items: center;
-}
-
 .hiw-item {
   border-radius: 12px;
   padding: 16px;
   box-sizing: border-box;
-}
-
-@media (min-width: 768px) {
-  .hiw-grid {
-    grid-template-columns: repeat(2, 1fr); // tablet: 2 per row
-  }
-}
-
-@media (min-width: 1100px) {
-  .hiw-grid {
-    grid-template-columns: repeat(3, 1fr); // desktop: 3 per row
-    gap: 48px;
-  }
 }

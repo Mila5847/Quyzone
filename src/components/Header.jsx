@@ -10,9 +10,9 @@ export default function BrandHeader({ title = 'MECHABUST', id = 'Logo', classNam
         <h1>{title}</h1>
         <div className="sub-h1">
           <span>PRINTABLE</span>
-          <span className="spacer-horizontal">&nbsp;&#x25CF;&nbsp;</span>
+          <span className="spacer-horizontal">&#x25CF;</span>
           <span>POSABLE</span>
-          <span className="spacer-horizontal">&nbsp;&#x25CF;&nbsp;</span>
+          <span className="spacer-horizontal">&#x25CF;</span>
           <span>PERFECTIBLE</span>
         </div>
       </div>
