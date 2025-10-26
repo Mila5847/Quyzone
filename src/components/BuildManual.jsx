@@ -13,11 +13,11 @@ function BuildManual() {
 
   // 👉 Data for carousel 0
   const carousel0Items = [{ type: 'img', src: '/images/manual/ori_receiver.jpg', alt: 'Slide 1' }];
-  const carousel0Captions = ['Part A-0 (post-curing NOT recommended)'];
+  const carousel0Captions = ['Part A-0 (P.C.N.R.*)'];
 
   // 👉 Data for carousel 1
   const carousel1Items = [
-    { type: 'img', src: '/images/manual/pres_coverBot.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/pres-A-2.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori_coverBot.jpg', alt: 'Slide 2' },
     { type: 'video', src: '/videos/manual/anim-coverBotR.mp4', alt: 'Slide 3' },
     { type: 'video', src: '/videos/manual/anim-coverBotL.mp4', alt: 'Slide 4' },
@@ -31,8 +31,8 @@ function BuildManual() {
 
   // 👉 Data for carousel 2
   const carousel2Items = [
-    { type: 'img', src: '/images/manual/pres-3.jpg', alt: 'Slide 1' },
-    { type: 'img', src: '/images/manual/A-3.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/pres-A-3.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/A-3.jpg', alt: 'Slide 2' },
     {
       type: 'video',
       src: '/videos/manual/anim-a02-back.mp4',
@@ -51,6 +51,28 @@ function BuildManual() {
     'A-3 \u27A4 A-0',
   ];
 
+  // 👉 Data for carousel 2
+  const carousel3Items = [
+    { type: 'img', src: '/images/manual/pres-A-4.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/A-4.jpg', alt: 'Slide 1' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-a02-back.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-a02-front.mp4',
+      alt: 'Alt video',
+    },
+  ];
+  const carousel3Captions = [
+    'Step 3 \u27A4 A-0 + A-3',
+    'Part A-3 (post-curing NOT recommended)',
+    'A-3 \u27A4 A-0',
+    'A-3 \u27A4 A-0',
+  ];
+
   return (
     <div className="build-manual">
       <Nav />
@@ -60,7 +82,7 @@ function BuildManual() {
       <section>
         <h2>PIONEER.3</h2>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY A<span className='post-cure-warning'>(post-curing NOT recommended)</span>{' '}
+          SUB ASSEMBLY A<span className='post-cure-warning'>(Post-Curing NOT Recommended*)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
         </h3>
 
@@ -76,6 +98,22 @@ function BuildManual() {
         <section className="carousel-section">
           <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="3" />
         </section>
+
+        {/* Second carousel for additional media */}
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel3Items} captions={carousel3Captions} title="4" />
+        </section>
+
+        {/* Second carousel for additional media */}
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="3" />
+        </section>
+      </section>
+      <section>
+        <h3 className="subassembly-title">
+          SUB ASSEMBLY B<span className='post-cure-warning'>(Post-Curing NOT Recommended*)</span>{' '}
+          <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
+        </h3>
       </section>
     </div>
   );
