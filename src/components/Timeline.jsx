@@ -64,7 +64,7 @@ function TimeLine() {
         </div>
       </div>
 
-      <Timeline position="right" sx={{ pl: 0, ml: 0 }}>
+      <Timeline className="timeline" position="right" sx={{ pl: 0, ml: 0 }}>
         <TimelineItem>
           <LeftLabel className="timeline-label" lines={['2022', 'somwhere']} />
 
@@ -86,7 +86,7 @@ function TimeLine() {
             <Typography className='timeline-right' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
               Laying the Foundation🌱
             </Typography>
-            <Typography className='timeline-right' sx={{ width: { xs: '30rem' } }}>
+            <Typography component="div" className='timeline-right' sx={{ width: { xs: '30rem' } }}>
               Back then, it was a birthing graphic novel. All I knew was I needed a universe, a lore for my designs to take shape.
               <div className="timeline-row">
                 <div className="timeline-column">
