@@ -1,0 +1,474 @@
+@charset "UTF-8";
+/* -----------------------------------
+   TYPOGRAPHY — Global Font Styles
+   ----------------------------------- */
+/* Font Imports (Google Fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Smythe&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&family=Sofia+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
+/* -----------------------------------
+   RESET — Modern CSS Reset
+   ----------------------------------- */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Font Stacks */
+/* Base Typography */
+body {
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  color: rgb(0, 0, 0);
+}
+
+.text-indent {
+  text-indent: 1em;
+}
+
+/* Headings */
+h1 {
+  margin-left: -5px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 900;
+  font-size: 160px;
+  line-height: 0.9;
+  color: #fff;
+}
+
+.sub-h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 38px;
+  margin-top: -32px;
+  letter-spacing: 2px;
+}
+
+h2 {
+  margin-left: -5px;
+  margin-bottom: 0px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1.1;
+  color: #fff;
+  text-shadow: 3px 0 0 #ffffff;
+  letter-spacing: 3px;
+}
+
+.cta {
+  margin-top: 150px;
+  padding-left: 10px;
+  padding-top: 0px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.5em;
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  font-weight: 200;
+  -webkit-text-stroke: 1px black;
+}
+.cta span {
+  font-size: 1.3em;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  line-height: 0.4;
+  margin-bottom: -30px;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 1200;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  text-shadow: 1px 1px 0px rgb(60, 22, 130);
+}
+
+/* Utility Font Classes */
+.font-smythe {
+  font-family: "Smythe", cursive;
+}
+
+.font-orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+
+.font-rajdhani {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.font-sofia {
+  font-family: "Sofia Sans", sans-serif;
+}
+
+q {
+  font-style: italic;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #c4b782;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+p {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+ul {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.container {
+  padding: 0rem;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .container {
+    padding-left: 1.5rem;
+  }
+}
+
+section {
+  padding-left: 5px;
+}
+
+.hero-bg {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  /* Or whatever height it needs */
+  /* Good practice if children might extend beyond its bounds */
+  /* For visibility during testing */
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  box-shadow: 2px 1px 1px 0px #000000;
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  border: none;
+  border-radius: 25px;
+  margin-top: 7px;
+  background-color: #38c5a9;
+  width: 350px;
+  height: 110px;
+}
+.cta-button img {
+  width: 350px;
+  height: auto;
+  max-height: 100%;
+}
+
+.cta-gumroad {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/images/logo/gumroad.svg");
+}
+.cta-gumroad:hover {
+  background-image: url("/images/logo/gumroadHover.svg");
+}
+
+.cta-button {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.cta-button:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.6862745098);
+}
+
+.hero-separator {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: auto;
+}
+
+.right-separator {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 699px;
+  width: 100vw;
+  /* Example value */
+  height: 75px;
+  background-color: #fff;
+}
+
+.left-separator {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  /* Aligned to the bottom of .hero-bg */
+  left: -100vw;
+  /* Starts from the very left edge of .hero-bg */
+  width: 100.5vw;
+  /* Example: Define its width */
+  height: 280px;
+  /* Example: Define its height */
+  background-color: #fff;
+  /* For testing visibility */
+}
+
+strong {
+  padding-top: 40px;
+}
+
+.logo-section {
+  margin-top: 33px;
+  width: 200px;
+}
+
+.howitworks {
+  margin-bottom: 30px;
+}
+.howitworks p {
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.howitworks hr {
+  width: 400px;
+}
+.howitworks .howitworks-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  text-align: left;
+}
+.howitworks .howitworks-image {
+  width: 50%;
+  height: auto;
+}
+.howitworks .howitworks-text {
+  width: 50%;
+}
+@media (max-width: 1020px) {
+  .howitworks .howitworks-row {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .howitworks .howitworks-image,
+  .howitworks .howitworks-text {
+    width: 100%;
+  }
+}
+
+.white-banner {
+  margin-left: calc(30% - 50vw);
+  margin-right: calc(30% - 50vw);
+  background: #fff;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  /* a bit taller like the mock 
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);*/
+}
+.white-banner .white-banner__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  /* five even columns, centered content */
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  justify-items: center;
+  align-items: start;
+  gap: 2.5rem;
+  /* more breathing room between items */
+}
+.white-banner .feature {
+  /* stack icon over text, centered */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+}
+.white-banner .feature__icon {
+  width: 100px;
+  margin-bottom: 0rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.white-banner .feature__title {
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+}
+.white-banner .feature__desc {
+  margin: 0;
+  /*font-size: 0.9rem;*/
+  line-height: 1.35;
+  color: #222;
+  /* strong black like the reference */
+}
+.white-banner .feature__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.white-banner .feature__list li {
+  font-size: 0.9rem;
+  line-height: 1.35;
+  margin: 0.15rem 0;
+  position: relative;
+  padding-left: 1.05rem;
+}
+.white-banner .feature__list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 1100px) {
+  .white-banner .white-banner__inner {
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    gap: 2rem 1.5rem;
+  }
+}
+@media (max-width: 640px) {
+  .white-banner {
+    padding: 1.5rem 0;
+  }
+  .white-banner .white-banner__inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .white-banner .feature {
+    max-width: 280px;
+  }
+}
+
+.sub-h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 515px;
+}
+
+.landing-page {
+  overflow: hidden;
+}
+
+.foreground {
+  position: absolute;
+  margin-left: 60rem;
+  margin-top: -25rem;
+  max-width: 990px;
+  width: 100%;
+  height: auto;
+  display: block;
+  right: 0px;
+  top: -190px;
+}
+
+.hiw-item {
+  border-radius: 12px;
+  padding: 16px;
+  box-sizing: border-box;
+}/*# sourceMappingURL=main.css.map */

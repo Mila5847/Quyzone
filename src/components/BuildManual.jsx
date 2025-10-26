@@ -19,12 +19,12 @@ function BuildManual() {
   const carousel1Items = [
     { type: 'img', src: '/images/manual/pres-A-2.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori_coverBot.jpg', alt: 'Slide 2' },
-    { type: 'video', src: '/videos/manual/anim-coverBotR.mp4', alt: 'Slide 3' },
-    { type: 'video', src: '/videos/manual/anim-coverBotL.mp4', alt: 'Slide 4' },
+    { type: 'video', src: '/videos/manual/anim-a01-2.mp4', alt: 'Slide 3' },
+    { type: 'video', src: '/videos/manual/anim-a01-1.mp4', alt: 'Slide 4' },
   ];
   const carousel1Captions = [
-    'Step 2 \u27A4 A-0 + A-1',
-    'Part A-1(R) (post-curing NOT recommended)',
+    'Step 2 \u27A4 A-0 receives A-1',
+    'Part A-1(R) (P.C.N.R.*)',
     'A-1(R) \u27A4 A-0',
     'A-1(L) \u27A4 A-0',
   ];
@@ -35,20 +35,20 @@ function BuildManual() {
     { type: 'img', src: '/images/manual/A-3.jpg', alt: 'Slide 2' },
     {
       type: 'video',
-      src: '/videos/manual/anim-a02-back.mp4',
+      src: '/videos/manual/anim-a03-1.mp4',
       alt: 'Alt video',
     },
     {
       type: 'video',
-      src: '/videos/manual/anim-a02-front.mp4',
+      src: '/videos/manual/anim-a03-2.mp4',
       alt: 'Alt video',
     },
   ];
   const carousel2Captions = [
-    'Step 3 \u27A4 A-0 + A-3',
-    'Part A-3 (post-curing NOT recommended)',
-    'A-3 \u27A4 A-0',
-    'A-3 \u27A4 A-0',
+    'Step 3 \u27A4 A-1 receives A-2',
+    'Part A-2 (P.C.N.R.*)',
+    'A-2 \u27A4 A-1',
+    'A-2 \u27A4 A-1',
   ];
 
   // 👉 Data for carousel 2
@@ -67,7 +67,7 @@ function BuildManual() {
     },
   ];
   const carousel3Captions = [
-    'Step 3 \u27A4 A-0 + A-3',
+    'Step 4 \u27A4 A-0 + A-3',
     'Part A-3 (post-curing NOT recommended)',
     'A-3 \u27A4 A-0',
     'A-3 \u27A4 A-0',
@@ -106,9 +106,15 @@ function BuildManual() {
 
         {/* Second carousel for additional media */}
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="3" />
+          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="5" />
+        </section>
+
+        {/* Second carousel for additional media */}
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="6" />
         </section>
       </section>
+
       <section>
         <h3 className="subassembly-title">
           SUB ASSEMBLY B<span className='post-cure-warning'>(Post-Curing NOT Recommended*)</span>{' '}
