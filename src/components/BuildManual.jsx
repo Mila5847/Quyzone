@@ -82,7 +82,7 @@ function BuildManual() {
       <section>
         <h2>PIONEER.3</h2>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY A<span className='post-cure-warning'>(Post-Curing NOT Recommended*)</span>{' '}
+          SUB ASSEMBLY A<span className='post-cure-warning'>Post-Curing NOT Recommended*(PCNR)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
         </h3>
 
@@ -117,7 +117,7 @@ function BuildManual() {
 
       <section>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY B<span className='post-cure-warning'>(Post-Curing NOT Recommended*)</span>{' '}
+          SUB ASSEMBLY B<span className='post-cure-warning'>Post-Curing NOT Recommended*(PCNR)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
         </h3>
       </section>

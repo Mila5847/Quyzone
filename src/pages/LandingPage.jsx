@@ -21,7 +21,7 @@ function LandingPage() {
   }, [location.pathname]);
 
   const videoRef = useRef(null);
-const sectionRef = useRef(null);
+  const sectionRef = useRef(null);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -119,16 +119,16 @@ const sectionRef = useRef(null);
             alt="beauty Shot"
             width={400}
             height={332}
-            /*
-          style={{
-            maxWidth: 970px,
-            width: "100%",
-            height: "auto",
-            display: "block", 
-            left: "-380px",
-            top:"-180px"
-          }}
-            */
+          /*
+        style={{
+          maxWidth: 970px,
+          width: "100%",
+          height: "auto",
+          display: "block", 
+          left: "-380px",
+          top:"-180px"
+        }}
+          */
           />
         </Parallax>
       </div>
@@ -156,19 +156,19 @@ const sectionRef = useRef(null);
           className="section container"
           ref={sectionRef}
         >
-            <Parallax speed={-5}>
+          <Parallax speed={0}>
 
-              <div className="sticky-viewport">
-                <video
-                  ref={videoRef}
-                  src="/videos/decorative/explodedTest_02_400x1000px.webm"
-                  playsInline
-                  muted
-                  preload="auto"
-                  controls={false}
-                />
-              </div>
-            </Parallax>
+            <div className="sticky-viewport">
+              <video
+                ref={videoRef}
+                src="/videos/decorative/explodedTest_06.webm"
+                playsInline
+                muted
+                preload="auto"
+                controls={false}
+              />
+            </div>
+          </Parallax>
         </section>
 
         <section className="section container">
@@ -176,11 +176,11 @@ const sectionRef = useRef(null);
         </section>
       </Element>
 
-{/* IMAGE AFTER TIMELINE*/}
+      {/* IMAGE AFTER TIMELINE*/}
       <Parallax speed={0}>
         <img src='/images/decorative/placeholder.jpg' />
       </Parallax>
-     
+
 
       <Parallax speed={0}>
         <Footer />
