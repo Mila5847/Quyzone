@@ -161,7 +161,7 @@ function LandingPage() {
             <div className="sticky-viewport">
               <video
                 ref={videoRef}
-                src="/videos/decorative/explodedTest_06.webm"
+                src="/videos/decorative/explodedTest_09.webm"
                 playsInline
                 muted
                 preload="auto"
