@@ -82,11 +82,11 @@ function TimeLine() {
           </TimelineSeparator>
 
           {/* 2022 */}
-          <TimelineContent className='timeline-acolade' sx={{ py: '0px', px: 2 }}>
-            <Typography className='timeline-right' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
+          <TimelineContent className='' sx={{ py: '0px', px: 2 }}>
+            <Typography className='' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
               Laying the Foundation🌱
             </Typography>
-            <Typography component="div" className='timeline-right' sx={{ width: { xs: '30rem' } }}>
+            <Typography component="div" className='' sx={{ width: { xs: '30rem' } }}>
               Back then, it was a birthing graphic novel. All I knew was I needed a universe, a lore for my designs to take shape.
               <div className="timeline-row">
                 <div className="timeline-column">
@@ -114,11 +114,11 @@ function TimeLine() {
           </TimelineSeparator>
 
           {/* 2024 */}
-          <TimelineContent className='timeline-acolade' sx={{ py: '0px', px: 2 }}>
-            <Typography className='timeline-right' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              Pioneer-1🚀
+          <TimelineContent className='' sx={{ py: '0px', px: 2 }}>
+            <Typography className='' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
+              <br />Pioneer-1🚀
             </Typography>
-            <Typography className='timeline-right' sx={{ width: { xs: '30rem' } }}>
+            <Typography className='' sx={{ width: { xs: '30rem' } }}>
               My first public attempt . I submitted it to an international contest. The concept of
               the Mech Bust was already alive in my mind and it had a head I could morph into an
               ice-shipping craft for the contest theme.
@@ -145,7 +145,7 @@ function TimeLine() {
           {/* 2022 */}
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              Pioneer-2🔧
+              <br />Pioneer-2🔧
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Didn’t win last year? All the more reason to go at it again. I revisited my original
@@ -175,7 +175,7 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              New Goals!🎯
+              <br />New Goals!🎯
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Time to be set some goals. Can’t always rely on contests. I officially decide to
@@ -203,7 +203,7 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              Pioneer-3 The Mech Head🔥
+              <br />Pioneer-3 The Mech Head🔥
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               MVP is Live! The base kit is fully designed and ready for you to download. This is our
@@ -232,7 +232,7 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              Next Step📈
+              <br />Next Step📈
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Community building. Lets get the ball rolling … stay tuned guys!
