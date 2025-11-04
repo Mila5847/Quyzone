@@ -2,14 +2,13 @@
   background: transparent;
   position: fixed;
   right: clamp(12px, 3vw, 24px);
-  bottom: calc(env(safe-area-inset-bottom, 0px) + clamp(12px, 3vw, 24px));
+  bottom: calc(env(safe-area-inset-bottom, 0px) + clamp(12px, 3vw, 0px) + 64px);
   width: 48px;
   height: 48px;
   border: none;
   border-radius: 999px;
   display: grid;
   place-items: center;
-
   font-size: 22px;
   line-height: 1;
   cursor: pointer;
@@ -19,10 +18,17 @@
     opacity 0.2s ease,
     transform 0.2s ease;
   pointer-events: none;
+  z-index: 20; // ensure above main content
 }
 
 .back-to-top.show {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+/* The second button (“index”) appears slightly lower */
+.back-to-top.index {
+  bottom: calc(env(safe-area-inset-bottom, 0px) + clamp(12px, 3vw, 24px));
+  z-index: 19; 
 }
