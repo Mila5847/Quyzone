@@ -53,7 +53,7 @@ function LandingPage() {
       // Keep a tiny epsilon off the end so browsers don’t “snap” to the last keyframe
       // Start at 20% scroll, end at 90%
       const startProgress = 0.2;
-      const endProgress = 0.9;
+      const endProgress = .8;
       const adjProgress = clamp((progress - startProgress) / (endProgress - startProgress), 0, 1);
       targetTime = clamp(adjProgress * video.duration, 0, video.duration - 0.001);
     };
