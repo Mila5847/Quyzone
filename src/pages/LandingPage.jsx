@@ -182,7 +182,7 @@ function LandingPage() {
 
       {/* IMAGE AFTER TIMELINE*/}
       <Parallax speed={0}>
-        <img src='/images/decorative/placeholder.jpg' />
+        <img className="bottom-image" src='/images/decorative/placeholder.jpg' />
       </Parallax>
 
 
