@@ -12,15 +12,15 @@ import ContactPage from './pages/ContactPage';
 function App() {
   return (
     <ParallaxProvider>
-      {/* Keep background outside animations so it doesn't blink */}
       <Background />
       <Router>
         <MainApp />
+        <BackToTop threshold={300} duration={600} />  
       </Router>
-      <BackToTop threshold={300} duration={600} />
     </ParallaxProvider>
   );
 }
+
 
 function MainApp() {
   const location = useLocation();
@@ -49,14 +49,6 @@ function MainApp() {
         </Route>
       </Routes>
     </AnimatePresence>
-  );
-}
-
-function ManualLayout() {
-  return (
-    <main className="manual-page site-content">
-      <Outlet />
-    </main>
   );
 }
 

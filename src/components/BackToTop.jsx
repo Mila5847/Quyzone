@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import '../styles/components/_backToTop.scss';
 
@@ -7,6 +8,28 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
   const [isHoverBackToTop, setIsHoverBackToTop] = useState(false);
   const [isHoverIndex, setIsHoverIndex] = useState(false);
   const raf = useRef(0);
+
+  const location = useLocation();           // <- drives rerenders on route change
+  const navigate = useNavigate();
+
+  // HashRouter can put the route in the hash (e.g. #/building-manual)
+  const isBuildingManual =
+    location.pathname.includes('building-manual') ||
+    (location.hash ?? '').includes('building-manual');
+
+  const assets = isBuildingManual
+    ? {
+        upNeutral: '/images/ui/upArrowNeutralManual.svg',
+        upHover: '/images/ui/upArrowHoverManual.svg',
+        logoNeutral: '/images/ui/mini-LogoManual.svg',
+        logoHover: '/images/ui/mini-LogoHoverManual.svg',
+      }
+    : {
+        upNeutral: '/images/ui/upArrowNeutral.svg',
+        upHover: '/images/ui/upArrowHover.svg',
+        logoNeutral: '/images/ui/mini-Logo.svg',
+        logoHover: '/images/ui/mini-LogoHover.svg',
+      };
 
   useEffect(() => {
     const onScroll = () => {
@@ -23,13 +46,8 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
     };
   }, [threshold]);
 
-  const toTop = () => {
-    scroll.scrollToTop({ smooth: 'easeInOutQuart', duration });
-  };
-
-  const toIndex = () => {
-    window.location.href = '/#'; 
-  };
+  const toTop = () => scroll.scrollToTop({ smooth: 'easeInOutQuart', duration });
+  const toIndex = () => navigate('/');      // <- no full reload
 
   return (
     <>
@@ -41,10 +59,7 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
         onMouseLeave={() => setIsHoverBackToTop(false)}
         aria-label="Back to top"
       >
-        <img
-          src={isHoverBackToTop ? '/images/ui/upArrowHover.svg' : '/images/ui/upArrowNeutral.svg'}
-          alt=""
-        />
+        <img src={isHoverBackToTop ? assets.upHover : assets.upNeutral} alt="" />
       </button>
 
       <button
@@ -55,10 +70,7 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
         onMouseLeave={() => setIsHoverIndex(false)}
         aria-label="Go to index"
       >
-        <img
-          src={isHoverIndex ? '/images/ui/mini-LogoHover.svg' : '/images/ui/mini-Logo.svg'}
-          alt=""
-        />
+        <img src={isHoverIndex ? assets.logoHover : assets.logoNeutral} alt="" />
       </button>
     </>
   );
