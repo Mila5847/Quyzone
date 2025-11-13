@@ -23,7 +23,7 @@ function BuildManual() {
     { type: 'video', src: '/videos/manual/anim-a01-1.mp4', alt: 'Slide 4' },
   ];
   const carousel1Captions = [
-    'Step 2 \u27A4 A-0 receives A-1',
+    'Step 2 Preview',
     'Part A-1(R) (P.C.N.R.*)',
     'A-1(R) \u27A4 A-0',
     'A-1(L) \u27A4 A-0',
@@ -45,7 +45,7 @@ function BuildManual() {
     },
   ];
   const carousel2Captions = [
-    'Step 3 \u27A4 A-1 receives A-2',
+    'Step 3 Preview',
     'Part A-2 (P.C.N.R.*)',
     'A-2 \u27A4 A-1',
     'A-2 \u27A4 A-1',
@@ -67,11 +67,35 @@ function BuildManual() {
     },
   ];
   const carousel3Captions = [
-    'Step 4 \u27A4 A-0 + A-3',
+    'Step 4 Preview',
     'Part A-3 (post-curing NOT recommended)',
     'A-3 \u27A4 A-0',
     'A-3 \u27A4 A-0',
   ];
+
+  // 👉 Data for carousel 4
+  const carousel4Items = [
+    { type: 'img', src: '/images/manual/pres-A-6.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori_A05.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori_A06.jpg', alt: 'Slide 1' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-a02-back.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-a02-front.mp4',
+      alt: 'Alt video',
+    },
+  ];
+  const carousel4Captions = [
+    'Step 4 Preview',
+    'Part A-3 (post-curing NOT recommended)',
+    'A-3 \u27A4 A-0',
+    'A-3 \u27A4 A-0',
+  ];
+
 
   return (
     <div className="build-manual">
@@ -106,7 +130,7 @@ function BuildManual() {
 
         {/* Second carousel for additional media */}
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="5" />
+          <MediaCarousel itemsData={carousel4Items} captions={carousel4Captions} title="5" />
         </section>
 
         {/* Second carousel for additional media */}
