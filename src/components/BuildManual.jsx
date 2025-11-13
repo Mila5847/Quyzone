@@ -133,6 +133,12 @@ function BuildManual() {
         <section className="carousel-section">
           <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="6" />
         </section>
+
+        {/* Second carousel for additional media */}
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="7" />
+        </section>
+
       </section>
 
       <section>
