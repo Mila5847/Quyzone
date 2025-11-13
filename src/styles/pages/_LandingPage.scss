@@ -34,3 +34,44 @@
   margin-top: -30px;
   margin-bottom: 50px;
 }
+
+.howItWorks-instructions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.howItWorks-instructions-item {
+
+  width: 200px;
+  height: 100px;
+  text-align: center;
+
+  position: relative;
+
+  span {
+    font-size: x-large;
+    font-weight: 1200;
+    text-decoration: solid;
+    text-shadow: 1px 1px 0px rgb(47, 19, 97);
+  }
+}
+
+.howItWorks-instructions-item:not(:last-child)::after {
+  content: "→";
+  /* The character for a right-pointing arrow (you can use unicode or an image/SVG too) */
+
+  // Positioning the arrow to the right edge of the item, centered vertically
+  position: absolute;
+  right: -30px;
+  /* Adjust this value to set the spacing between the item and the arrow */
+
+  /* Ensures perfect vertical centering */
+  transform: translateY(-50%);
+  // Optional styling for the arrow
+  font-size: 24px;
+
+  /* A subtle color */
+  padding: 0 15px; // Adds a little breathing room
+}
