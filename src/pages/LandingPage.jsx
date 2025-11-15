@@ -183,6 +183,18 @@ function LandingPage() {
         </section>
       </Element>
 
+      <section className="section container testimonials">
+        <blockquote >
+          <p>I was hesitant at first, but this service delivered  beyond my expectations. Five stars!</p>
+
+          <div className="author">
+            Sarah L, <cite>Beta-tester</cite>
+          </div>
+
+        </blockquote>
+      </section>
+
+
       {/* IMAGE AFTER TIMELINE*/}
       <Parallax speed={0}>
         <img className="bottom-image" src='/images/decorative/placeholder.jpg' />

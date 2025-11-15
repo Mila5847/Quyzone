@@ -77,3 +77,45 @@
   /* A subtle color */
   padding: 0 10px; // Adds a little breathing room
 }
+
+.testimonials {
+  margin-top: 30px;
+  display: flex;
+
+  // 2. Center the children (the blockquote) horizontally
+  justify-content: center;
+}
+
+blockquote {
+
+
+  p:before {
+    content: open-quote;
+  }
+
+  p:after {
+    content: close-quote;
+  }
+
+  p {
+    font-style: italic;
+  }
+
+  .author:before {
+    content: "-";
+  }
+
+
+  .author {
+    margin-top: -20px;
+    padding-left: 3rem;
+    font-style: unset;
+    margin-bottom: 20px;
+  }
+}
+
+.bottom-image {
+  margin: auto;
+  margin-bottom: 30px;
+
+}
