@@ -49,14 +49,13 @@ function TimeLine() {
 
             <p className="text-indent">
               Like many, I went through a period of “professional reflection” in 2022. Bored out of my mind,
-              I grabbed the opportunity to begin work on the Mechabust project. I mean ... how cool would it be ... to have in my room ... a standing bust ... of a mech ... geared in samurai-style armor?!?🫨 I mean COME ON!</p>
+              I grabbed the opportunity to begin work on the Mechabust project. I mean ... how cool would it be ... to have in my room ... a standing bust ... of a mech ... geared in samurai-style armor?!?🤩 I mean COME ON!</p>
 
             <p className="text-indent">
-              This kit was born directly out of my biggest passions: storytelling, drawing, sculpting, mechs,
-              3D printing, and design. Many factors lined up to push this dream past the starting line: the time,
-              energy, and, most importantly, the urgency. I knew I might never have this chance again; to design my
-              very own customizable model kit of a mech bust. From that moment on, I simply trusted the iterative
-              creative process to bring it to life.
+              This kit was born directly out of my biggest passions: storytelling, drawing, sculpting, mechs, 3D printing, and design. Many factors lined
+              up to push the dream past the starting line: time, energy, and, most importantly, the urgency. I might never have this chance again to
+              design my very own customizable model kit of a mech bust. From then on, I simply trusted the iterative creative process to bring it to life.
+
             </p>
           </div>
 
@@ -84,6 +83,7 @@ function TimeLine() {
           {/* 2022 */}
           <TimelineContent className='' sx={{ py: '0px', px: 2 }}>
             <Typography className='' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
+              <br />
               Laying the Foundation🌱
             </Typography>
             <Typography component="div" className='' sx={{ width: { xs: '30rem' } }}>
@@ -120,7 +120,7 @@ function TimeLine() {
             </Typography>
             <Typography className='' sx={{ width: { xs: '30rem' } }}>
               My first public attempt . I submitted it to an international contest. The concept of
-              the Mech Bust was already alive in my mind and it had a head I could morph into an
+              the Mech Bust was already alive in my mind.  It had a head I could morph into an
               ice-shipping craft for the contest theme.
             </Typography>
           </TimelineContent>

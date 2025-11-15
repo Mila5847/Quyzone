@@ -44,17 +44,19 @@
 
 .howItWorks-instructions-item {
 
-  width: 200px;
+  width: 250px;
   height: 100px;
   text-align: center;
 
   position: relative;
 
   span {
+    color: white;
+    font-family: orbitron, sans-serif;
     font-size: x-large;
     font-weight: 1200;
     text-decoration: solid;
-    text-shadow: 1px 1px 0px rgb(47, 19, 97);
+    text-shadow: 1px 0 0px rgb(255, 255, 255);
   }
 }
 

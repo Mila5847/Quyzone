@@ -148,7 +148,10 @@ function LandingPage() {
             <HowItWorksPart1 />
           </Parallax>
         </section>
-        <div className="howItWorks-instructions"><div className='howItWorks-instructions-item'><span>Download</span><br />(Support)</div><div className='howItWorks-instructions-item'><span>Resin Print</span><br />(No Postcuring)</div><div className='howItWorks-instructions-item'><span>Assemble</span><br />(Customize)</div></div>
+        <div className="howItWorks-instructions">
+          <div className='howItWorks-instructions-item'><span>Download</span><br />(Support)</div>
+          <div className='howItWorks-instructions-item'><span>Resin Print</span><br />(No Postcuring)</div>
+          <div className='howItWorks-instructions-item'><span>Assemble</span><br />(Customize)</div></div>
         <section id="how-it-works" className="section container">
           <Parallax speed={0}>
             <HowItWorksPart2 />
