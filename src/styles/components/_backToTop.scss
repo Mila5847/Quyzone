@@ -30,5 +30,5 @@
 /* The second button (“index”) appears slightly lower */
 .back-to-top.index {
   bottom: calc(env(safe-area-inset-bottom, 0px) + clamp(12px, 3vw, 24px));
-  z-index: 19; 
+  z-index: 19;
 }

@@ -9,7 +9,7 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
   const [isHoverIndex, setIsHoverIndex] = useState(false);
   const raf = useRef(0);
 
-  const location = useLocation();           // <- drives rerenders on route change
+  const location = useLocation(); // <- drives rerenders on route change
   const navigate = useNavigate();
 
   // HashRouter can put the route in the hash (e.g. #/building-manual)
@@ -47,7 +47,7 @@ export default function BackToTop({ threshold = 300, duration = 600 }) {
   }, [threshold]);
 
   const toTop = () => scroll.scrollToTop({ smooth: 'easeInOutQuart', duration });
-  const toIndex = () => navigate('/');      // <- no full reload
+  const toIndex = () => navigate('/'); // <- no full reload
 
   return (
     <>

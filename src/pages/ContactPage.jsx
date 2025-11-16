@@ -7,14 +7,14 @@ function ContactPage() {
   return (
     <div>
       <Parallax speed={0}>
-        <Header title="CONTACT" />
+        <Header title="CONTACT" subtitles={['CONTACT1', 'CONTACT2', 'CONTACT3']} />
       </Parallax>
 
       <Parallax speed={0}>
         <QAndA />
       </Parallax>
 
-       <Parallax speed={0}>
+      <Parallax speed={0}>
         <Footer />
       </Parallax>
     </div>

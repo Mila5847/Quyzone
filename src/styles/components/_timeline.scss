@@ -49,14 +49,10 @@
   max-width: 0;
 }
 
-
 .timeline-acolade {
   position: relative;
   /* space for accolade */
-
 }
-
-
 
 .timeline-acolade::before {
   content: '';
@@ -72,9 +68,7 @@
   border-bottom: 2px solid #ffffff;
   border-radius: 0 10px 10px 0;
   transform: translateX(-50%) rotate(180deg);
-
 }
-
 
 .timeline-right {
   margin-top: 10px;

@@ -3,8 +3,8 @@
    TYPOGRAPHY — Global Font Styles
    ----------------------------------- */
 /* Font Imports (Google Fonts) */
-@import url("https://fonts.googleapis.com/css2?family=Smythe&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&family=Sofia+Sans:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Smythe&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&family=Sofia+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
 /* -----------------------------------
    RESET — Modern CSS Reset
    ----------------------------------- */
@@ -89,7 +89,7 @@ select {
 /* Font Stacks */
 /* Base Typography */
 body {
-  font-family: "Sofia Sans", sans-serif;
+  font-family: 'Sofia Sans', sans-serif;
   font-size: 18px;
   line-height: 1.3;
   color: rgb(0, 0, 0);
@@ -102,7 +102,7 @@ body {
 /* Headings */
 h1 {
   margin-left: -5px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 900;
   font-size: 160px;
   line-height: 0.9;
@@ -110,7 +110,7 @@ h1 {
 }
 
 .sub-h1 {
-  font-family: "Rajdhani", sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 600;
   color: #fff;
   font-size: 38px;
@@ -121,7 +121,7 @@ h1 {
 h2 {
   margin-left: -5px;
   margin-bottom: 0px;
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: 500;
   font-size: 45px;
   line-height: 1.1;
@@ -134,7 +134,7 @@ h2 {
   margin-top: 150px;
   padding-left: 10px;
   padding-top: 0px;
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 3.5em;
   color: rgb(0, 0, 0);
   line-height: 1em;
@@ -151,7 +151,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: 700;
   line-height: 0.4;
   margin-bottom: -30px;
@@ -165,25 +165,25 @@ p {
 strong {
   font-weight: 1200;
   -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   text-shadow: 1px 1px 0px rgb(60, 22, 130);
 }
 
 /* Utility Font Classes */
 .font-smythe {
-  font-family: "Smythe", cursive;
+  font-family: 'Smythe', cursive;
 }
 
 .font-orbitron {
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .font-rajdhani {
-  font-family: "Rajdhani", sans-serif;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .font-sofia {
-  font-family: "Sofia Sans", sans-serif;
+  font-family: 'Sofia Sans', sans-serif;
 }
 
 q {
@@ -259,10 +259,10 @@ section {
 .cta-gumroad {
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/images/logo/gumroad.svg");
+  background-image: url('/images/logo/gumroad.svg');
 }
 .cta-gumroad:hover {
-  background-image: url("/images/logo/gumroadHover.svg");
+  background-image: url('/images/logo/gumroadHover.svg');
 }
 
 .cta-button {
@@ -270,7 +270,9 @@ section {
   display: inline-grid;
   place-items: center;
   cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
 }
 
 .cta-button:hover {
@@ -392,7 +394,7 @@ strong {
   width: 100px;
   margin-bottom: 0rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .white-banner .feature__title {
   font-weight: 800;
@@ -420,7 +422,7 @@ strong {
   padding-left: 1.05rem;
 }
 .white-banner .feature__list li::before {
-  content: "→";
+  content: '→';
   position: absolute;
   left: 0;
   top: 0;
@@ -471,4 +473,4 @@ strong {
   border-radius: 12px;
   padding: 16px;
   box-sizing: border-box;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

@@ -48,14 +48,19 @@ function TimeLine() {
             <q>To go fast, run alone. To go far, walk together.</q>
 
             <p className="text-indent">
-              Like many, I went through a period of “professional reflection” in 2022. Bored out of my mind,
-              I grabbed the opportunity to begin work on the Mechabust project. I mean ... how cool would it be ... to have in my room ... a standing bust ... of a mech ... geared in samurai-style armor?!?🤩 I mean COME ON!</p>
+              Like many, I went through a period of “professional reflection” in 2022. Bored out of
+              my mind, I grabbed the opportunity to begin work on the Mechabust project. I mean ...
+              how cool would it be ... to have in my room ... a standing bust ... of a mech ...
+              geared in samurai-style armor?!?🤩 I mean COME ON!
+            </p>
 
             <p className="text-indent">
-              This kit was born directly out of my biggest passions: storytelling, drawing, sculpting, mechs, 3D printing, and design. Many factors lined
-              up to push the dream past the starting line: time, energy, and, most importantly, the urgency. I might never have this chance again to
-              design my very own customizable model kit of a mech bust. From then on, I simply trusted the iterative creative process to bring it to life.
-
+              This kit was born directly out of my biggest passions: storytelling, drawing,
+              sculpting, mechs, 3D printing, and design. Many factors lined up to push the dream
+              past the starting line: time, energy, and, most importantly, the urgency. I might
+              never have this chance again to design my very own customizable model kit of a mech
+              bust. From then on, I simply trusted the iterative creative process to bring it to
+              life.
             </p>
           </div>
 
@@ -81,13 +86,18 @@ function TimeLine() {
           </TimelineSeparator>
 
           {/* 2022 */}
-          <TimelineContent className='' sx={{ py: '0px', px: 2 }}>
-            <Typography className='' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
+          <TimelineContent className="" sx={{ py: '0px', px: 2 }}>
+            <Typography
+              className=""
+              variant="h6"
+              sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}
+            >
               <br />
               Laying the Foundation🌱
             </Typography>
-            <Typography component="div" className='' sx={{ width: { xs: '30rem' } }}>
-              Back then, it was a birthing graphic novel. All I knew was I needed a universe, a lore for my designs to take shape.
+            <Typography component="div" className="" sx={{ width: { xs: '30rem' } }}>
+              Back then, it was a birthing graphic novel. All I knew was I needed a universe, a lore
+              for my designs to take shape.
               <div className="timeline-row">
                 <div className="timeline-column">
                   <img width={300} src="/images/decorative/timeline-2022.jpg" alt="comic frame" />
@@ -114,13 +124,18 @@ function TimeLine() {
           </TimelineSeparator>
 
           {/* 2024 */}
-          <TimelineContent className='' sx={{ py: '0px', px: 2 }}>
-            <Typography className='' variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />Pioneer-1🚀
+          <TimelineContent className="" sx={{ py: '0px', px: 2 }}>
+            <Typography
+              className=""
+              variant="h6"
+              sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}
+            >
+              <br />
+              Pioneer-1🚀
             </Typography>
-            <Typography className='' sx={{ width: { xs: '30rem' } }}>
+            <Typography className="" sx={{ width: { xs: '30rem' } }}>
               My first public attempt . I submitted it to an international contest. The concept of
-              the Mech Bust was already alive in my mind.  It had a head I could morph into an
+              the Mech Bust was already alive in my mind. It had a head I could morph into an
               ice-shipping craft for the contest theme.
             </Typography>
           </TimelineContent>
@@ -145,7 +160,8 @@ function TimeLine() {
           {/* 2022 */}
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />Pioneer-2🔧
+              <br />
+              Pioneer-2🔧
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Didn’t win last year? All the more reason to go at it again. I revisited my original
@@ -175,7 +191,8 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />New Goals!🎯
+              <br />
+              New Goals!🎯
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Time to be set some goals. Can’t always rely on contests. I officially decide to
@@ -203,7 +220,8 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />Pioneer-3 The Mech Head🔥
+              <br />
+              Pioneer-3 The Mech Head🔥
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               MVP is Live! The base kit is fully designed and ready for you to download. This is our
@@ -232,7 +250,8 @@ function TimeLine() {
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />Next Step📈
+              <br />
+              Next Step📈
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               Community building. Lets get the ball rolling … stay tuned guys!

@@ -32,8 +32,7 @@ function LandingPage() {
     let rafId = 0;
     let lastNow = performance.now();
 
-    const clamp = (v, min, max) =>
-      Math.max(min, Math.min(max, v));
+    const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
 
     const computeProgressInSection = () => {
       // Progress over the sticky section only
@@ -41,9 +40,9 @@ function LandingPage() {
       const vh = window.innerHeight;
 
       // Amount of the section that has scrolled through the viewport
-      const total = rect.height + vh;                  // total scrollable path
+      const total = rect.height + vh; // total scrollable path
       const scrolled = clamp(vh - rect.top, 0, total); // 0..total as it passes through
-      const progress = scrolled / total;               // 0..1
+      const progress = scrolled / total; // 0..1
       return progress;
     };
 
@@ -53,7 +52,7 @@ function LandingPage() {
       // Keep a tiny epsilon off the end so browsers don’t “snap” to the last keyframe
       // Start at 20% scroll, end at 90%
       const startProgress = 0.2;
-      const endProgress = .8;
+      const endProgress = 0.8;
       const adjProgress = clamp((progress - startProgress) / (endProgress - startProgress), 0, 1);
       targetTime = clamp(adjProgress * video.duration, 0, video.duration - 0.001);
     };
@@ -102,7 +101,6 @@ function LandingPage() {
     };
   }, []);
 
-
   return (
     <div className="landing-page">
       <Parallax speed={0}>
@@ -123,7 +121,7 @@ function LandingPage() {
             alt="beauty Shot"
             width={400}
             height={332}
-          /*
+            /*
         style={{
           maxWidth: 970px,
           width: "100%",
@@ -149,22 +147,30 @@ function LandingPage() {
           </Parallax>
         </section>
         <div className="howItWorks-instructions">
-          <div className='howItWorks-instructions-item'><span>Download</span><br />(Support)</div>
-          <div className='howItWorks-instructions-item'><span>Resin Print</span><br />(No Postcuring)</div>
-          <div className='howItWorks-instructions-item'><span>Assemble</span><br />(Customize)</div></div>
+          <div className="howItWorks-instructions-item">
+            <span>Download</span>
+            <br />
+            (Support)
+          </div>
+          <div className="howItWorks-instructions-item">
+            <span>Resin Print</span>
+            <br />
+            (No Postcuring)
+          </div>
+          <div className="howItWorks-instructions-item">
+            <span>Assemble</span>
+            <br />
+            (Customize)
+          </div>
+        </div>
         <section id="how-it-works" className="section container">
           <Parallax speed={0}>
             <HowItWorksPart2 />
           </Parallax>
         </section>
 
-        <section
-          id="how-it-works"
-          className="section container"
-          ref={sectionRef}
-        >
+        <section id="how-it-works" className="section container" ref={sectionRef}>
           <Parallax speed={0}>
-
             <div className="sticky-viewport">
               <video
                 ref={videoRef}
@@ -184,22 +190,21 @@ function LandingPage() {
       </Element>
 
       <section className="section container testimonials">
-        <blockquote >
-          <p>I was hesitant at first, but this service delivered  beyond my expectations. Five stars!</p>
+        <blockquote>
+          <p>
+            I was hesitant at first, but this service delivered beyond my expectations. Five stars!
+          </p>
 
           <div className="author">
             Sarah L, <cite>Beta-tester</cite>
           </div>
-
         </blockquote>
       </section>
 
-
       {/* IMAGE AFTER TIMELINE*/}
       <Parallax speed={0}>
-        <img className="bottom-image" src='/images/decorative/placeholder.jpg' />
+        <img className="bottom-image" src="/images/decorative/placeholder.jpg" />
       </Parallax>
-
 
       <Parallax speed={0}>
         <Footer />

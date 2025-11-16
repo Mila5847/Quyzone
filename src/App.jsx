@@ -15,12 +15,11 @@ function App() {
       <Background />
       <Router>
         <MainApp />
-        <BackToTop threshold={300} duration={600} />  
+        <BackToTop threshold={300} duration={600} />
       </Router>
     </ParallaxProvider>
   );
 }
-
 
 function MainApp() {
   const location = useLocation();

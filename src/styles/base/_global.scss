@@ -1,4 +1,4 @@
-@use '../abstracts/variables'as *;
+@use '../abstracts/variables' as *;
 @use 'sass:math';
 
 body {
@@ -15,7 +15,6 @@ p {
   padding-left: $p-padding;
   padding-right: $p-padding;
 }
-
 
 ul {
   padding-left: 60px;

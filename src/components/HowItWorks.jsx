@@ -18,19 +18,24 @@ export function HowItWorksPart1() {
         />
 
         <div className="howitworks-text">
-          <p className=' text-indent'>
+          <p className=" text-indent">
             I'm a huge fan of mechanical design, and let's be honest, so are you. That's why we're
-            both here. Quyzone offers high-quality files kits for <strong>resin printers</strong> designed by and for every hungry builder, brought to life with
-            a unique, cute, whimsical touch! Our first model, the <strong>Pioneer-3</strong> sub, is pint-sized,
-            compact, and ready for deep-sea epicness.
+            both here. Quyzone offers high-quality files kits for <strong>resin printers</strong>{' '}
+            designed by and for every hungry builder, brought to life with a unique, cute, whimsical
+            touch! Our first model, the <strong>Pioneer-3</strong> sub, is pint-sized, compact, and
+            ready for deep-sea epicness.
           </p>
           <hr />
-          <p>→ <strong>Printable:</strong> friendly for even smaller resin printers.</p>
-          <p>→ <strong>Posable:</strong>  looks awesome on shelf with precision joints.</p>
-          <p>→ <strong>Perfectible:</strong> features modular assembly allowing for easy upgrades and deep
-            customization.
+          <p>
+            → <strong>Printable:</strong> friendly for even smaller resin printers.
           </p>
-
+          <p>
+            → <strong>Posable:</strong> looks awesome on shelf with precision joints.
+          </p>
+          <p>
+            → <strong>Perfectible:</strong> features modular assembly allowing for easy upgrades and
+            deep customization.
+          </p>
         </div>
       </div>
     </div>
@@ -43,7 +48,11 @@ export function HowItWorksPart2() {
       <div className="white-banner">
         <div className="white-banner__inner">
           <div className="feature">
-            <img src="/images/decorative/5iconsA.jpg" alt="paywhatyouwant" className="feature__icon" />
+            <img
+              src="/images/decorative/5iconsA.jpg"
+              alt="paywhatyouwant"
+              className="feature__icon"
+            />
             <p className="feature__desc">
               “<strong>PayWhatYouWant</strong>” Support the project as you see fit.
             </p>
@@ -57,26 +66,39 @@ export function HowItWorksPart2() {
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/5iconsC.jpg" alt="small footprint" className="feature__icon" />
+            <img
+              src="/images/decorative/5iconsC.jpg"
+              alt="small footprint"
+              className="feature__icon"
+            />
             <p className="feature__desc">
               Small Resin Printer? Parts are designed for <strong>Small Footprints</strong>.
             </p>
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/5iconsD.gif" alt="animated manual" className="feature__icon" />
+            <img
+              src="/images/decorative/5iconsD.gif"
+              alt="animated manual"
+              className="feature__icon"
+            />
             <p className="feature__desc">
               New to Model Making? My <strong>Animated Manual</strong> has you covered.
             </p>
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/5iconsE.jpg" alt="No glue needed" className="feature__icon" />
+            <img
+              src="/images/decorative/5iconsE.jpg"
+              alt="No glue needed"
+              className="feature__icon"
+            />
             <ul className="feature__list">
-              <p>→ <strong>No Glue Needed</strong></p>
+              <p>
+                → <strong>No Glue Needed</strong>
+              </p>
               <p>→ precision snap</p>
               <p>→ tactile bliss</p>
-
             </ul>
           </div>
         </div>
