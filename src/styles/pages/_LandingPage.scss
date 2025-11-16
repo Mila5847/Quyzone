@@ -31,8 +31,9 @@
 }
 
 .sticky-viewport {
-  margin-top: -30px;
-  margin-bottom: 50px;
+ max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .howItWorks-instructions {
