@@ -92,6 +92,53 @@ function BuildManual() {
     'A-3 \u27A4 A-0',
   ];
 
+  // 👉 Data for carousel 6
+  const carousel6Items = [
+    { type: 'img', src: '/images/manual/pres-A-5.jpg', alt: 'Slide 1' },
+
+    {
+      type: 'video',
+      src: '/videos/manual/anim-a05-2.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-a05-1.mp4',
+      alt: 'Alt video',
+    },
+
+  ];
+  const carousel6Captions = [
+    'Step 4 Preview',
+    'Part A-3 (post-curing NOT recommended)',
+    'A-3 \u27A4 A-0',
+    'A-3 \u27A4 A-0',
+  ];
+  // 👉 Data for carousel 7
+  const carousel7Items = [
+    { type: 'img', src: '/images/manual/pres-A-7.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori-A07.jpg', alt: 'Slide 2' },
+
+    {
+      type: 'video',
+      src: '/videos/manual/anim-a05-2.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-a05-1.mp4',
+      alt: 'Alt video',
+    },
+
+  ];
+  const carousel7Captions = [
+    'Step 4 Preview',
+    'Part A-3 (post-curing NOT recommended)',
+    'A-3 \u27A4 A-0',
+    'A-3 \u27A4 A-0',
+  ];
+
+
 
   return (
     <div className="build-manual">
@@ -131,12 +178,12 @@ function BuildManual() {
 
         {/* Second carousel for additional media */}
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="6" />
+          <MediaCarousel itemsData={carousel6Items} captions={carousel6Captions} title="6" />
         </section>
 
         {/* Second carousel for additional media */}
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="7" />
+          <MediaCarousel itemsData={carousel7Items} captions={carousel7Captions} title="7" />
         </section>
 
       </section>
