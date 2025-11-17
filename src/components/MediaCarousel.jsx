@@ -68,45 +68,48 @@ function MediaCarousel({ itemsData, captions, title }) {
         <p className="media-caption">{captions[activeIndex]}</p>
       </div>
 
-      <button
-        type="button"
-        className="btn-prev"
-        aria-label="Previous"
-        onClick={() => !atStart && carouselRef.current?.slidePrev()}
-        onMouseEnter={() => setHoverPrev(true)}
-        onMouseLeave={() => setHoverPrev(false)}
-      >
-        <img
-          src={
-            atStart
-              ? '/images/ui/buttonGalleryBack-greyed.svg' // show alt on first slide
-              : hoverPrev
-                ? '/images/ui/buttonGalleryBack-hover.svg'
-                : '/images/ui/buttonGalleryBack.svg'
-          }
-          alt=""
-        />
-      </button>
+     <button
+  type="button"
+  className={`btn-prev ${atStart ? 'is-disabled' : ''}`}
+  aria-label="Previous"
+  aria-disabled={atStart}
+  onClick={() => !atStart && carouselRef.current?.slidePrev()}
+  onMouseEnter={() => !atStart && setHoverPrev(true)}
+  onMouseLeave={() => !atStart && setHoverPrev(false)}
+>
+  <img
+    src={
+      atStart
+        ? '/images/ui/buttonGalleryBack-greyed.svg'
+        : hoverPrev
+          ? '/images/ui/buttonGalleryBack-hover.svg'
+          : '/images/ui/buttonGalleryBack.svg'
+    }
+    alt=""
+  />
+</button>
 
-      <button
-        type="button"
-        className="btn-next"
-        aria-label="Next"
-        onClick={() => !atEnd && carouselRef.current?.slideNext()}
-        onMouseEnter={() => setHoverNext(true)}
-        onMouseLeave={() => setHoverNext(false)}
-      >
-        <img
-          src={
-            atEnd
-              ? '/images/ui/buttonGalleryForward-greyed.svg' // only grey on last slide
-              : hoverNext
-                ? '/images/ui/buttonGalleryForward-hover.svg'
-                : '/images/ui/buttonGalleryForward.svg'
-          }
-          alt=""
-        />
-      </button>
+<button
+  type="button"
+  className={`btn-next ${atEnd ? 'is-disabled' : ''}`}
+  aria-label="Next"
+  aria-disabled={atEnd}
+  onClick={() => !atEnd && carouselRef.current?.slideNext()}
+  onMouseEnter={() => !atEnd && setHoverNext(true)}
+  onMouseLeave={() => !atEnd && setHoverNext(false)}
+>
+  <img
+    src={
+      atEnd
+        ? '/images/ui/buttonGalleryForward-greyed.svg'
+        : hoverNext
+          ? '/images/ui/buttonGalleryForward-hover.svg'
+          : '/images/ui/buttonGalleryForward.svg'
+    }
+    alt=""
+  />
+</button>
+
     </div>
   );
 }

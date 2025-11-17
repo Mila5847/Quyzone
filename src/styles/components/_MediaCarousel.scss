@@ -40,6 +40,11 @@
   transform: translate(calc(100% + var(--nav-outside, 8px)), -50%);
 }
 
+.btn-prev.is-disabled,
+.btn-next.is-disabled {
+  cursor: default;      // arrow cursor
+}
+
 .carousel-number {
   font-family: radhani, sans-serif;
   position: absolute;
@@ -57,7 +62,7 @@
 }
 
 .media-index {
-  position: absolute;
+  //position: absolute;
   font-family: radhani, sans-serif;
   padding: 0px 8px;
   /*border-radius: 12px;*/
@@ -66,7 +71,7 @@
 }
 
 .media-caption {
-  position: absolute;
+  //position: absolute;
   width: 100%;
   text-align: center;
   font-size: 16px;
