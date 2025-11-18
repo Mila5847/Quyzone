@@ -119,12 +119,12 @@ function BuildManual() {
 
     {
       type: 'video',
-      src: '/videos/manual/anim-a05-2.mp4',
+      src: '/videos/manual/anim-a07-1.mp4',
       alt: 'Alt video',
     },
     {
       type: 'video',
-      src: '/videos/manual/anim-a05-1.mp4',
+      src: '/videos/manual/anim-a07-2.mp4',
       alt: 'Alt video',
     },
   ];
