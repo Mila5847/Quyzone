@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/variables'as *;
 
 .sub-h1 {
   display: flex;
@@ -30,10 +30,37 @@
   box-sizing: border-box;
 }
 
+/*
+.white-band {
+  background-color: white;
+  width: 100vh;
+  margin-bottom: 30px;
+}
+*/
+
 .sticky-viewport {
+  margin-top: -40px;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
+
+  display: flex;
+  align-items: center;
+  align-items: flex-start;
+
+}
+
+.explodedView {
+  filter: contrast(120%);
+  background-color: white;
+  padding: 0 60px;
+  border-radius: 0 0 150px 150px;
+}
+
+.vidCorner {
+  margin-top: 10px;
+  width: 80px
 }
 
 .howItWorks-instructions {

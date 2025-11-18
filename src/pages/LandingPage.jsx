@@ -121,16 +121,16 @@ function LandingPage() {
             alt="beauty Shot"
             width={400}
             height={332}
-            /*
-        style={{
-          maxWidth: 970px,
-          width: "100%",
-          height: "auto",
-          display: "block", 
-          left: "-380px",
-          top:"-180px"
-        }}
-          */
+          /*
+      style={{
+        maxWidth: 970px,
+        width: "100%",
+        height: "auto",
+        display: "block", 
+        left: "-380px",
+        top:"-180px"
+      }}
+        */
           />
         </Parallax>
       </div>
@@ -169,17 +169,21 @@ function LandingPage() {
           </Parallax>
         </section>
 
-        <section id="how-it-works" className="section container" ref={sectionRef}>
+        <section id="how-it-works" className="section container white-band" ref={sectionRef}>
           <Parallax speed={0}>
             <div className="sticky-viewport">
+              <img src="/images/decorative/vidCornerTopLeft.svg" alt="Decorative element" className="vidCorner" />
               <video
                 ref={videoRef}
                 src="/videos/decorative/explodedTest_09.webm"
                 playsInline
                 muted
                 preload="auto"
+                className='explodedView'
                 controls={false}
               />
+              <img src="/images/decorative/vidCornerTopRight.svg" alt="Decorative element" className="vidCorner" />
+
             </div>
           </Parallax>
         </section>
