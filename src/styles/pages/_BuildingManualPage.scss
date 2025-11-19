@@ -27,11 +27,6 @@
   white-space: nowrap;
 }
 
-// .overflow-image {
-//   max-width: clamp(80px, 18vw, 150px);
-//   height: auto;
-// }
-
 
 /* ---------- Global overrides already in your snippet ---------- */
 
@@ -66,13 +61,6 @@ body.parallax-wallpaper.fixed-bg {
   .subassembly-title {
     flex-direction: column;
     align-items: flex-start;
-  }
-
- 
-
-  .overflow-image {
-    align-self: center;
-    max-width: 55%;
   }
 }
 
@@ -143,8 +131,9 @@ body.parallax-wallpaper.fixed-bg {
   .build-manual {
     padding-inline: 12px;
   }
-
-  .overflow-image {
-    max-width: 70%;
+  
+   .overflow-image {
+    align-self: center;
+    max-width: 50%;
   }
 }
