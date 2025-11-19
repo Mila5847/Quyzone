@@ -37,12 +37,14 @@ export default function BrandHeader({
 
         <div className="sub-h1" ref={subtitlesRef}>
           {subtitles.map((word, i) => (
-            <span key={i}>
+            <>
+             <span key={i}>
               {word}
-              {i < subtitles.length - 1 && (
-                <span className="spacer-horizontal">&#x25CF;</span>
-              )}
             </span>
+            {i < subtitles.length - 1 && (
+               <span>&#x25CF;</span>
+              )}
+            </>
           ))}
         </div>
       </div>

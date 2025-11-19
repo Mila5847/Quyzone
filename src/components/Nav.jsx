@@ -13,10 +13,6 @@ function Nav() {
       if (e && typeof e.preventDefault === 'function') e.preventDefault();
       return;
     }
-
-    // Only scroll to top when navigating to a different route.
-    // If the user clicks the nav link for the page they're already on,
-    // avoid scrolling so the current scroll position is preserved.
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

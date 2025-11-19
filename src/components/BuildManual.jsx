@@ -136,7 +136,7 @@ function BuildManual() {
   ];
 
   return (
-    <div className="build-manual">
+    <div className="manual-page build-manual">
       <Nav />
 
       <br />

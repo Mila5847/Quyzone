@@ -19,3 +19,12 @@
   display: flex;
   align-items: center;
 }
+
+.spacer-horizontal {
+  display: inline-block;
+  padding: 0 2ch;   // visually even spacing
+  line-height: 0;
+}
+
+// // font size of h1 to chnage 
+// @media
