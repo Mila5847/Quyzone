@@ -12,10 +12,11 @@ function LeftLabel({ lines }) {
   return (
     <Box
       sx={{
-        m: 'auto 0',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'flex-end',
+        justifyContent: 'center', // center label vertically vs dot
+        height: '100%',
         lineHeight: 1.05,
         fontSize: '1.2rem',
         fontWeight: 'bold',
@@ -69,11 +70,21 @@ function TimeLine() {
       </div>
 
       <Timeline className="timeline" position="right" sx={{ pl: 0, ml: 0 }}>
+        {/* 2022 */}
         <TimelineItem>
-          <LeftLabel className="timeline-label" lines={['2022', 'somwhere']} />
+          <LeftLabel lines={['2022', 'SOMEWHERE']} />
 
           <TimelineSeparator>
-            <TimelineConnector sx={{ visibility: 'hidden' }} />
+            {/* top connector: no growth, hidden (first item, no line above) */}
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 0,
+                height: 0,
+                visibility: 'hidden',
+              }}
+            />
             <TimelineDot
               sx={{
                 bgcolor: 'common.white',
@@ -82,20 +93,21 @@ function TimeLine() {
                 height: 10,
               }}
             />
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            {/* bottom connector grows to fill */}
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 1,
+              }}
+            />
           </TimelineSeparator>
 
-          {/* 2022 */}
-          <TimelineContent className="" sx={{ py: '0px', px: 2 }}>
-            <Typography
-              className=""
-              variant="h6"
-              sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}
-            >
-              <br />
+          <TimelineContent sx={{ py: '0px', px: 2 }}>
+            <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
               Laying the Foundation🌱
             </Typography>
-            <Typography component="div" className="" sx={{ width: { xs: '30rem' } }}>
+            <Typography component="div" sx={{ width: { xs: '30rem' } }}>
               Back then, it was a birthing graphic novel. All I knew was I needed a universe, a lore
               for my designs to take shape.
               <div className="timeline-row">
@@ -107,11 +119,20 @@ function TimeLine() {
           </TimelineContent>
         </TimelineItem>
 
+        {/* 2024 */}
         <TimelineItem>
-          <LeftLabel className="timeline-label" lines={['2024', ' Summer']} />
+          <LeftLabel lines={['2024', 'SUMMER']} />
 
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3, height: 20 }} />
+            {/* small fixed top connector, no grow -> dot stays near top */}
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 0,
+                height: 0,
+              }}
+            />
             <TimelineDot
               sx={{
                 bgcolor: 'common.white',
@@ -120,20 +141,20 @@ function TimeLine() {
                 height: 10,
               }}
             />
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 1,
+              }}
+            />
           </TimelineSeparator>
 
-          {/* 2024 */}
-          <TimelineContent className="" sx={{ py: '0px', px: 2 }}>
-            <Typography
-              className=""
-              variant="h6"
-              sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}
-            >
-              <br />
+          <TimelineContent sx={{ py: '0px', px: 2 }}>
+            <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
               Pioneer-1🚀
             </Typography>
-            <Typography className="" sx={{ width: { xs: '30rem' } }}>
+            <Typography sx={{ width: { xs: '30rem' } }}>
               My first public attempt . I submitted it to an international contest. The concept of
               the Mech Bust was already alive in my mind. It had a head I could morph into an
               ice-shipping craft for the contest theme.
@@ -141,11 +162,19 @@ function TimeLine() {
           </TimelineContent>
         </TimelineItem>
 
+        {/* 2025 Summer */}
         <TimelineItem>
-          <LeftLabel className="timeline-label" lines={['2025', 'Summer']} />
+          <LeftLabel lines={['2025', 'SUMMER']} />
 
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 0,
+                height: 0,
+              }}
+            />
             <TimelineDot
               sx={{
                 bgcolor: 'common.white',
@@ -154,13 +183,17 @@ function TimeLine() {
                 height: 10,
               }}
             />
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 1,
+              }}
+            />
           </TimelineSeparator>
 
-          {/* 2022 */}
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />
               Pioneer-2🔧
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
@@ -171,11 +204,19 @@ function TimeLine() {
           </TimelineContent>
         </TimelineItem>
 
+        {/* 2025 Fall */}
         <TimelineItem>
-          <LeftLabel className="timeline-label" lines={['2025', 'Fall']} />
+          <LeftLabel lines={['2025', 'FALL']} />
 
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 0,
+                height: 0,
+              }}
+            />
             <TimelineDot
               sx={{
                 bgcolor: 'common.white',
@@ -184,14 +225,17 @@ function TimeLine() {
                 height: 10,
               }}
             />
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 1,
+              }}
+            />
           </TimelineSeparator>
-
-          {/* 2022 */}
 
           <TimelineContent sx={{ py: '0px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />
               New Goals!🎯
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
@@ -201,12 +245,19 @@ function TimeLine() {
           </TimelineContent>
         </TimelineItem>
 
-        {/* NOW 2025 */}
+        {/* 2026 Early */}
         <TimelineItem>
-          <LeftLabel className="timeline-label" lines={['2026', 'Early']} />
+          <LeftLabel lines={['2026', 'EARLY']} />
 
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 0,
+                height: 12,
+              }}
+            />
             <TimelineDot
               sx={{
                 bgcolor: 'common.white',
@@ -215,28 +266,39 @@ function TimeLine() {
                 height: 10,
               }}
             />
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 1,
+              }}
+            />
           </TimelineSeparator>
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />
               Pioneer-3 The Mech Head🔥
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
               MVP is Live! The base kit is fully designed and ready for you to download. This is our
               starting point, friendly to upgrades. A real standalone product.
             </Typography>
-            <img></img>
           </TimelineContent>
         </TimelineItem>
 
         {/* Soon */}
         <TimelineItem>
-          <LeftLabel className="timeline-label" lines={['Soon TBD!']} />
+          <LeftLabel lines={['SOON', 'TBD!']} />
 
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: 'common.white', width: 3 }} />
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 0,
+                height: 12,
+              }}
+            />
             <TimelineDot
               sx={{
                 bgcolor: 'common.white',
@@ -245,12 +307,19 @@ function TimeLine() {
                 height: 10,
               }}
             />
-            <TimelineConnector sx={{ visibility: 'hidden' }} />
+            {/* last item: no connector below */}
+            <TimelineConnector
+              sx={{
+                bgcolor: 'common.white',
+                width: 3,
+                flexGrow: 1,
+                visibility: 'hidden',
+              }}
+            />
           </TimelineSeparator>
 
           <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
-              <br />
               Next Step📈
             </Typography>
             <Typography sx={{ width: { xs: '30rem' } }}>
