@@ -163,6 +163,11 @@ function LandingPage() {
             (Customize)
           </div>
         </div>
+        
+        <Parallax speed={0}>
+          <img src="/images/decorative/IconBg.svg" alt="" className="icon-bg" />
+        </Parallax>
+    
         <section id="how-it-works" className="section container">
           <Parallax speed={0}>
             <HowItWorksPart2 />

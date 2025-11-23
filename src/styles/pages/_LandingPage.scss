@@ -30,13 +30,6 @@
   box-sizing: border-box;
 }
 
-/*
-.white-band {
-  background-color: white;
-  width: 100vh;
-  margin-bottom: 30px;
-}
-*/
 
 .sticky-viewport {
   margin-top: -40px;
@@ -141,4 +134,16 @@ blockquote {
 .bottom-image {
   margin: auto;
   margin-bottom: 30px;
+}
+
+.icon-bg {
+  display: block;
+  width: 100%;
+  max-width: 1200px; // or whatever your content width is
+  margin: 0 auto;
+
+  position: relative;
+  transform: translateY(8rem); // pull it down;
+  pointer-events: none;
+  z-index: 1; // sits behind the white band we'll pull up
 }
