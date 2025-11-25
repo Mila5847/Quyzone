@@ -4,6 +4,11 @@ import { Link as RouterLink, useLocation } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className="footer">
+      <div className="meetMe">
+
+        Lets Meet Up!
+
+      </div>
       <div className="social-icons">
         <a href="https://www.youtube.com/@YourChannel" target="_blank" rel="noopener noreferrer">
           <img src="/images/logo/YouTube.svg" alt="YouTube" width={110} height={130} />
@@ -23,7 +28,7 @@ const Footer = () => {
           &gt; Contact
         </RouterLink>
       </div>
-      <div>© 2025 quyzone.com - Design by Quy Tran. Development by Mila Kehayova.</div>
+      <div>© 2025 quyzone.com - Design by Quy Tran. Development by Mila Kehayova.  Model weathering by Laury-Anne Morel</div>
     </div>
   );
 };
