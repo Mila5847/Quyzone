@@ -74,21 +74,33 @@ nav {
 @media (max-width: 600px) {
   nav {
     padding: 0.8rem;
-    gap: 0.5rem;
+    gap: 0.3rem;
 
-    /* Enables wrapping on small screens */
-    flex-wrap: wrap;
+    /* Stack items vertically */
+    flex-direction: column;
 
-    /* Centers content on mobile */
-    justify-content: center;
+    /* Align to the left */
+    align-items: flex-start;
+
+    /* No wrap needed since it's now a column */
+    flex-wrap: nowrap;
   }
 
   nav a,
   nav button {
     font-size: 23px;
-    padding: 0.5rem 0.7rem;
+    padding: 0.5rem 0;
+    width: 100%;          /* optional: full width tap target */
+    text-align: left;     /* make sure text aligns left */
+  }
+
+  /* Optional: move underline closer for mobile */
+  nav a::after,
+  nav button::after {
+    bottom: 4px;
   }
 }
+
 
 /* Divider (unchanged but cleaned) */
 .divider {

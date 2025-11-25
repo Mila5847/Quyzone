@@ -41,6 +41,17 @@
       width: 100%;
     }
   }
+
+  /* 🔹 Mobile hr override */
+  @media (max-width: 640px) {
+    hr {
+      width: 50%;         
+      max-width: 300px;   // optional
+      margin: 1.5rem auto;
+      border: none;
+      border-top: 3px solid black;
+    }
+  }
 }
 
 .white-banner {

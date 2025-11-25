@@ -1,10 +1,10 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef, Fragment } from 'react';
 import Logo from './logo';
 import '../styles/components/_Header.scss';
 
 export default function BrandHeader({
   title = 'MECHABUST',
-  subtitles = ['PRINTABLE', 'POSABLE', 'PERFECTIBLE'],
+  subtitles = ['PERFECTIBLE', 'PRINTABLE', 'POSABLE'],
   id = 'Logo',
   className = 'section ',
 }) {
@@ -15,6 +15,12 @@ export default function BrandHeader({
     const titleEl = titleRef.current;
     const subsEl = subtitlesRef.current;
     if (!titleEl || !subsEl) return;
+
+    // Optionally: skip letter-spacing on mobile
+    if (window.matchMedia('(max-width: 600px)').matches) {
+      subsEl.style.letterSpacing = '';
+      return;
+    }
 
     subsEl.style.letterSpacing = '0px';
     const titleWidth = titleEl.offsetWidth;
@@ -37,14 +43,14 @@ export default function BrandHeader({
 
         <div className="sub-h1" ref={subtitlesRef}>
           {subtitles.map((word, i) => (
-            <>
-             <span key={i}>
-              {word}
-            </span>
-            {i < subtitles.length - 1 && (
-               <span>&#x25CF;</span>
+            <Fragment key={i}>
+              <span className="sub-h1__item">{word}</span>
+              {i < subtitles.length - 1 && (
+                <span className="sub-h1__dot" aria-hidden="true">
+                  &#x25CF;
+                </span>
               )}
-            </>
+            </Fragment>
           ))}
         </div>
       </div>

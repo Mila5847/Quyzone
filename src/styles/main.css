@@ -109,15 +109,6 @@ h1 {
   color: #fff;
 }
 
-.sub-h1 {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 600;
-  color: #fff;
-  font-size: 38px;
-  margin-top: -32px;
-  letter-spacing: 2px;
-}
-
 h2 {
   margin-left: -5px;
   margin-bottom: 0px;
@@ -236,18 +227,6 @@ ul {
   margin-bottom: 30px;
 }
 
-.cta-button {
-  box-shadow: 2px 1px 1px 0px #000000;
-  margin-left: 20px;
-  display: flex;
-  justify-content: left;
-  border: none;
-  border-radius: 25px;
-  margin-top: 7px;
-  background-color: #38c5a9;
-  width: 350px;
-  height: 110px;
-}
 .cta-button img {
   width: 350px;
   height: auto;
@@ -271,6 +250,16 @@ ul {
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease;
+  box-shadow: 2px 1px 1px 0px #000000;
+  margin-left: 20px;
+  display: flex;
+  justify-content: left;
+  border: none;
+  border-radius: 25px;
+  margin-top: 7px;
+  background-color: #38c5a9;
+  width: 350px;
+  height: 110px;
 }
 
 .cta-button:hover {
@@ -449,6 +438,10 @@ strong {
   flex-direction: row;
   justify-content: space-between;
   width: 515px;
+  color: black;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+  font-size: 38px;
 }
 
 .landing-page {
@@ -458,7 +451,7 @@ strong {
 .foreground {
   position: absolute;
   margin-left: 60rem;
-  margin-top: -25rem;
+  margin-top:-19rem;
   max-width: 990px;
   width: 100%;
   height: auto;

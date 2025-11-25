@@ -11,19 +11,6 @@
   overflow: hidden;
 }
 
-.foreground {
-  position: absolute;
-  margin-left: 60rem;
-  margin-top: -25rem;
-
-  max-width: $hero_foreground_maxWidth;
-  width: 40%;
-  height: auto;
-  display: block;
-  right: $hero_foreground_horizMove;
-  top: $hero_foreground_vertMove;
-}
-
 .hiw-item {
   border-radius: 12px;
   padding: 16px;
@@ -146,4 +133,83 @@ blockquote {
   transform: translateY(8rem); // pull it down;
   pointer-events: none;
   z-index: 1; // sits behind the white band we'll pull up
+}
+
+.foreground {
+  position: absolute;
+  margin-left: 60rem;
+  margin-top: -25rem;
+  max-width: $hero_foreground_maxWidth;
+  width: 40%;
+  height: auto;
+  display: block;
+  right: $hero_foreground_horizMove;
+  top: $hero_foreground_vertMove;
+}
+
+@media (min-width: 1920px) {
+  .foreground {
+    margin-left: 70rem;
+    margin-top: -28rem;
+    width: 35%;
+    max-width: 1100px;
+    right: 0;
+    top: -220px;
+  }
+}
+
+@media (min-width: 1470px) and (max-width: 1919px) {
+  .foreground {
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -20rem;
+    max-width: 990px;
+    width: 35%;
+    height: auto;
+    display: block;
+    right: 0;
+    top: -190px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .foreground {
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -17rem;
+    max-width: 990px;
+    width: 50%;
+    height: auto;
+    display: block;
+    right: 0;
+    top: -190px;
+  }
+}
+
+@media (max-width: 800px) {
+  .foreground {
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -17rem;
+    max-width: 990px;
+    width: 53%;
+    height: auto;
+    display: block;
+    right: 0;
+    top: -190px;
+  }
+}
+
+@media (max-width: 600px) {
+  .foreground {
+    position: absolute;
+    margin-left: 60rem;
+    margin-top: -23rem;
+    max-width: 990px;
+    width: 70%;
+    height: auto;
+    display: block;
+    right: 0;
+    top: -190px;
+  }
 }

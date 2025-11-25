@@ -7,45 +7,45 @@
 
   display: flex;
   flex-direction: column;
-}
 
-/* SUB ASSEMBLY title row */
-.subassembly-title {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1rem;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
+  /* SUB ASSEMBLY title row */
+  .subassembly-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
 
-.post-cure-warning {
-  font-size: clamp(0.6rem, 1.1vw, 0.75rem);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
+  .post-cure-warning {
+    font-size: clamp(0.6rem, 1.1vw, 0.75rem);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
 
 
-/* ---------- Global overrides already in your snippet ---------- */
+  /* ---------- Global overrides already in your snippet ---------- */
 
-#Logo,
-#Logo h1,
-#Logo .sub-h1,
-#Logo .sub-h1 span {
-  color: #111;
-}
+  #Logo,
+  #Logo h1,
+  #Logo .sub-h1,
+  #Logo .sub-h1 span {
+    color: #111;
+  }
 
-body.no-global {
-  background: #fff;
-  background-image: none;
-  color: #111;
-}
+  body.no-global {
+    background: #fff;
+    background-image: none;
+    color: #111;
+  }
 
-body.parallax-wallpaper.fixed-bg {
-  background: #fff;
-  background-image: none;
+  body.parallax-wallpaper.fixed-bg {
+    background: #fff;
+    background-image: none;
+  }
 }
 
 /* ---------- Responsiveness ---------- */
@@ -69,12 +69,6 @@ body.parallax-wallpaper.fixed-bg {
   #Logo h1 {
     font-size: 95px;
   }
-
-  #Logo .sub-h1 {
-    font-size: 20px;
-    width: auto;
-    margin: 0px 5px 0px 5px;
-  }
 }
 
 @media (max-width: 1200px) 
@@ -82,39 +76,17 @@ body.parallax-wallpaper.fixed-bg {
   #Logo h1 {
     font-size: 130px;
   }
-
-  #Logo .sub-h1 {
-    font-size: 20px;
-    width: auto;
-    margin: 0px 5px 0px 5px;
-  }
 }
 
 @media (max-width: 980px) 
 {
   #Logo h1 {
-    font-size: 93px;
-  }
-
-  #Logo .sub-h1 {
-    font-size: 20px;
-    width: auto;
-    margin: 0px 5px 0px 5px;
+    font-size: 80px;
   }
 }
 
 /* tiny phones */
 @media (max-width: 800px) {
-  #Logo h1 {
-    font-size: 50px;
-  }
-
-  #Logo .sub-h1 {
-    font-size: 20px;
-    width: auto;
-    margin: 0px 5px 0px 5px;
-  }
-
   .brand-header {
     display: block;
     text-align: -webkit-center;
@@ -132,7 +104,7 @@ body.parallax-wallpaper.fixed-bg {
     padding-inline: 12px;
   }
   
-   .overflow-image {
+  .overflow-image {
     align-self: center;
     max-width: 50%;
   }

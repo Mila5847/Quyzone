@@ -22,9 +22,32 @@
 
 .spacer-horizontal {
   display: inline-block;
-  padding: 0 2ch;   // visually even spacing
+  padding: 0 2ch;
   line-height: 0;
 }
 
-// // font size of h1 to chnage 
-// @media
+/* --- Mobile layout --- */
+@media (max-width: 600px) {
+  .brand-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand-header .brand-heading {
+    margin-left: 0; // optional: remove desktop offset
+  }
+
+  .brand-header .sub-h1 {
+    flex-direction: column;      // stack subtitles vertically
+    align-items: flex-start;     // left align
+  }
+
+  .brand-header .sub-h1__dot {
+    display: none;               // hide dots on mobile
+  }
+
+  // Optional: reset letter-spacing if JS doesn't already do it
+  .brand-header .sub-h1 {
+    letter-spacing: normal;
+  }
+}
