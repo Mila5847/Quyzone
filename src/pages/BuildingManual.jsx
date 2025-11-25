@@ -16,7 +16,7 @@ export default function BuildingManual() {
 
   return (
     <main className="manual-page">
-      <Header title="BUILD MANUAL" subtitles={['SOMETHING', 'SOMETHNG2', 'SOMETHING3']} />
+      <Header title="BUILD MANUAL" subtitles={['ASSEMBLY', 'INSTRUCTION', 'INSIDE']} />
       <BuildManual />
     </main>
   );

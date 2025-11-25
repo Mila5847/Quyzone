@@ -67,19 +67,14 @@ function TimeLine() {
             <q>To go fast, run alone. To go far, walk together.</q>
 
             <p className="text-indent">
-              Like many, I went through a period of “professional reflection” in 2022. Bored out of
-              my mind, I grabbed the opportunity to begin work on the Mechabust project. I mean ...
-              how cool would it be ... to have in my room ... a standing bust ... of a mech ...
-              geared in samurai-style armor?!?🤩 I mean COME ON!
+              Like many, I went through a period of professional reflection during the pandemic. Looking for something to pour myself into, I seized the opportunity to begin work on the Mechabust project. Because honestly... how cool would it be to have a standing mech bust geared in samurai-style armor right in your room?🤩 I mean, COME ON!
             </p>
 
             <p className="text-indent">
-              This kit was born directly out of my biggest passions: storytelling, drawing,
-              sculpting, mechs, 3D printing, and design. Many factors lined up to push the dream
-              past the starting line: time, energy, and, most importantly, the urgency. I might
-              never have this chance again to design my very own customizable model kit of a mech
-              bust. From then on, I simply trusted the iterative creative process to bring it to
-              life.
+              This kit was born directly out of my biggest passions: storytelling, drawing, sculpting, mechs, 3D printing, and design. The stars aligned—time, energy, and urgency pushed this dream past the starting line. I realized I might never have this chance again to design my very own customizable model kit. From then on, I simply trusted the iterative creative process to bring it to life.
+            </p>
+            <p className="text-indent">
+              As the full bust is a massive undertaking, I am launching with the head unit first. Here is the twist: when flipped upside down, the head transforms into a standalone mini-submarine.
             </p>
           </div>
 
@@ -101,7 +96,7 @@ function TimeLine() {
       >
         {/* 2022 */}
         <TimelineItem>
-          <LeftLabel lines={['2022', 'SOMEWHERE']} />
+          <LeftLabel lines={['2022']} />
 
           <TimelineSeparator>
             <TimelineConnector
@@ -126,8 +121,7 @@ function TimeLine() {
               Laying the Foundation🌱
             </Typography>
             <Typography component="div" sx={contentTextSx}>
-              Back then, it was a birthing graphic novel. All I knew was I needed a universe, a lore
-              for my designs to take shape.
+              Back then, this project was just a budding graphic novel. I started with the story and let lore drive my designs.
               <div className="timeline-row">
                 <div className="timeline-column">
                   <img
@@ -167,9 +161,7 @@ function TimeLine() {
               Pioneer-1🚀
             </Typography>
             <Typography sx={contentTextSx}>
-              My first public attempt. I submitted it to an international contest. The concept of
-              the Mech Bust was already alive in my mind. It had a head I could morph into an
-              ice-shipping craft for the contest theme.
+              I first exposed the concept to the world by submitting it to an international contest. The Mech Bust was already alive in my mind, featuring a head I designed to morph into an ice-shipping craft for the competition's theme.
             </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -201,8 +193,7 @@ function TimeLine() {
             </Typography>
             <Typography sx={contentTextSx}>
               Didn’t win last year? All the more reason to go at it again. I revisited my original
-              model, but this time I wasn’t starting from scratch. I rebuilt it to be far more
-              modular, designed for customization and community remixing.
+              model, but this time I wasn’t starting from scratch. I rebuilt it and pushed the modularity aspect, designed for customization.
             </Typography>
           </TimelineContent>
         </TimelineItem>
@@ -298,7 +289,7 @@ function TimeLine() {
               Next Step📈
             </Typography>
             <Typography sx={contentTextSx}>
-              Community building. Let’s get the ball rolling … stay tuned guys!
+              Community building. Let’s get the ball rolling … stay tuned!
             </Typography>
           </TimelineContent>
         </TimelineItem>

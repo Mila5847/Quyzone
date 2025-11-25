@@ -7,7 +7,7 @@ function ContactPage() {
   return (
     <div>
       <Parallax speed={0}>
-        <Header title="CONTACT" subtitles={['CONTACT1', 'CONTACT2', 'CONTACT3']} />
+        <Header title="CONTACT" subtitles={['LOOKING', 'FOR', 'ANSWERS?']} />
       </Parallax>
 
       <Parallax speed={0}>

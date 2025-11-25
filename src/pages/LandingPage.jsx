@@ -117,7 +117,7 @@ function LandingPage() {
         <Parallax speed={3}>
           <img
             className="foreground"
-            src="./images/decorative/foregroundTest_01.png"
+            src="./images/decorative/Hero-foreground.png"
             alt="beauty Shot"
             width={400}
             height={332}
@@ -163,11 +163,11 @@ function LandingPage() {
             (Customize)
           </div>
         </div>
-        
+
         <Parallax speed={0}>
           <img src="/images/decorative/IconBg.svg" alt="" className="icon-bg" />
         </Parallax>
-    
+
         <section id="how-it-works" className="section container">
           <Parallax speed={0}>
             <HowItWorksPart2 />
