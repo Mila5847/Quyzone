@@ -23,12 +23,14 @@ function BuildManual() {
   // 👉 Data for carousel 2
   const carousel1Items = [
     { type: 'img', src: '/images/manual/pres-A-2.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori_receiver.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori_coverBot.jpg', alt: 'Slide 2' },
     { type: 'video', src: '/videos/manual/anim-a01-2.mp4', alt: 'Slide 3' },
     { type: 'video', src: '/videos/manual/anim-a01-1.mp4', alt: 'Slide 4' },
   ];
   const carousel1Captions = [
     'Step 2 Preview',
+    'Part A-0 (P.C.N.R.)*',
     'Part A-1(R) (P.C.N.R.)*',
     'A-1(R) \u27A4 A-0',
     'A-1(L) \u27A4 A-0',
@@ -145,7 +147,7 @@ function BuildManual() {
   //-------------------------------------------------------------------------------------------------------------------------------//
 
   // 👉 Data for carousel 8
-  const carouselB08Items = [
+  const carousel08Items = [
     { type: 'img', src: '/images/manual/pres-B01.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B00.jpg', alt: 'Slide 2' },
     { type: 'img', src: '/images/manual/ori-B01.jpg', alt: 'Slide 2' },
@@ -156,7 +158,7 @@ function BuildManual() {
     },
 
   ];
-  const carouselB08Captions = [
+  const carousel08Captions = [
     'Step 8 Preview',
     'Part B-0 (P.C.N.R.)*',
     'Part B-1 (P.C.N.R.)*',
@@ -247,25 +249,22 @@ function BuildManual() {
         </h3>
 
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel0Items} captions={carousel0Captions} title="1" />
+          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="1" />
         </section>
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="2" />
+          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="2" />
         </section>
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="3" />
+          <MediaCarousel itemsData={carousel3Items} captions={carousel3Captions} title="3" />
         </section>
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel3Items} captions={carousel3Captions} title="4" />
+          <MediaCarousel itemsData={carousel5Items} captions={carousel5Captions} title="4" />
         </section>
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel5Items} captions={carousel5Captions} title="5" />
+          <MediaCarousel itemsData={carousel6Items} captions={carousel6Captions} title="5" />
         </section>
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel6Items} captions={carousel6Captions} title="6" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel7Items} captions={carousel7Captions} title="7" />
+          <MediaCarousel itemsData={carousel7Items} captions={carousel7Captions} title="6" />
         </section>
       </section>
 
@@ -277,10 +276,10 @@ function BuildManual() {
         </h3>
 
         <section className="carousel-section">
-          <MediaCarousel itemsData={carouselB08Items} captions={carouselB08Captions} title="8" />
+          <MediaCarousel itemsData={carousel08Items} captions={carousel08Captions} title="7" />
         </section>
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel09Items} captions={carousel09Captions} title="9" />
+          <MediaCarousel itemsData={carousel09Items} captions={carousel09Captions} title="8" />
         </section>
         <section className="carousel-section">
           <MediaCarousel itemsData={carousel10Items} captions={carousel10Captions} title="10" />
