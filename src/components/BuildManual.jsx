@@ -149,7 +149,6 @@ function BuildManual() {
     { type: 'img', src: '/images/manual/pres-B01.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B00.jpg', alt: 'Slide 2' },
     { type: 'img', src: '/images/manual/ori-B01.jpg', alt: 'Slide 2' },
-
     {
       type: 'video',
       src: '/videos/manual/anim-b00-1.mp4',
@@ -204,8 +203,8 @@ function BuildManual() {
   const carousel10Captions = [
     'Step 10 Preview',
     'Part B-3 (P.C.N.R.)*',
-    'Part B-3 (post-curing NOT recommended)',
-    'B-0 \u27A4 B-1',
+    'B-0 \u27A4 B-0 + B-2',
+    'B-0 \u27A4 B-0 + B-2',
 
   ];
   const carousel11Items = [
@@ -242,7 +241,7 @@ function BuildManual() {
       <section>
         <h2>PIONEER.3</h2>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY A
+          SUB-ASSEMBLY A
           <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
         </h3>
@@ -272,7 +271,7 @@ function BuildManual() {
 
       <section>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY B
+          SUB-ASSEMBLY B
           <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyB.png" alt="assemblyA" />
         </h3>
@@ -290,16 +289,11 @@ function BuildManual() {
           <MediaCarousel itemsData={carousel11Items} captions={carousel11Captions} title="11" />
         </section>
 
-
-
       </section>
-
-
-
 
       <section>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY C
+          SUB-ASSEMBLY C
           <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyC.png" alt="assemblyA" />
         </h3>
@@ -309,7 +303,7 @@ function BuildManual() {
       </section>
       <section>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY D
+          SUB-ASSEMBLY D
           <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyD.png" alt="assemblyA" />
         </h3>
@@ -319,7 +313,7 @@ function BuildManual() {
       </section>
       <section>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY E
+          SUB-ASSEMBLY E
           <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
         </h3>
@@ -329,7 +323,7 @@ function BuildManual() {
       </section>
       <section>
         <h3 className="subassembly-title">
-          SUB ASSEMBLY F
+          SUB-ASSEMBLY F
           <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
           <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
         </h3>
