@@ -2,7 +2,7 @@
 
 .brand-header {
   display: flex;
-  align-items: center;
+ //align-items: center;
   gap: clamp(12px, 3vw, 24px);
 }
 
@@ -17,7 +17,7 @@
 
 .brand-header .sub-h1 {
   display: flex;
-  align-items: center;
+  //align-items: center;
 }
 
 .spacer-horizontal {
@@ -30,7 +30,7 @@
 @media (max-width: 600px) {
   .brand-header {
     flex-direction: column;
-    align-items: flex-start;
+    //align-items: flex-start;
   }
 
   .brand-header .brand-heading {
@@ -39,7 +39,7 @@
 
   .brand-header .sub-h1 {
     flex-direction: column;      // stack subtitles vertically
-    align-items: flex-start;     // left align
+   // align-items: baseline;     // left align
   }
 
   .brand-header .sub-h1__dot {
@@ -50,4 +50,9 @@
   .brand-header .sub-h1 {
     letter-spacing: normal;
   }
+
+  .logo-section {
+    margin-left: 28vw;
+  }
+
 }

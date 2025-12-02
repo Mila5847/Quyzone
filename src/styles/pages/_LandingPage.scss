@@ -126,7 +126,6 @@ blockquote {
 .icon-bg {
   display: block;
   width: 100%;
-  max-width: 1200px; // or whatever your content width is
   margin: 0 auto;
 
   position: relative;
@@ -184,6 +183,17 @@ blockquote {
     right: 0;
     top: -190px;
   }
+
+  .icon-bg {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+    position: relative;
+    transform: translateY(0.5rem); 
+    pointer-events: none;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 800px) {
@@ -198,6 +208,28 @@ blockquote {
     right: 0;
     top: -190px;
   }
+
+ .howItWorks-instructions {
+    flex-direction: column;     
+    align-items: center;
+    gap: 2rem;                
+  }
+
+  .howItWorks-instructions-item {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .howItWorks-instructions-item:not(:last-child)::after {
+    content: '↓';
+    position: absolute;
+    bottom: -45px;            
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 44px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -211,5 +243,19 @@ blockquote {
     display: block;
     right: 0;
     top: -190px;
+  }
+}
+
+.icon-bg--mobile {
+   transform: translateY(0.5rem); // pull it down;
+  display: none;
+}
+
+@media (max-width: 1180px) {
+  .icon-bg--default {
+    display: none;
+  }
+  .icon-bg--mobile {
+    display: block;
   }
 }

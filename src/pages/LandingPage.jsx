@@ -121,7 +121,7 @@ function LandingPage() {
             alt="beauty Shot"
             width={400}
             height={332}
-          /*
+            /*
       style={{
         maxWidth: 970px,
         width: "100%",
@@ -165,7 +165,10 @@ function LandingPage() {
         </div>
 
         <Parallax speed={0}>
-          <img src="/images/decorative/IconBg.svg" alt="" className="icon-bg" />
+          <>
+            <img src="/images/decorative/IconBg.svg" alt="" className="icon-bg icon-bg--default" />
+            <img src="/images/decorative/separator_A01.svg" alt="" className="icon-bg icon-bg--mobile" />
+          </>
         </Parallax>
 
         <section id="how-it-works" className="section container">
@@ -177,18 +180,25 @@ function LandingPage() {
         <section id="how-it-works" className="section container white-band" ref={sectionRef}>
           <Parallax speed={0}>
             <div className="sticky-viewport">
-              <img src="/images/decorative/vidCornerTopLeft.svg" alt="Decorative element" className="vidCorner" />
+              <img
+                src="/images/decorative/vidCornerTopLeft.svg"
+                alt="Decorative element"
+                className="vidCorner"
+              />
               <video
                 ref={videoRef}
                 src="/videos/decorative/explodedTest_09.webm"
                 playsInline
                 muted
                 preload="auto"
-                className='explodedView'
+                className="explodedView"
                 controls={false}
               />
-              <img src="/images/decorative/vidCornerTopRight.svg" alt="Decorative element" className="vidCorner" />
-
+              <img
+                src="/images/decorative/vidCornerTopRight.svg"
+                alt="Decorative element"
+                className="vidCorner"
+              />
             </div>
           </Parallax>
         </section>

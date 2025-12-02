@@ -89,7 +89,6 @@
 @media (max-width: 800px) {
   .brand-header {
     display: block;
-    text-align: -webkit-center;
   }
 
   .brand-heading {
@@ -98,6 +97,7 @@
 
   .brand-heading h1 {
     margin-bottom: 40px;
+    text-align: -webkit-center;
   }
 
   .build-manual {

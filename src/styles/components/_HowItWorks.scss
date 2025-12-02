@@ -45,8 +45,8 @@
   /* 🔹 Mobile hr override */
   @media (max-width: 640px) {
     hr {
-      width: 50%;         
-      max-width: 300px;   // optional
+      width: 50%;
+      max-width: 300px; // optional
       margin: 1.5rem auto;
       border: none;
       border-top: 3px solid black;
@@ -61,30 +61,24 @@
   padding-top: $feature__icon-vertical-padding;
   padding-bottom: $feature__icon-vertical-padding;
 
-  /* a bit taller like the mock 
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);*/
   .white-banner__inner {
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 1rem;
 
-    /* five even columns, centered content */
     display: grid;
     grid-template-columns: repeat(5, minmax(150px, 1fr));
     justify-items: center;
     align-items: start;
-    gap: 2.5rem;
-    /* more breathing room between items */
+    gap: clamp(1rem, 2vw, 2.5rem);
   }
 
   .feature {
-    /* stack icon over text, centered */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    max-width: 200px;
+    max-width: clamp(140px, 18vw, 200px);
   }
 
   .feature__icon {
@@ -102,42 +96,17 @@
 
   .feature__desc {
     margin: 0;
-    /*font-size: 0.9rem;*/
     line-height: 1.35;
     color: #222;
-    /* strong black like the reference */
   }
 
   .feature__list {
     margin: 0;
     padding: 0;
     list-style: none;
-
-    li {
-      font-size: 0.9rem;
-      line-height: 1.35;
-      margin: 0.15rem 0;
-
-      position: relative;
-      padding-left: 1.05rem;
-
-      &::before {
-        content: '→';
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
   }
 
-  @media (max-width: 1100px) {
-    .white-banner__inner {
-      grid-template-columns: repeat(3, minmax(150px, 1fr));
-      gap: 2rem 1.5rem;
-    }
-  }
-
-  @media (max-width: 640px) {
+  @media (max-width: 1180px) {
     padding: 1.5rem 0;
 
     .white-banner__inner {
@@ -147,10 +116,36 @@
 
     .feature {
       max-width: 280px;
+      /* make sure triangle layout doesn't interfere */
+      grid-column: auto !important;
+      grid-row: auto !important;
     }
   }
 
-  .howItWorks-instructions {
-    color: red;
+  @media (min-width: 641px) and (max-width: 1600px) {
+    .feature:nth-child(1) {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .feature:nth-child(2) {
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    .feature:nth-child(3) {
+      grid-column: 5;
+      grid-row: 1;
+    }
+
+    .feature:nth-child(4) {
+      grid-column: 2;
+      grid-row: 2;
+    }
+
+    .feature:nth-child(5) {
+      grid-column: 4;
+      grid-row: 2;
+    }
   }
 }
