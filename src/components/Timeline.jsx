@@ -11,8 +11,9 @@ import '../styles/components/_timeline.scss';
 function LeftLabel({ lines }) {
   return (
     <Box
+      className="timeline-left-label"
       sx={{
-        display: 'flex',
+        display: { xs: 'contents', sm: 'flex' }, // 👈 mobile vs desktop
         flexDirection: 'column',
         alignItems: 'flex-end',
         minWidth: '10rem',
@@ -31,7 +32,6 @@ function LeftLabel({ lines }) {
     </Box>
   );
 }
-
 
 const dotSx = {
   bgcolor: 'common.white',

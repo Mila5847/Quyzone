@@ -3,8 +3,4 @@
 .container {
   padding: 0rem;
   width: 100%;
-
-  @media (min-width: v.$breakpoint-sm) {
-    padding-left: 1.5rem; // Slightly more padding on larger phones/small tablets
-  }
 }

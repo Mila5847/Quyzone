@@ -112,6 +112,7 @@
     .white-banner__inner {
       grid-template-columns: 1fr;
       gap: 1.5rem;
+      margin-top: -8vh;
     }
 
     .feature {
@@ -119,6 +120,19 @@
       /* make sure triangle layout doesn't interfere */
       grid-column: auto !important;
       grid-row: auto !important;
+      margin-right: 2vh;
+    }
+  }
+
+  @media (width: 379px) {
+    .feature {
+      margin-right: 0vh;
+    }
+  }
+
+   @media (width: 390px) {
+    .feature {
+      margin-right: 0vh;
     }
   }
 

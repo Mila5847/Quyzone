@@ -259,3 +259,15 @@ blockquote {
     display: block;
   }
 }
+
+@media (max-width: 640px) {
+   .vidCorner {
+    display: none;
+  }
+
+  .explodedView {
+    border-radius: 0;
+  }
+}
+
+
