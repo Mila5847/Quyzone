@@ -1,8 +1,9 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/variables'as *;
 
 .brand-header {
+
   display: flex;
- //align-items: center;
+  //align-items: center;
   gap: clamp(12px, 3vw, 24px);
 }
 
@@ -22,7 +23,7 @@
 
 .spacer-horizontal {
   display: inline-block;
-  padding: 0 2ch;
+  padding: 0 0ch;
   line-height: 0;
 }
 
@@ -38,12 +39,12 @@
   }
 
   .brand-header .sub-h1 {
-    flex-direction: column;      // stack subtitles vertically
-   // align-items: baseline;     // left align
+    flex-direction: column; // stack subtitles vertically
+    // align-items: baseline;     // left align
   }
 
   .brand-header .sub-h1__dot {
-    display: none;               // hide dots on mobile
+    display: none; // hide dots on mobile
   }
 
   // Optional: reset letter-spacing if JS doesn't already do it

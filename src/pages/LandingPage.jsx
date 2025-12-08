@@ -46,12 +46,13 @@ function LandingPage() {
       return progress;
     };
 
+    //this is where I change the video speet
     const onScroll = () => {
       if (!video.duration || !Number.isFinite(video.duration)) return;
       const progress = computeProgressInSection();
       // Keep a tiny epsilon off the end so browsers don’t “snap” to the last keyframe
       // Start at 20% scroll, end at 90%
-      const startProgress = 0.2;
+      const startProgress = 0.4;
       const endProgress = 0.8;
       const adjProgress = clamp((progress - startProgress) / (endProgress - startProgress), 0, 1);
       targetTime = clamp(adjProgress * video.duration, 0, video.duration - 0.001);
@@ -121,16 +122,16 @@ function LandingPage() {
             alt="beauty Shot"
             width={400}
             height={332}
-            /*
-      style={{
-        maxWidth: 970px,
-        width: "100%",
-        height: "auto",
-        display: "block", 
-        left: "-380px",
-        top:"-180px"
-      }}
-        */
+          /*
+    style={{
+      maxWidth: 970px,
+      width: "100%",
+      height: "auto",
+      display: "block", 
+      left: "-380px",
+      top:"-180px"
+    }}
+      */
           />
         </Parallax>
       </div>

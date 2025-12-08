@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/variables'as *;
 
 .howitworks {
   margin-bottom: 30px;
@@ -120,7 +120,7 @@
       /* make sure triangle layout doesn't interfere */
       grid-column: auto !important;
       grid-row: auto !important;
-      margin-right: 2vh;
+      margin-right: 0vh;
     }
   }
 
@@ -130,7 +130,7 @@
     }
   }
 
-   @media (width: 390px) {
+  @media (width: 390px) {
     .feature {
       margin-right: 0vh;
     }

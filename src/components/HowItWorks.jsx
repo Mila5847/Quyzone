@@ -52,7 +52,7 @@ export function HowItWorksPart2() {
         <div className="white-banner__inner">
           <div className="feature">
             <img
-              src="/images/decorative/5iconsA.jpg"
+              src="/images/decorative/5iconsA.png"
               alt="paywhatyouwant"
               className="feature__icon"
             />
