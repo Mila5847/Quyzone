@@ -1,9 +1,8 @@
-@use '../abstracts/variables'as *;
+@use '../abstracts/variables' as *;
 
 .brand-header {
-
   display: flex;
-  //align-items: center;
+  // align-items: center;
   gap: clamp(12px, 3vw, 24px);
 }
 
@@ -18,7 +17,7 @@
 
 .brand-header .sub-h1 {
   display: flex;
-  //align-items: center;
+  // align-items: center;
 }
 
 .spacer-horizontal {
@@ -27,33 +26,46 @@
   line-height: 0;
 }
 
-/* --- Mobile layout --- */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .brand-header {
     flex-direction: column;
-    //align-items: flex-start;
+    align-items: center; 
   }
 
+  /* Center the logo */
+  .brand-header .logo-section {
+    margin: 0 auto 0.75rem;
+  }
+
+  /* Heading wrapper should fill the width and align left */
   .brand-header .brand-heading {
-    margin-left: 0; // optional: remove desktop offset
+    width: 100%;
+    margin-left: 0;
+    align-items: flex-start; // << ensures left alignment
   }
 
+  /* H1 left aligned, takes full width */
+  .brand-header h1 {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    font-size: clamp(52px, 16vw, 90px);
+    line-height: 0.9;
+  }
+}
+
+@media (max-width: 600px)
+{
+  /* sub-H1 left aligned */
   .brand-header .sub-h1 {
-    flex-direction: column; // stack subtitles vertically
-    // align-items: baseline;     // left align
+    flex-direction: column;
+    align-items: flex-start; // << left alignment
+    width: 100%;
+    text-align: left;
+    letter-spacing: normal;
   }
 
   .brand-header .sub-h1__dot {
     display: none; // hide dots on mobile
   }
-
-  // Optional: reset letter-spacing if JS doesn't already do it
-  .brand-header .sub-h1 {
-    letter-spacing: normal;
-  }
-
-  .logo-section {
-    margin-left: 28vw;
-  }
-
 }
