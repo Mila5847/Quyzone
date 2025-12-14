@@ -88,6 +88,30 @@ function TimeLine() {
 
   return (
     <Box sx={{ maxWidth: 960, width: '100%', textAlign: 'left' }}>
+      
+      <div className="mechabust-section">
+        <div className="mechabust-content">
+          <div className="mechabust-text">
+            <h2>Me Quy and the Mechabust</h2>
+            <q>To go fast, run alone. To go far, walk together.</q>
+
+            <p className="text-indent">
+              Like many, I went through a period of “professional reflection” in 2022...
+            </p>
+
+            <p className="text-indent">
+              This kit was born directly out of my biggest passions...
+            </p>
+          </div>
+
+          <img
+            src="/images/decorative/me.png"
+            alt="mascot"
+            className="mechabust-image"
+          />
+        </div>
+      </div>
+
       <Timeline
         className="timeline"
         position="right"
@@ -119,6 +143,7 @@ function TimeLine() {
               <Typography variant="h6" sx={{ fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 }}>
                 {item.title}
               </Typography>
+
               <Typography sx={contentTextSx}>
                 {item.text}
                 {item.img && (
