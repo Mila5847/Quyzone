@@ -5,6 +5,7 @@
 /* Font Imports (Google Fonts) */
 @import url('https://fonts.googleapis.com/css2?family=Smythe&family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&family=Sofia+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+
 /* -----------------------------------
    RESET — Modern CSS Reset
    ----------------------------------- */
@@ -77,6 +78,7 @@ select {
 
 /* Remove all animations and transitions for people who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -86,6 +88,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
 /* Font Stacks */
 /* Base Typography */
 body {
@@ -132,6 +135,7 @@ h2 {
   font-weight: 200;
   -webkit-text-stroke: 1px black;
 }
+
 .cta span {
   font-size: 1.3em;
   font-weight: 900;
@@ -233,6 +237,7 @@ ul {
   background-position: center;
   background-image: url('/images/logo/gumroad.svg');
 }
+
 .cta-gumroad:hover {
   background-image: url('/images/logo/gumroadHover.svg');
 }
@@ -309,13 +314,16 @@ strong {
 .howitworks {
   margin-bottom: 30px;
 }
+
 .howitworks p {
   padding: 0 10px;
   margin: 0 10px;
 }
+
 .howitworks hr {
   width: 400px;
 }
+
 .howitworks .howitworks-row {
   display: flex;
   align-items: center;
@@ -323,19 +331,23 @@ strong {
   gap: 0;
   text-align: left;
 }
+
 .howitworks .howitworks-image {
   width: 50%;
   height: auto;
 }
+
 .howitworks .howitworks-text {
   width: 50%;
 }
+
 @media (max-width: 1020px) {
   .howitworks .howitworks-row {
     flex-direction: column;
     gap: 1.5rem;
     text-align: center;
   }
+
   .howitworks .howitworks-image,
   .howitworks .howitworks-text {
     width: 100%;
@@ -352,6 +364,7 @@ strong {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);*/
 }
+
 .white-banner .white-banner__inner {
   max-width: 1180px;
   margin: 0 auto;
@@ -364,6 +377,7 @@ strong {
   gap: 2.5rem;
   /* more breathing room between items */
 }
+
 .white-banner .feature {
   /* stack icon over text, centered */
   display: flex;
@@ -372,18 +386,21 @@ strong {
   text-align: center;
   max-width: 200px;
 }
+
 .white-banner .feature__icon {
   width: 100px;
   margin-bottom: 0rem;
   -o-object-fit: contain;
   object-fit: contain;
 }
+
 .white-banner .feature__title {
   font-weight: 800;
   font-size: 0.95rem;
   line-height: 1.2;
   margin-bottom: 0.35rem;
 }
+
 .white-banner .feature__desc {
   margin: 0;
   /*font-size: 0.9rem;*/
@@ -391,11 +408,13 @@ strong {
   color: #222;
   /* strong black like the reference */
 }
+
 .white-banner .feature__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .white-banner .feature__list li {
   font-size: 0.9rem;
   line-height: 1.35;
@@ -403,26 +422,31 @@ strong {
   position: relative;
   padding-left: 1.05rem;
 }
+
 .white-banner .feature__list li::before {
   content: '→';
   position: absolute;
   left: 0;
   top: 0;
 }
+
 @media (max-width: 1100px) {
   .white-banner .white-banner__inner {
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     gap: 2rem 1.5rem;
   }
 }
+
 @media (max-width: 640px) {
   .white-banner {
     padding: 1.5rem 0;
   }
+
   .white-banner .white-banner__inner {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+
   .white-banner .feature {
     max-width: 280px;
   }
@@ -446,7 +470,7 @@ strong {
 .foreground {
   position: absolute;
   margin-left: 60rem;
-  margin-top:-19rem;
+  margin-top: -19rem;
   max-width: 990px;
   width: 100%;
   height: auto;
@@ -459,4 +483,6 @@ strong {
   border-radius: 12px;
   padding: 16px;
   box-sizing: border-box;
-} /*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

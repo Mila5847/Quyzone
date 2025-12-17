@@ -15,16 +15,16 @@ function LeftLabel({ lines }) {
       sx={{
         display: "flex",
         flexDirection: 'column',
-        alignItems: { md: 'flex-end', xs: 'flex-start'},
-        minWidth: { md: '10rem', xs: '5rem'},
+        alignItems: { md: 'flex-end', xs: 'flex-start' },
+        minWidth: { md: '10rem', xs: '5rem' },
         lineHeight: 1.05,
         fontSize: '1.2rem',
         fontWeight: 'bold',
         letterSpacing: '0.06em',
         textTransform: 'uppercase',
         color: 'common.white',
-        pr: { xs: '0rem', md: '1rem'},
-        ml: {xs: '0.5rem'}
+        pr: { xs: '0rem', md: '1rem' },
+        ml: { xs: '0.5rem' }
       }}
     >
       {lines.map((t, i) => (
@@ -88,7 +88,7 @@ function TimeLine() {
 
   return (
     <Box sx={{ maxWidth: 960, width: '100%', textAlign: 'left' }}>
-      
+
       <div className="mechabust-section">
         <div className="mechabust-content">
           <div className="mechabust-text">
@@ -96,11 +96,19 @@ function TimeLine() {
             <q>To go fast, run alone. To go far, walk together.</q>
 
             <p className="text-indent">
-              Like many, I went through a period of “professional reflection” in 2022...
+              Like many, I went through a period of “professional reflection” in 2022. Bored out of
+              my mind, I grabbed the opportunity to begin work on the Mechabust project. I mean ...
+              how cool would it be ... to have in my room ... a standing bust ... of a mech ...
+              geared in samurai-style armor?!?🤩 I mean COME ON!
             </p>
 
             <p className="text-indent">
-              This kit was born directly out of my biggest passions...
+              This kit was born directly out of my biggest passions: storytelling, drawing,
+              sculpting, mechs, 3D printing, and design. Many factors lined up to push the dream
+              past the starting line: time, energy, and, most importantly, the urgency. I might
+              never have this chance again to design my very own customizable model kit of a mech
+              bust. From then on, I simply trusted the iterative creative process to bring it to
+              life.
             </p>
           </div>
 

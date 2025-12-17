@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/variables'as *;
 
 .manual-page {
   min-height: 100dvh;
@@ -64,25 +64,22 @@
   }
 }
 
-@media (max-width: 650px) 
-{
+@media (max-width: 650px) {
   #Logo h1 {
     font-size: 95px;
   }
 }
 
-@media (max-width: 1200px) 
-{
+@media (max-width: 1200px) {
   #Logo h1 {
     font-size: 130px;
   }
 }
 
-@media (max-width: 800px) 
-{
- #Logo h1 {
-  font-size: clamp(48px, 24vw, 190px);
-}
+@media (max-width: 800px) {
+  #Logo h1 {
+    font-size: clamp(48px, 24vw, 190px);
+  }
 
 }
 
@@ -97,13 +94,14 @@
   }
 
   .brand-heading h1 {
-    margin-bottom: 40px;
+    //* margin-bottom for landing page H1 as well. -----------------------------------------------
+    margin-bottom: 10px;
   }
 
   .build-manual {
     padding-inline: 12px;
   }
-  
+
   .overflow-image {
     align-self: center;
     max-width: 50%;
