@@ -40,18 +40,19 @@
   /* Heading wrapper should fill the width and align left */
   .brand-header .brand-heading {
     width: 100%;
-    margin-left: 0;
+    margin-left: 5px;
     align-items: flex-start; // << ensures left alignment
   }
 
   /* H1 left aligned, takes full width */
+
   .brand-header h1 {
     //color: red;
     width: 100%;
     text-align: left;
-    margin-left: 0;
-    font-size: clamp(52px, 16vw, 90px);
-    line-height: 0.9;
+    //margin-left: 0;
+    // font-size: clamp(52px, 16vw, 90px);
+    //line-height: 0.9;
 
 
   }
@@ -66,12 +67,15 @@
     width: 100%;
     text-align: left;
     letter-spacing: normal;
-    padding-left: 4px;
+
 
   }
 
   .sub-h1__item {
-    line-height: 1;
+    line-height: .9;
+
+
+
   }
 
   .brand-header .sub-h1__dot {
