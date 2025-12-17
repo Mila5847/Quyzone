@@ -3,10 +3,9 @@
 .howitworks {
   margin-bottom: 30px;
 
-  p {
-    padding: 0 10px;
-    margin: 0 10px;
-  }
+  //-----------------to add side padding: 10px or margin: 10px-----------------
+  padding: 0 10px;
+
 
   hr {
     width: 400px;
@@ -33,7 +32,9 @@
     .howitworks-row {
       flex-direction: column;
       gap: 1.5rem;
-      text-align: center;
+
+      //-----------------to center text on mobile-----------------
+      //text-align: center;
     }
 
     .howitworks-image,
@@ -163,3 +164,5 @@
     }
   }
 }
+
+.howitworks {}

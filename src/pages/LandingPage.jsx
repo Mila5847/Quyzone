@@ -172,7 +172,7 @@ function LandingPage() {
           </>
         </Parallax>
 
-        <section id="how-it-works" className="section container">
+        <section id="how-it-works" className="section container mobile__margin">
           <Parallax speed={0}>
             <HowItWorksPart2 />
           </Parallax>
