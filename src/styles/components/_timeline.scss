@@ -1,3 +1,5 @@
+@use '../abstracts/variables'as *;
+
 .timeline-row {
   display: flex;
   align-items: center;
@@ -42,5 +44,6 @@
 
 
 .mechabust-section {
-  margin: 10px;
+  padding-left: $text-padding-left;
+
 }

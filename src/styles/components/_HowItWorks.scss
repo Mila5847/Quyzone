@@ -4,7 +4,9 @@
   margin-bottom: 30px;
 
   //-----------------to add side padding: 10px or margin: 10px-----------------
-  padding: 0 10px;
+  //padding: 0 10px;
+  padding-left: $text-padding-left;
+  padding-right: $text-padding-right;
 
 
   hr {
@@ -48,9 +50,9 @@
     hr {
       width: 50%;
       max-width: 300px; // optional
-      margin: 1.5rem auto;
+      margin: .9rem auto;
       border: none;
-      border-top: 3px solid black;
+      border-top: 2px solid black;
     }
   }
 }
@@ -164,5 +166,3 @@
     }
   }
 }
-
-.howitworks {}
