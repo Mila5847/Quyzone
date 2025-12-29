@@ -7,6 +7,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import '../styles/components/_timeline.scss';
+import { Parallax } from 'react-scroll-parallax';
 
 function LeftLabel({ lines }) {
   return (
@@ -112,11 +113,13 @@ function TimeLine() {
             </p>
           </div>
 
-          <img
-            src="/images/decorative/me.png"
-            alt="mascot"
-            className="mechabust-image"
-          />
+          <Parallax speed={0}>
+            <img
+                      src="/images/decorative/me.png"
+                      alt="mascot"
+                      className="mechabust-image"
+                    />
+          </Parallax>
         </div>
       </div>
 
