@@ -233,6 +233,165 @@ function BuildManual() {
 
   ];
 
+  const carousel12Items = [
+    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-1.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-2.mp4',
+      alt: 'Alt video',
+    },
+
+
+  ];
+  const carousel12Captions = [
+    'Step 11 Preview',
+    'Part B-4 (P.C.N.R.)*',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+  ];
+
+  const carousel13Items = [
+    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-1.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-2.mp4',
+      alt: 'Alt video',
+    },
+
+
+  ];
+  const carousel13Captions = [
+    'Step 11 Preview',
+    'Part B-4 (P.C.N.R.)*',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+  ];
+  const carousel14Items = [
+    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-1.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-2.mp4',
+      alt: 'Alt video',
+    },
+
+
+  ];
+  const carousel14Captions = [
+    'Step 11 Preview',
+    'Part B-4 (P.C.N.R.)*',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+  ];
+  const carousel15Items = [
+    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-1.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-2.mp4',
+      alt: 'Alt video',
+    },
+
+
+  ];
+  const carousel15Captions = [
+    'Step 11 Preview',
+    'Part B-4 (P.C.N.R.)*',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+  ];
+  const carousel16Items = [
+    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-1.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-2.mp4',
+      alt: 'Alt video',
+    },
+
+
+  ];
+  const carousel16Captions = [
+    'Step 11 Preview',
+    'Part B-4 (P.C.N.R.)*',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+  ];
+
+  const carousel17Items = [
+    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-1.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-2.mp4',
+      alt: 'Alt video',
+    },
+
+
+  ];
+  const carousel17Captions = [
+    'Step 11 Preview',
+    'Part B-4 (P.C.N.R.)*',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+  ];
+  const carousel18Items = [
+    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-1.mp4',
+      alt: 'Alt video',
+    },
+    {
+      type: 'video',
+      src: '/videos/manual/anim-b03-2.mp4',
+      alt: 'Alt video',
+    },
+
+
+  ];
+  const carousel18Captions = [
+    'Step 11 Preview',
+    'Part B-4 (P.C.N.R.)*',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+    'B-0 \u27A4 B-0 + B-2 + B-3',
+  ];
+
+
+
 
   return (
     <div className="manual-page build-manual">
@@ -297,8 +456,27 @@ function BuildManual() {
           <img className="overflow-image" src="./images/decorative/assemblyC.png" alt="assemblyA" />
         </h3>
         <section className="carousel-section">
-          <MediaCarousel itemsData={carousel0Items} captions={carousel0Captions} title="1" />
+          <MediaCarousel itemsData={carousel12Items} captions={carousel12Captions} title="12" />
         </section>
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel13Items} captions={carousel13Captions} title="13" />
+        </section>
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel14Items} captions={carousel14Captions} title="14" />
+        </section>
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel15Items} captions={carousel15Captions} title="15" />
+        </section>
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel16Items} captions={carousel16Captions} title="16" />
+        </section>
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel17Items} captions={carousel17Captions} title="17" />
+        </section>
+        <section className="carousel-section">
+          <MediaCarousel itemsData={carousel18Items} captions={carousel18Captions} title="18" />
+        </section>
+
       </section>
       <section>
         <h3 className="subassembly-title">
