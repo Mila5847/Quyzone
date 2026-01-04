@@ -28,75 +28,52 @@ function LandingPage() {
     const section = sectionRef.current;
     if (!video || !section) return;
 
-    let targetTime = 0;
-    let rafId = 0;
-    let lastNow = performance.now();
-
     const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
 
     const computeProgressInSection = () => {
-      // Progress over the sticky section only
       const rect = section.getBoundingClientRect();
       const vh = window.innerHeight;
-
-      // Amount of the section that has scrolled through the viewport
-      const total = rect.height + vh; // total scrollable path
-      const scrolled = clamp(vh - rect.top, 0, total); // 0..total as it passes through
-      const progress = scrolled / total; // 0..1
-      return progress;
+      const total = rect.height + vh;
+      const scrolled = clamp(vh - rect.top, 0, total);
+      return scrolled / total;
     };
 
-    //this is where I change the video speet
-    const onScroll = () => {
+    let ticking = false;
+
+    const update = () => {
+      ticking = false;
       if (!video.duration || !Number.isFinite(video.duration)) return;
       const progress = computeProgressInSection();
-      // Keep a tiny epsilon off the end so browsers don’t “snap” to the last keyframe
-      // Start at 20% scroll, end at 90%
       const startProgress = 0.4;
       const endProgress = 0.8;
       const adjProgress = clamp((progress - startProgress) / (endProgress - startProgress), 0, 1);
-      targetTime = clamp(adjProgress * video.duration, 0, video.duration - 0.001);
+      const targetTime = clamp(adjProgress * video.duration, 0, video.duration - 0.001);
+      video.currentTime = targetTime;
     };
 
-    const loop = (now) => {
-      // time-step aware smoothing (stable across fast/slow machines)
-      const dt = clamp((now - lastNow) / 1000, 0, 0.05);
-      lastNow = now;
-
-      if (video.readyState >= HTMLMediaElement.HAVE_METADATA) {
-        // convert a nominal smoothing constant into a dt-aware factor
-        // nominal “responsiveness” ~ 0.22 per 60fps frame
-        const nominal = 0.22;
-        const lerpFactor = 1 - Math.pow(1 - nominal, dt * 60);
-        video.currentTime += (targetTime - video.currentTime) * lerpFactor;
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
       }
-
-      rafId = requestAnimationFrame(loop);
     };
 
-    // Prepare the element
-    video.pause(); // make sure the browser isn’t trying to play while we seek
-    const start = () => {
-      // sync initial target once metadata is known
-      onScroll();
-      lastNow = performance.now();
-      rafId = requestAnimationFrame(loop);
-      window.addEventListener('scroll', onScroll, { passive: true });
-      window.addEventListener('resize', onScroll, { passive: true });
-    };
+    video.pause();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
 
     if (video.readyState >= HTMLMediaElement.HAVE_METADATA) {
-      start();
+      // initialize
+      onScroll();
     } else {
       const onMeta = () => {
         video.removeEventListener('loadedmetadata', onMeta);
-        start();
+        onScroll();
       };
       video.addEventListener('loadedmetadata', onMeta);
     }
 
     return () => {
-      cancelAnimationFrame(rafId);
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
     };
@@ -188,11 +165,10 @@ function LandingPage() {
               <video
                 ref={videoRef}
                 src="/videos/decorative/explodedTest_09.webm"
-                playsInline
                 muted
+                playsInline
                 preload="auto"
                 className="explodedView"
-                controls={false}
               />
               <img
                 src="/images/decorative/vidCornerTopRight.svg"
