@@ -186,11 +186,11 @@ blockquote {
 
   .icon-bg {
     display: block;
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
 
     position: relative;
-    transform: translateY(0.5rem); 
+    transform: translateY(0.03rem); 
     pointer-events: none;
     z-index: 1;
   }
@@ -247,7 +247,7 @@ blockquote {
 }
 
 .icon-bg--mobile {
-   transform: translateY(0.5rem); // pull it down;
+   
   display: none;
 }
 
