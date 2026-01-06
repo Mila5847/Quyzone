@@ -58,17 +58,19 @@ function TimeLine() {
       label: ['2022'],
       title: 'Laying the Foundation🌱',
       text: 'Back then, this project was just a budding graphic novel. I started with the story and let lore drive my designs.',
-      img: '/images/decorative/timeline-2022.jpg',
+      img: '/images/decorative/timeline-0-0.jpg'
     },
     {
       label: ['2024', 'SUMMER'],
       title: 'Pioneer-1🚀',
       text: 'I first exposed the concept to the world by submitting it to an international contest. The Mech Bust was already alive in my mind, featuring a head I designed to morph into an ice-shipping craft for the competition\'s theme.',
+      img: '/images/decorative/timeline-1-1.jpg'
     },
     {
       label: ['2025', 'SUMMER'],
       title: 'Pioneer-2🔧',
       text: 'Didn’t win last year? All the more reason to go at it again. I revisited my original model, but this time I wasn’t starting from scratch. I rebuilt it and pushed the modularity aspect, designed for customization.',
+      img: '/images/decorative/timeline-2-1.jpg'
     },
     {
       label: ['2025', 'FALL'],
@@ -115,10 +117,10 @@ function TimeLine() {
 
           <Parallax speed={0}>
             <img
-                      src="/images/decorative/me.png"
-                      alt="mascot"
-                      className="mechabust-image"
-                    />
+              src="/images/decorative/me.png"
+              alt="mascot"
+              className="mechabust-image"
+            />
           </Parallax>
         </div>
       </div>
