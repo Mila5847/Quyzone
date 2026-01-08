@@ -407,123 +407,127 @@ function BuildManual() {
   ];
 
   return (
-    <div className="manual-page build-manual">
+    <div>
+
+
       <Nav />
 
-      <br />
 
-      <section>
-        <h2>PIONEER.3</h2>
-        <h3 className="subassembly-title">
-          SUB-ASSEMBLY A
-          <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
-          <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
-        </h3>
+      <div className="manual-page build-manual">
+        <br />
 
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="1" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="2" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel3Items} captions={carousel3Captions} title="3" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel4Items} captions={carousel4Captions} title="4" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel5Items} captions={carousel5Captions} title="5" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel6Items} captions={carousel6Captions} title="6" />
-        </section>
-      </section>
+        <section>
+          <h2>PIONEER.3</h2>
+          <h3 className="subassembly-title">
+            SUB-ASSEMBLY A
+            <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
+            <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
+          </h3>
 
-      <section>
-        <h3 className="subassembly-title">
-          SUB-ASSEMBLY B
-          <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
-          <img className="overflow-image" src="./images/decorative/assemblyB.png" alt="assemblyA" />
-        </h3>
 
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel7Items} captions={carousel7Captions} title="7" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel8Items} captions={carousel8Captions} title="8" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel9Items} captions={carousel9Captions} title="9" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel10Items} captions={carousel10Captions} title="10" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel11Items} captions={carousel11Captions} title="11" />
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel2Items} captions={carousel2Captions} title="1" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel3Items} captions={carousel3Captions} title="2" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel4Items} captions={carousel4Captions} title="3" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel5Items} captions={carousel5Captions} title="4" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel6Items} captions={carousel6Captions} title="5" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel7Items} captions={carousel7Captions} title="6" />
+          </section>
         </section>
 
-      </section>
+        <section>
+          <h3 className="subassembly-title">
+            SUB-ASSEMBLY B
+            <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
+            <img className="overflow-image" src="./images/decorative/assemblyB.png" alt="assemblyA" />
+          </h3>
 
-      <section>
-        <h3 className="subassembly-title">
-          SUB-ASSEMBLY C
-          <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
-          <img className="overflow-image" src="./images/decorative/assemblyC.png" alt="assemblyA" />
-        </h3>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel12Items} captions={carousel12Captions} title="12" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel13Items} captions={carousel13Captions} title="13" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel14Items} captions={carousel14Captions} title="14" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel15Items} captions={carousel15Captions} title="15" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel16Items} captions={carousel16Captions} title="16" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel17Items} captions={carousel17Captions} title="17" />
-        </section>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel18Items} captions={carousel18Captions} title="18" />
+
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel8Items} captions={carousel8Captions} title="7" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel9Items} captions={carousel9Captions} title="8" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel10Items} captions={carousel10Captions} title="9" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel11Items} captions={carousel11Captions} title="10" />
+          </section>
+
         </section>
 
-      </section>
-      <section>
-        <h3 className="subassembly-title">
-          SUB-ASSEMBLY D
-          <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
-          <img className="overflow-image" src="./images/decorative/assemblyD.png" alt="assemblyA" />
-        </h3>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="1" />
+        <section>
+          <h3 className="subassembly-title">
+            SUB-ASSEMBLY C
+            <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
+            <img className="overflow-image" src="./images/decorative/assemblyC.png" alt="assemblyA" />
+          </h3>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel12Items} captions={carousel12Captions} title="11" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel13Items} captions={carousel13Captions} title="12" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel14Items} captions={carousel14Captions} title="13" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel15Items} captions={carousel15Captions} title="14" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel16Items} captions={carousel16Captions} title="15" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel17Items} captions={carousel17Captions} title="16" />
+          </section>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel18Items} captions={carousel18Captions} title="17" />
+          </section>
+
         </section>
-      </section>
-      <section>
-        <h3 className="subassembly-title">
-          SUB-ASSEMBLY E
-          <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
-          <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
-        </h3>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="1" />
+        <section>
+          <h3 className="subassembly-title">
+            SUB-ASSEMBLY D
+            <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
+            <img className="overflow-image" src="./images/decorative/assemblyD.png" alt="assemblyA" />
+          </h3>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="1" />
+          </section>
         </section>
-      </section>
-      <section>
-        <h3 className="subassembly-title">
-          SUB-ASSEMBLY F
-          <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
-          <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
-        </h3>
-        <section className="carousel-section">
-          <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="1" />
+        <section>
+          <h3 className="subassembly-title">
+            SUB-ASSEMBLY E
+            <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
+            <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
+          </h3>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="1" />
+          </section>
         </section>
-      </section>
+        <section>
+          <h3 className="subassembly-title">
+            SUB-ASSEMBLY F
+            <span className="post-cure-warning">Post-Curing NOT Recommended*(PCNR)</span>{' '}
+            <img className="overflow-image" src="./images/decorative/assemblyA.png" alt="assemblyA" />
+          </h3>
+          <section className="carousel-section">
+            <MediaCarousel itemsData={carousel1Items} captions={carousel1Captions} title="1" />
+          </section>
+        </section>
+      </div>
     </div>
   );
 }

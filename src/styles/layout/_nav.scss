@@ -16,7 +16,8 @@ nav {
     font-size: 1.5rem;
     cursor: pointer;
     text-decoration: none;
-    padding: 0.2rem 0.5rem;
+    margin-left: -0px;
+    padding: 0.2rem -1.55rem;
     padding-bottom: 0.6rem;
     position: relative;
     overflow: hidden;
@@ -75,7 +76,7 @@ nav {
 @media (max-width: 600px) {
   nav {
     //*spacing from gumroad button
-    margin-top: 35px;
+
     padding: 0.8rem;
     gap: 0.3rem;
 

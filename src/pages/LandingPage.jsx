@@ -115,7 +115,7 @@ function LandingPage() {
 
       <Nav />
       <div className="divider"></div>
-     
+
 
       <Element name="how-it-works">
         <section className="section container">
@@ -197,8 +197,9 @@ function LandingPage() {
       </section>
 
       {/* IMAGE AFTER TIMELINE*/}
+      {/*  */}
       <Parallax speed={0}>
-        <img className="bottom-image" src="/images/decorative/placeholder.jpg" />
+        <div className="bottom-image"></div>
       </Parallax>
 
       <Parallax speed={0}>

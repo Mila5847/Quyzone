@@ -22,7 +22,7 @@ function QAndA() {
     <>
       <Nav />
 
-      <section>
+      <section className="contact-intro">
         <h2>Contact</h2>
         <p>Include frequently asked questions, help guides, or contact options here.</p>
       </section>

@@ -119,8 +119,14 @@ blockquote {
 }
 
 .bottom-image {
-  margin: auto;
-  margin-bottom: 30px;
+  background-image: url("/images/decorative/placeholder.jpg");
+  background-size: contain;
+  /* Ensures the image covers the whole area */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
 }
 
 .icon-bg {
@@ -190,7 +196,7 @@ blockquote {
     margin: 1rem auto 0;
 
     position: relative;
-    transform: translateY(0.03rem); 
+    transform: translateY(0.03rem);
     pointer-events: none;
     z-index: 1;
   }
@@ -209,10 +215,10 @@ blockquote {
     top: -190px;
   }
 
- .howItWorks-instructions {
-    flex-direction: column;     
+  .howItWorks-instructions {
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;                
+    gap: 2rem;
   }
 
   .howItWorks-instructions-item {
@@ -225,7 +231,7 @@ blockquote {
   .howItWorks-instructions-item:not(:last-child)::after {
     content: '↓';
     position: absolute;
-    bottom: -45px;            
+    bottom: -45px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 44px;
@@ -247,7 +253,7 @@ blockquote {
 }
 
 .icon-bg--mobile {
-   
+
   display: none;
 }
 
@@ -255,13 +261,14 @@ blockquote {
   .icon-bg--default {
     display: none;
   }
+
   .icon-bg--mobile {
     display: block;
   }
 }
 
 @media (max-width: 640px) {
-   .vidCorner {
+  .vidCorner {
     display: none;
   }
 
@@ -269,5 +276,3 @@ blockquote {
     border-radius: 0;
   }
 }
-
-

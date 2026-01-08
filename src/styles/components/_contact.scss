@@ -1,3 +1,10 @@
+@use '../abstracts/variables'as *;
+
+.contact-intro {
+  margin-left: $text-padding-left;
+  margin-right: $text-padding-right;
+}
+
 .contact-container {
   margin: 60px auto;
   padding: 20px;
