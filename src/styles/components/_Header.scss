@@ -17,7 +17,6 @@
 
 .brand-header .sub-h1 {
   display: flex;
-  // align-items: center;
 }
 
 .spacer-horizontal {
@@ -40,9 +39,8 @@
 
   /* Heading wrapper should fill the width and align left */
   .brand-header .brand-heading {
-    width: 100%;
-    margin-left: 5px;
-    align-items: flex-start; // << ensures left alignment
+
+    align-items: flex-center; // << ensures left alignment
   }
 
   /* H1 left aligned, takes full width */
