@@ -95,7 +95,7 @@ function TimeLine() {
       <div className="mechabust-section">
         <div className="mechabust-content">
           <div className="mechabust-text">
-            <h2>Me Quy and the Mechabust</h2>
+            <h2>Me Quy and Mechabust</h2>
             <q>To go fast, run alone. To go far, walk together.</q>
 
             <p className="text-indent">
