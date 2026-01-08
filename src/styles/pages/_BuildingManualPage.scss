@@ -11,7 +11,7 @@
   /* SUB ASSEMBLY title row */
   .subassembly-title {
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
     justify-content: space-between;
     gap: 1rem;
     font-size: clamp(1rem, 2vw, 1.3rem);
@@ -49,13 +49,6 @@
 }
 
 /* ---------- Responsiveness ---------- */
-
-@media (max-width: 900px) {
-  .build-manual {
-    max-width: 100%;
-    padding-inline: clamp(12px, 4vw, 20px);
-  }
-}
 
 @media (max-width: 768px) {
   .subassembly-title {
@@ -96,10 +89,6 @@
   .brand-heading h1 {
     //* margin-bottom for landing page H1 as well. -----------------------------------------------
     margin-bottom: 10px;
-  }
-
-  .build-manual {
-    padding-inline: 12px;
   }
 
   .overflow-image {
