@@ -16,7 +16,8 @@
     gap: 1rem;
     font-size: clamp(1rem, 2vw, 1.3rem);
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: $subassembly-title-margin;
+    margin-top: $subassembly-title-margin;
   }
 
   .post-cure-warning {

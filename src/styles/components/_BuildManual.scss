@@ -1,3 +1,5 @@
+@use '../abstracts/variables'as *;
+
 .build-manual {
   h2 {
     color: black;
@@ -26,9 +28,9 @@
 
 .overflow-image {
   position: absolute;
-  top: -26px;
+  top: -66px;
   /* Adjust as needed */
-  left: 240px;
+  right: 0px;
   /* Adjust as needed */
   width: 400px;
   /* Optional: control size */
@@ -37,8 +39,9 @@
 }
 
 .carousel-section {
-  margin-bottom: 2rem;
+  margin-bottom: .998rem;
+  margin-right: $caroussel-side-margins;
+  margin-left: $caroussel-side-margins;
 }
 
-@media (max-width: 600px) {
-}
+@media (max-width: 600px) {}
