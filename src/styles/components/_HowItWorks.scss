@@ -85,6 +85,7 @@
   }
 
   .feature__icon {
+    margin-top: $feature__margin-top;
     width: $feature__icon-width;
     margin-bottom: 0rem;
     object-fit: contain;

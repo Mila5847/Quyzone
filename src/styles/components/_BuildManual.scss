@@ -28,11 +28,12 @@
 
 .overflow-image {
   position: absolute;
-  top: -66px;
+  top: $overflow-image-top;
   /* Adjust as needed */
-  right: 0px;
+  right: 0;
   /* Adjust as needed */
-  width: 400px;
+  width: $overflow-image-width;
+  max-width: $overflow-image-max-width;
   /* Optional: control size */
   z-index: 1;
   /* Ensure it appears above other elements */

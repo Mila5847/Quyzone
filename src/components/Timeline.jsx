@@ -99,7 +99,7 @@ function TimeLine() {
             <q>To go fast, run alone. To go far, walk together.</q>
 
             <p className="text-indent">
-              Like many, I went through a period of “professional reflection” in 2022. Bored out of
+              Like many, I went through a period of profound “professional reflection” in 2022. Bored out of
               my mind, I grabbed the opportunity to begin work on the Mechabust project. I mean ...
               how cool would it be ... to have in my room ... a standing bust ... of a mech ...
               geared in samurai-style armor?!?🤩 I mean COME ON!
