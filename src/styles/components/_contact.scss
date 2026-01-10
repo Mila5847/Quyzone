@@ -3,6 +3,10 @@
 .contact-intro {
   margin-left: $text-padding-left;
   margin-right: $text-padding-right;
+
+  h2 {
+    margin-left: 4px;
+  }
 }
 
 .contact-container {
