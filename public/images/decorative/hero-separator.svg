@@ -6,5 +6,5 @@
 	.st0{fill:#FFFFFF;}
 </style>
 <title>Asset 1</title>
-<path class="st0" d="M436.1,205C356.7,205,330.8,0,245,0H0v280h700l0-75H436.1z"/>
+<path class="st0" d="M468,205c-48.3,0-83.3-32.1-174-116C240,39,218,0,126,0H0v280h700v-75H468z"/>
 </svg>

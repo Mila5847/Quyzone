@@ -5,8 +5,8 @@ const Hero = () => {
       <div className="hero-bg">
         <div>
           <div className="cta">
-            Get <br />
-            Started <br />
+            <div style={{ lineHeight: "40.564px", paddingTop: "10.9775px" }}>Get<br /></div>
+            Yours <br />
             <span>HERE!</span>
           </div>
           <button
@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         <div className="right-separator"></div>
       </div>
-    </section>
+    </section >
   );
 };
 
