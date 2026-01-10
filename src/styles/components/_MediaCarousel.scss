@@ -113,12 +113,12 @@
   }
 
   .btn-prev {
-    left: 6px;
+    left: -17px;
     transform: translate(0, -50%);
   }
 
   .btn-next {
-    right: 6px;
+    right: -17px;
     transform: translate(0, -50%);
   }
 
@@ -129,8 +129,6 @@
   }
 
   .carousel-number {
-    top: 6px;
-    left: 6px;
     font-size: 18px;
     line-height: 22px;
     border-radius: 10px;
@@ -169,7 +167,7 @@
 
   .btn-prev img,
   .btn-next img {
-    width: 22px;
-    height: 22px;
+    width: 35px;
+    height: 35px;
   }
 }
