@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/variables'as *;
 
 .carousel {
   position: relative;
@@ -18,7 +18,8 @@
 .btn-next {
   position: absolute;
   top: 50%;
-  width: 56px; /* slightly smaller by default */
+  width: 56px;
+  /* slightly smaller by default */
   border: 0;
   padding: 2px;
   border-radius: 999px;
@@ -42,15 +43,15 @@
 
 .btn-prev.is-disabled,
 .btn-next.is-disabled {
-  cursor: default;      // arrow cursor
+  cursor: default; // arrow cursor
 }
 
 .carousel-number {
   font-family: radhani, sans-serif;
   position: absolute;
   min-width: $media-carousel-min-width;
-  top: -17px;
-  left: -18px;
+  top: -11px;
+  left: -11px;
   background: black;
   color: white;
   padding: 0px 5px;
@@ -80,7 +81,8 @@
 /* Ensure images and videos scale to container */
 .carousel .carousel-frame {
   width: 100%;
-  aspect-ratio: 489 / 325; /* preserve original aspect on larger screens */
+  aspect-ratio: 489 / 325;
+  /* preserve original aspect on larger screens */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -109,7 +111,8 @@
   }
 
   .carousel .carousel-frame {
-    aspect-ratio: 16 / 9; /* more friendly for narrow screens */
+    aspect-ratio: 16 / 9;
+    /* more friendly for narrow screens */
   }
 
   .btn-prev {
