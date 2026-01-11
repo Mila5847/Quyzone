@@ -179,7 +179,13 @@ blockquote {
   }
 }
 
-@media (max-width: 1030px) {
+@media (min-width: 700px) and (max-width: 1120px) {
+  .icon-bg {
+     transform: translateY(4rem); 
+  }
+}
+
+@media (max-width: 700px) {
   .foreground {
     position: absolute;
     margin-left: 60rem;
@@ -260,7 +266,7 @@ blockquote {
   display: none;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 700px) {
   .icon-bg--default {
     display: none;
   }
@@ -270,12 +276,33 @@ blockquote {
   }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 650px) and (max-width: 700px)
+{
   .vidCorner {
-    display: none;
+    width: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 650px)
+{
+  .vidCorner {
+    width: 20px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 600px)
+{
+  .vidCorner {
+    width: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .vidCorner {
+     display: none;
   }
 
   .explodedView {
-    border-radius: 0;
+    border-radius: 0%;
   }
 }

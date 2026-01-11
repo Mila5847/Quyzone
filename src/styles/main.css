@@ -369,86 +369,38 @@ strong {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 1rem;
-  /* five even columns, centered content */
+
   display: grid;
+  gap: 2.5rem;
+
+  /* >=1200-ish: 5 in a row */
   grid-template-columns: repeat(5, minmax(150px, 1fr));
   justify-items: center;
   align-items: start;
-  gap: 2.5rem;
-  /* more breathing room between items */
 }
 
 .white-banner .feature {
-  /* stack icon over text, centered */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  max-width: 200px;
+  grid-column: auto;
+  grid-row: auto;
 }
 
-.white-banner .feature__icon {
-  width: 100px;
-  margin-bottom: 0rem;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-
-.white-banner .feature__title {
-  font-weight: 800;
-  font-size: 0.95rem;
-  line-height: 1.2;
-  margin-bottom: 0.35rem;
-}
-
-.white-banner .feature__desc {
-  margin: 0;
-  /*font-size: 0.9rem;*/
-  line-height: 1.35;
-  color: #222;
-  /* strong black like the reference */
-}
-
-.white-banner .feature__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.white-banner .feature__list li {
-  font-size: 0.9rem;
-  line-height: 1.35;
-  margin: 0.15rem 0;
-  position: relative;
-  padding-left: 1.05rem;
-}
-
-.white-banner .feature__list li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-@media (max-width: 1100px) {
+/* ~700px: 2 columns (use 700px if you want exact) */
+@media (max-width: 900px) {
   .white-banner .white-banner__inner {
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
-    gap: 2rem 1.5rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .white-banner {
-    padding: 1.5rem 0;
-  }
-
-  .white-banner .white-banner__inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
     gap: 1.5rem;
   }
 
   .white-banner .feature {
     max-width: 280px;
+  }
+}
+
+/* small screens: stacked */
+@media (max-width: 640px) {
+  .white-banner .white-banner__inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 
