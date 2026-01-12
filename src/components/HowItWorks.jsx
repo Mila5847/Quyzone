@@ -98,10 +98,9 @@ export function HowItWorksPart2() {
             />
             <ul className="feature__list">
               <p>
-                → <strong>No Glue Needed</strong>
-              </p>
-              <p>→ precision snap</p>
-              <p>→ tactile bliss</p>
+                → <strong>No Glue Needed</strong><br />
+                → precision snap<br />
+                → tactile bliss</p>
             </ul>
           </div>
         </div>

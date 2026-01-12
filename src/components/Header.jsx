@@ -4,7 +4,7 @@ import '../styles/components/_Header.scss';
 
 export default function BrandHeader({
   title = 'MECHABUST',
-  subtitles = ['PERFECTIBLE', 'PRINTABLE', 'POSABLE'],
+  subtitles = ['PRINTABLE', 'POSABLE', 'PERFECTIBLE'],
   id = 'Logo',
   className = 'section ',
 }) {
