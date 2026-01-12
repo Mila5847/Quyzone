@@ -62,7 +62,7 @@ export function HowItWorksPart2() {
           </div>
 
           <div className="feature">
-            <img src="/images/decorative/5iconsB.jpg" alt="" className="feature__icon" />
+            <img src="/images/decorative/5iconsB.png" alt="" className="feature__icon" />
             <p className="feature__desc">
               <strong>Unique Aesthetic</strong> Fresh IP as detailed as whimsical.
             </p>

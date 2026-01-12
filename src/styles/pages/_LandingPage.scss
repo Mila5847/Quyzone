@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/variables'as *;
 
 /* ===============================
    BASE
@@ -92,12 +92,21 @@
 }
 
 blockquote {
-  p::before { content: open-quote; }
-  p::after { content: close-quote; }
+  p::before {
+    content: open-quote;
+  }
 
-  p { font-style: italic; }
+  p::after {
+    content: close-quote;
+  }
 
-  .author::before { content: '-'; }
+  p {
+    font-style: italic;
+  }
+
+  .author::before {
+    content: '-';
+  }
 
   .author {
     margin-top: -20px;
@@ -122,6 +131,8 @@ blockquote {
 
 .icon-bg {
   display: block;
+
+  max-width: 650px; //<---
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -149,9 +160,14 @@ blockquote {
 ================================ */
 
 @media (min-width: 1121px) {
-  .icon-bg--default { display: block; }
+  .icon-bg--default {
+    display: block;
+  }
+
   .icon-bg--tablet,
-  .icon-bg--mobile { display: none; }
+  .icon-bg--mobile {
+    display: none;
+  }
 }
 
 /* Ultra-wide */
@@ -180,6 +196,7 @@ blockquote {
 ================================ */
 
 @media (min-width: 700px) and (max-width: 1120px) {
+
   .icon-bg--default,
   .icon-bg--mobile {
     display: none;
@@ -204,6 +221,7 @@ blockquote {
 ================================ */
 
 @media (max-width: 699px) {
+
   .icon-bg--default,
   .icon-bg--tablet {
     display: none;
@@ -244,18 +262,29 @@ blockquote {
 ================================ */
 
 @media (min-width: 650px) and (max-width: 700px) {
-  .vidCorner { width: 50px; }
+  .vidCorner {
+    width: 50px;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 649px) {
-  .vidCorner { width: 20px; }
+  .vidCorner {
+    width: 20px;
+  }
 }
 
 @media (min-width: 550px) and (max-width: 599px) {
-  .vidCorner { width: 10px; }
+  .vidCorner {
+    width: 10px;
+  }
 }
 
 @media (max-width: 549px) {
-  .vidCorner { display: none; }
-  .explodedView { border-radius: 0; }
+  .vidCorner {
+    display: none;
+  }
+
+  .explodedView {
+    border-radius: 0;
+  }
 }
