@@ -144,6 +144,7 @@ function LandingPage() {
         <Parallax speed={0}>
           <>
             <img src="/images/decorative/IconBg.svg" alt="" className="icon-bg icon-bg--default" />
+            <img src="/images/decorative/separator_B01.svg" alt="" className="icon-bg icon-bg--tablet" />
             <img src="/images/decorative/separator_A01.svg" alt="" className="icon-bg icon-bg--mobile" />
           </>
         </Parallax>

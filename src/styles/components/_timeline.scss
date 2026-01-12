@@ -50,10 +50,4 @@
 
 .mechabust-section {
   padding-left: $text-padding-left;
-
-  @media (max-width: 950px) {
-    h2 {
-      text-align: center;
-    } 
-  }
 }
