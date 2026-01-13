@@ -7,7 +7,7 @@ import TimeLine from './Timeline';
 export function HowItWorksPart1() {
   return (
     <div className="howitworks">
-      <h2>What is the Product?</h2>
+      <h2 id="what-is-the-product">What is the Product?</h2>
       <q>Or Why You'll Love Building My Kit</q>
 
       <div className="howitworks-row">
@@ -23,10 +23,10 @@ export function HowItWorksPart1() {
             both here.
           </p>
           <p className=" text-indent">
-            Quyzone offers high-quality files kits for <strong>resin printers</strong>{' '}
-            designed by and for every hungry builder, brought to life with a unique, cute, whimsical
-            touch! Our first model, the <strong>Pioneer-3</strong> sub, is pint-sized, compact, and
-            ready for deep-sea epicness.
+            Quyzone offers high-quality files kits for <strong>resin printers</strong> designed by
+            and for every hungry builder, brought to life with a unique, cute, whimsical touch! Our
+            first model, the <strong>Pioneer-3</strong> sub, is pint-sized, compact, and ready for
+            deep-sea epicness.
           </p>
           <hr />
           <p>
@@ -98,9 +98,11 @@ export function HowItWorksPart2() {
             />
             <ul className="feature__list">
               <p>
-                → <strong>No Glue Needed</strong><br />
-                → precision snap<br />
-                → tactile bliss</p>
+                → <strong>No Glue Needed</strong>
+                <br />
+                → precision snap
+                <br />→ tactile bliss
+              </p>
             </ul>
           </div>
         </div>
