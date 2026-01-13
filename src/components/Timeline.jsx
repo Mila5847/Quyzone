@@ -120,7 +120,7 @@ const ITEMS = [
 
 export default function TimeLine() {
   return (
-    <Box sx={{ maxWidth: 960, width: '100%', textAlign: 'left' }}>
+    <Box>
       <div className="mechabust-section">
         <div className="mechabust-content">
           <div className="mechabust-text">
