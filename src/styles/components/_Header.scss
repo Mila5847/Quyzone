@@ -1,9 +1,12 @@
-@use '../abstracts/variables'as *;
+@use '../abstracts/variables' as *;
 
 .brand-header {
   display: flex;
-  // align-items: center;
+  align-items: center; // keep it simple now
   gap: clamp(12px, 3vw, 24px);
+
+  // fallback if JS hasn't run yet
+  --logo-h: 96px;
 }
 
 .brand-header .brand-heading {
@@ -19,10 +22,18 @@
   display: flex;
 }
 
-.spacer-horizontal {
-  display: inline-block;
-  padding: 0 0ch;
-  line-height: 0;
+/* ✅ Logo sized from measured heading height */
+.brand-header .logo-section,
+.brand-header .logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.brand-header .logo-link img {
+  height: var(--logo-h); // ✅ exact match
+  width: auto;
+  display: block;
+  user-select: none;
 }
 
 @media (max-width: 800px) {
@@ -31,53 +42,35 @@
     align-items: center;
   }
 
-  /* Center the logo And margin-top */
   .brand-header .logo-section {
-
     margin: 10.1px auto 0.75rem;
   }
 
-  /* Heading wrapper should fill the width and align left */
   .brand-header .brand-heading {
-
-    align-items: flex-center; // << ensures left alignment
+    width: 100%;
+    align-items: flex-start; // ✅ (flex-center was invalid)
   }
 
-  /* H1 left aligned, takes full width */
-
   .brand-header h1 {
-    //color: red;
     width: 100%;
     text-align: left;
-    //margin-left: 0;
-    // font-size: clamp(52px, 16vw, 90px);
-    //line-height: 0.9;
-
-
   }
 }
 
 @media (max-width: 600px) {
-
-  /* sub-H1 left aligned */
   .brand-header .sub-h1 {
     flex-direction: column;
-    align-items: flex-start; // << left alignment
+    align-items: flex-start;
     width: 100%;
     text-align: left;
     letter-spacing: normal;
-
-
   }
 
   .sub-h1__item {
-    line-height: .9;
-
-
-
+    line-height: 0.9;
   }
 
   .brand-header .sub-h1__dot {
-    display: none; // hide dots on mobile
+    display: none;
   }
 }
