@@ -30,7 +30,10 @@
     width: 50%;
   }
 
-  @media (max-width: 600px) {
+  //----------------ortho row to col break-point-----------------
+  @media (max-width: 750px) {
+
+
     .howitworks-row {
       flex-direction: column;
       gap: 1.5rem;
