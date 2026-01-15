@@ -295,15 +295,16 @@ blockquote {
 }
 
 .landing-page .brand-header {
-  --logo-h: 165px; 
+  --logo-h: 165px;
 }
 
 @media (max-width: 1200px) {
   .logo-link {
     margin-top: 12px;
+    padding-bottom: 5px;
   }
 
   .landing-page .brand-header {
-    --logo-h: 140px; 
+    --logo-h: 140px;
   }
 }
