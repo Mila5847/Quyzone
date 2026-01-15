@@ -46,4 +46,8 @@
   margin-left: $caroussel-side-margins;
 }
 
-@media (max-width: 600px) {}
+@media (min-width: 1200px) {
+  .overflow-image {
+    right: 200px;
+  }
+}
