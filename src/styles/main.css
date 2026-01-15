@@ -367,17 +367,17 @@ strong {
 
 .white-banner .white-banner__inner {
   max-width: 1180px;
-  margin: 0 auto;
+  
   padding: 0 1rem;
 
   display: grid;
   gap: 2.5rem;
 
-  /* >=1200-ish: 5 in a row */
   grid-template-columns: repeat(5, minmax(150px, 1fr));
   justify-items: center;
   align-items: start;
 }
+
 
 .white-banner .feature {
   grid-column: auto;

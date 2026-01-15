@@ -7,17 +7,18 @@ export default function BrandHeader({
   subtitles = ['PRINTABLE', 'POSABLE', 'PERFECTIBLE'],
   id = 'Logo',
   className = 'section ',
+  logoClassName = '',       
+  logoStyle = undefined,    
 }) {
   const titleRef = useRef(null);
   const subtitlesRef = useRef(null);
-  const headerRef = useRef(null); 
 
   useLayoutEffect(() => {
     const titleEl = titleRef.current;
     const subsEl = subtitlesRef.current;
-    const headerEl = headerRef.current;
-    if (!titleEl || !subsEl || !headerEl) return;
+    if (!titleEl || !subsEl) return;
 
+    // keep ONLY the letter-spacing alignment logic (logo sizing removed)
     if (window.matchMedia('(max-width: 600px)').matches) {
       subsEl.style.letterSpacing = '';
     } else {
@@ -25,22 +26,18 @@ export default function BrandHeader({
       const titleWidth = titleEl.offsetWidth;
       const subsWidth = subsEl.scrollWidth;
       const diff = titleWidth - subsWidth;
+
       if (diff > 0) {
         const text = (subsEl.textContent || '').replace(/\s/g, '');
         const gaps = Math.max(text.length, 1);
         subsEl.style.letterSpacing = `${diff / gaps}px`;
       }
     }
-
-    const headingEl = headerEl.querySelector('.brand-heading');
-    if (headingEl) {
-      headerEl.style.setProperty('--logo-h', `${headingEl.offsetHeight}px`);
-    }
   }, [title, subtitles.join('|')]);
 
   return (
-    <section ref={headerRef} id={id} className={`${className} brand-header`}>
-      <Logo />
+    <section id={id} className={`${className} brand-header`}>
+      <Logo className={logoClassName} style={logoStyle} />
 
       <div className="brand-heading">
         <h1 ref={titleRef}>{title}</h1>

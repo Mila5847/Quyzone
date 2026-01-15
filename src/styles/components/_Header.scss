@@ -1,11 +1,11 @@
-@use '../abstracts/variables'as *;
+@use '../abstracts/variables' as *;
 
 .brand-header {
   display: flex;
-  align-items: center; // keep it simple now
+  align-items: center;
   gap: clamp(12px, 3vw, 24px);
 
-  // fallback if JS hasn't run yet
+  /* ✅ default logo height (override per page / per instance) */
   --logo-h: 96px;
 }
 
@@ -22,16 +22,16 @@
   display: flex;
 }
 
-/* ✅ Logo sized from measured heading height */
+/* Logo layout */
 .brand-header .logo-section,
 .brand-header .logo-link {
-
   display: flex;
   align-items: center;
 }
 
+/* ✅ logo sizing is NOW only controlled by --logo-h */
 .brand-header .logo-link img {
-  height: var(--logo-h); // ✅ exact match
+  height: var(--logo-h);
   width: auto;
   display: block;
   user-select: none;
@@ -49,7 +49,7 @@
 
   .brand-header .brand-heading {
     width: 100%;
-    align-items: flex-start; // ✅ (flex-center was invalid)
+    align-items: flex-start;
   }
 
   .brand-header h1 {

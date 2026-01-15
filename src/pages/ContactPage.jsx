@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 function ContactPage() {
   return (
-    <div>
+    <div className="contact-page">
       <Parallax speed={0}>
         <Header title="CONTACT" subtitles={[]} />
       </Parallax>

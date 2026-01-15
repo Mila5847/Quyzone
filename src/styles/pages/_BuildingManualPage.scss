@@ -52,6 +52,14 @@
 
 /* ---------- Responsiveness ---------- */
 
+.logo-link {
+  margin-top: 12px;
+}
+
+.manual-page .brand-header {
+  --logo-h: 117px; 
+}
+
 @media (max-width: 650px) {
   #Logo h1 {
 
@@ -62,6 +70,14 @@
 @media (max-width: 1200px) {
   #Logo h1 {
     font-size: 130px;
+  }
+
+  .logo-link {
+    margin-top: 12px;
+  }
+
+  .manual-page .brand-header {
+    --logo-h: 92px; 
   }
 }
 

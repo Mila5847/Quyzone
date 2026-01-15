@@ -65,3 +65,21 @@
   text-align: left;
   cursor: pointer;
 }
+
+.logo-link {
+  margin-top: 12px;
+}
+
+.contact-page .brand-header {
+  --logo-h: 112px; 
+}
+
+@media (max-width: 1200px) {
+  .logo-link {
+    margin-top: 12px;
+  }
+
+  .contact-page .brand-header {
+    --logo-h: 92px; 
+  }
+}
