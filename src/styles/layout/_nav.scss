@@ -8,25 +8,25 @@ nav {
   margin-bottom: -9px;
   padding-bottom: 4px;
 
-  a,
-  button {
-    background: none;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: -0px;
-    padding: 0.2rem -1.55rem;
-    padding-bottom: 0.6rem;
-    position: relative;
-    overflow: hidden;
+a,
+button {
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.2rem 0;
+  padding-bottom: 0.6rem;
 
-    transition:
-      color 0.3s ease,
-      transform 0.3s ease,
-      text-shadow 0.3s ease;
-  }
+  position: relative;
+  overflow: visible; 
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease,
+    text-shadow 0.3s ease;
+}
 
   /* Arrow Effect (::before pseudo-element) */
   a::before,
