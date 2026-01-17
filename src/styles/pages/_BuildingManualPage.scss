@@ -57,7 +57,7 @@
 }
 
 .manual-page .brand-header {
-  --logo-h: 117px; 
+  --logo-h: 117px;
 }
 
 @media (max-width: 650px) {
@@ -69,6 +69,7 @@
 
 @media (max-width: 1200px) {
   #Logo h1 {
+    margin-top: -6px;
     font-size: 130px;
   }
 
@@ -77,7 +78,8 @@
   }
 
   .manual-page .brand-header {
-    --logo-h: 92px; 
+    padding-top: 0;
+    --logo-h: 98px;
   }
 }
 
