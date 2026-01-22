@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, Fragment } from 'react';
+import { useLayoutEffect, useEffect, useRef, Fragment } from 'react';
 import Logo from './logo';
 import '../styles/components/_Header.scss';
 
@@ -7,8 +7,8 @@ export default function BrandHeader({
   subtitles = ['PRINTABLE', 'POSABLE', 'PERFECTIBLE'],
   id = 'Logo',
   className = 'section ',
-  logoClassName = '',       
-  logoStyle = undefined,    
+  logoClassName = '',
+  logoStyle = undefined,
 }) {
   const titleRef = useRef(null);
   const subtitlesRef = useRef(null);
@@ -18,21 +18,44 @@ export default function BrandHeader({
     const subsEl = subtitlesRef.current;
     if (!titleEl || !subsEl) return;
 
-    // keep ONLY the letter-spacing alignment logic (logo sizing removed)
-    if (window.matchMedia('(max-width: 600px)').matches) {
-      subsEl.style.letterSpacing = '';
-    } else {
-      subsEl.style.letterSpacing = '0px';
-      const titleWidth = titleEl.offsetWidth;
-      const subsWidth = subsEl.scrollWidth;
-      const diff = titleWidth - subsWidth;
+    const adjustSpacing = () => {
+      // keep ONLY the letter-spacing alignment logic (logo sizing removed)
+      if (window.matchMedia('(max-width: 600px)').matches) {
+        subsEl.style.letterSpacing = '';
+      } else {
+        subsEl.style.letterSpacing = '0px';
+        const titleWidth = titleEl.offsetWidth;
+        const subsWidth = subsEl.scrollWidth;
+        const diff = titleWidth - subsWidth;
 
-      if (diff > 0) {
-        const text = (subsEl.textContent || '').replace(/\s/g, '');
-        const gaps = Math.max(text.length, 1);
-        subsEl.style.letterSpacing = `${diff / gaps}px`;
+        if (diff > 0) {
+          const text = (subsEl.textContent || '').replace(/\s/g, '');
+          const gaps = Math.max(text.length, 1);
+          subsEl.style.letterSpacing = `${diff / gaps}px`;
+        }
       }
+    };
+
+    // Initial adjustment
+    adjustSpacing();
+
+    // Wait for fonts to load, then adjust again
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        adjustSpacing();
+      });
     }
+
+    // Handle window resize
+    const handleResize = () => {
+      adjustSpacing();
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, [title, subtitles.join('|')]);
 
   return (

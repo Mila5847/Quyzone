@@ -48,7 +48,7 @@ const connectorBaseSx = {
 
 const contentTextSx = {
   width: '100%',
-  maxWidth: { xs: '100%', md: '54rem' },
+  maxWidth: '351px',
 };
 
 const titleSx = { fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 };
