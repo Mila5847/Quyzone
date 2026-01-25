@@ -172,7 +172,7 @@ blockquote {
 }
 
 /* Ultra-wide */
-@media (min-width: 1920px) {
+@media (min-width: 1919px) {
   .foreground {
     margin-left: 70rem;
     margin-top: -28rem;
@@ -186,11 +186,23 @@ blockquote {
 @media (min-width: 1470px) and (max-width: 1919px) {
   .foreground {
     margin-top: -20rem;
-    width: 35%;
     max-width: 990px;
     top: -190px;
+    margin-right: 8rem;
+    width: 35%;
   }
 }
+@media (min-width: 1120px) and (max-width: 1470px) {
+  .foreground {
+    margin-top: -17.5rem;
+    max-width: 990px;
+    top: -190px;
+    margin-right: 4rem;
+    width: 43%;
+  }
+}
+
+
 
 /* ===============================
    TABLET (700px – 1120px)
@@ -210,16 +222,47 @@ blockquote {
   .icon-bg {
     transform: translateY(4rem);
   }
+}
 
+@media (min-width: 810px) and (max-width: 1120px) {
   .foreground {
-    width: 50%;
-    margin-top: -17rem;
+    margin-top: -15.5rem;
+    margin-right: 1rem;
+    width: 51%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 810px) {
+  .foreground {
+    margin-top: -15.5rem;
+    margin-right: 1rem;
+    width: 51%;
   }
 }
 
 /* ===============================
    MOBILE (< 700px)
 ================================ */
+@media (min-width: 390px) and (max-width: 500px) {
+  .foreground {
+    width: 70%;
+    margin-top: -20rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 650px) {
+  .foreground {
+    width: 70%;
+    margin-top: -23rem;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 699px) {
+  .foreground {
+    width: 58%;
+    margin-top: -17rem;
+  }
+}
 
 @media (max-width: 699px) {
 
@@ -233,11 +276,6 @@ blockquote {
     width: 240px;
     margin: 1rem auto 0;
     transform: translateY(0.13rem);
-  }
-
-  .foreground {
-    width: 70%;
-    margin-top: -23rem;
   }
 
   .howItWorks-instructions {
