@@ -64,6 +64,7 @@
   #Logo h1 {
 
     font-size: 95px;
+
   }
 }
 
@@ -86,7 +87,7 @@
 @media (max-width: 800px) {
   #Logo h1 {
 
-    font-size: clamp(48px, 24vw, 130px);
+    font-size: clamp(48px, 24vw, 1130px);
     text-align: center;
 
   }
@@ -108,4 +109,7 @@
     align-self: center;
 
   }
+
+
+
 }

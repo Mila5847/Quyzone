@@ -1,4 +1,4 @@
-@use '../abstracts/variables' as *;
+@use '../abstracts/variables'as *;
 
 .brand-header {
   display: flex;
@@ -44,7 +44,7 @@
   }
 
   .brand-header .logo-section {
-    margin: 10.1px auto 0.75rem;
+    margin: 10.1px auto -1.1rem;
   }
 
   .brand-header .brand-heading {
