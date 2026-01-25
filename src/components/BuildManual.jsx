@@ -213,6 +213,8 @@ function BuildManual() {
 
   ];
 
+
+
   // Data for carousel 11
   const carousel11Items = [
     { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
@@ -239,12 +241,12 @@ function BuildManual() {
   ];
 
   //-------------------------------------------------------------------------------------------------------------------------------//
-  //------------------------------------------------------- DATA FOR SUB B --------------------------------------------------------//
+  //------------------------------------------------------- DATA FOR SUB C --------------------------------------------------------//
   //-------------------------------------------------------------------------------------------------------------------------------//
 
   // Data for carousel 12
-  const carousel12Items = [
-    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+  const carouselC1Items = [
+    { type: 'img', src: '/images/manual/pres-C01.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
     {
       type: 'video',
@@ -259,7 +261,7 @@ function BuildManual() {
 
 
   ];
-  const carousel12Captions = [
+  const carouselC1Captions = [
     'Step 11 Preview',
     'Part B-4 (P.C.N.R.)*',
     'B-0 \u27A4 B-0 + B-2 + B-3',
@@ -268,7 +270,7 @@ function BuildManual() {
 
   // Data for carousel 13
   const carousel13Items = [
-    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/pres-C02.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
     {
       type: 'video',
@@ -292,7 +294,7 @@ function BuildManual() {
 
   // Data for carousel 14
   const carousel14Items = [
-    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/pres-C03.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
     {
       type: 'video',
@@ -316,7 +318,7 @@ function BuildManual() {
 
   // Data for carousel 15
   const carousel15Items = [
-    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/pres-C04.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
     {
       type: 'video',
@@ -340,7 +342,7 @@ function BuildManual() {
 
   // Data for carousel 16
   const carousel16Items = [
-    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/pres-C05.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
     {
       type: 'video',
@@ -364,7 +366,7 @@ function BuildManual() {
 
   // Data for carousel 17
   const carousel17Items = [
-    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/pres-C06.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
     {
       type: 'video',
@@ -388,7 +390,7 @@ function BuildManual() {
 
   // Data for carousel 18
   const carousel18Items = [
-    { type: 'img', src: '/images/manual/pres-B04.jpg', alt: 'Slide 1' },
+    { type: 'img', src: '/images/manual/pres-C07.jpg', alt: 'Slide 1' },
     { type: 'img', src: '/images/manual/ori-B04.jpg', alt: 'Slide 2' },
     {
       type: 'video',
@@ -479,7 +481,7 @@ function BuildManual() {
             <img className="overflow-image" src="./images/decorative/assemblyC.png" alt="assemblyA" />
           </h3>
           <section className="carousel-section">
-            <MediaCarousel itemsData={carousel12Items} captions={carousel12Captions} title="11" />
+            <MediaCarousel itemsData={carouselC1Items} captions={carouselC1Captions} title="11" />
           </section>
           <section className="carousel-section">
             <MediaCarousel itemsData={carousel13Items} captions={carousel13Captions} title="12" />
