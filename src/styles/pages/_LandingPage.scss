@@ -183,7 +183,7 @@ blockquote {
 }
 
 /* Large desktop */
-@media (min-width: 1470px) and (max-width: 1919px) {
+@media (min-width: 1470px) {
   .foreground {
     margin-top: -20rem;
     max-width: 990px;
@@ -243,7 +243,7 @@ blockquote {
 /* ===============================
    MOBILE (< 700px)
 ================================ */
-@media (min-width: 390px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .foreground {
     width: 70%;
     margin-top: -20rem;
