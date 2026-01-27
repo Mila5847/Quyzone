@@ -22,7 +22,7 @@ const leftLabelSx = {
   color: 'common.white',
   pr: { xs: 0, md: '1rem' },
   ml: { xs: '0.5rem' },
-  mr: {xs: '5px'}
+  mr: { xs: '5px' }
 };
 
 const timelineSx = {
@@ -48,7 +48,7 @@ const connectorBaseSx = {
 
 const contentTextSx = {
   width: '100%',
-  maxWidth: '351px',
+  maxWidth: '501.1px',
 };
 
 const titleSx = { fontSize: '1.2rem', fontWeight: 'bold', mb: 0.5 };
