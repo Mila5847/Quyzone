@@ -13,8 +13,13 @@ function QAndA() {
   }, [location.pathname]);
 
   const faqs = [
-    { q: 'What is Lorem Ipsum?', a: 'Lorem ipsum dolor sit amet...' },
+    {
+      q: 'Why this strange shape for the ship??',
+      a: 'Thanks for asking! Two reasons: first, it was meant as a parody of the classic Benchee 3D print test. Second, when you flip it upside down, it totally looks like a mech head.'
+    },
     { q: 'Where does it come from?', a: 'Quisque eget luctus mi...' },
+    { q: 'Why do we use it?', a: 'Suspendisse massa risus...' },
+    { q: 'Why do we use it?', a: 'Suspendisse massa risus...' },
     { q: 'Why do we use it?', a: 'Suspendisse massa risus...' },
   ];
 
@@ -24,7 +29,7 @@ function QAndA() {
 
       <section className="contact-intro">
         <h2>Contact</h2>
-        <p>Include frequently asked questions, help guides, or contact options here.</p>
+        <p>&nbsp;&nbsp;Got questions? Trust me, someone else wondered the same thing. Dive below — the answers live there. And if not, congrats on being the first… reach out and let me know. </p>
       </section>
 
       <Accordion className="faq" allowMultiple transition transitionTimeout={200}>
